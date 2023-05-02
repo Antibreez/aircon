@@ -1,0 +1,14 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+
+block content
+	.main
+		include pug/components/header-anime
+		.content.content--index
+			include pug/pages/index
+		include pug/components/footer

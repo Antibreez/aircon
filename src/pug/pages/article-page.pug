@@ -1,0 +1,84 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Блог—статьи
+			li Страница статьи
+
+	.page-news.anime
+		h1.page-title
+			| Страница новости
+		.slider(data-app="slider")
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.slider__image(style="background-image:url(./images/temp/20.jpg)")
+					.swiper-slide
+						.slider__image(style="background-image:url(./images/temp/20.jpg)")
+					.swiper-slide
+						.slider__image(style="background-image:url(./images/temp/20.jpg)")
+					.swiper-slide
+						.slider__image(style="background-image:url(./images/temp/20.jpg)")
+			.progress
+
+		.page-news__container
+			.page-news__side.anime.fadeUp(data-offset="25")
+				.h1.page-news__side__title
+					| Изящество и&nbsp;легкость
+			.page-news__content
+				.page-news__text.anime.fadeUp(data-offset="25")
+					| Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему оратору отточить навык публичных выступлений в&nbsp;домашних условиях. При создании генератора мы&nbsp;использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от&nbsp;двух до&nbsp;десяти предложений в&nbsp;абзаце, что позволяет сделать текст более привлекательным и&nbsp;живым для визуально-слухового восприятия.
+					br
+					br
+					| По&nbsp;своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у&nbsp;некторых людей недоумение при попытках прочитать рыбу текст. В&nbsp;отличии от&nbsp;lorem ipsum, текст рыба на&nbsp;русском языке наполнит любой макет непонятным смыслом и&nbsp;придаст неповторимый колорит советских времен.
+				.quote.anime.fadeUp(data-offset="25")
+					.quote__icon
+						+svg('quotes')
+					.quote__text
+						| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на&nbsp;теплообменнике и простота подбора и проектирования
+					.quote__signature
+						| Подпись автора цитаты
+
+		.articles.anime(data-offset="25" data-app="articles")
+			.articles__side.anime.fadeUp(data-offset="15")
+				.h1.articles__title
+					| Другие #[br.for-desktop]статьи
+			.articles__content
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/1.jpg)")
+								.h4.articles__item__title
+									| Уникальные возможности VRV&nbsp;Daikin
+								.articles__item__text
+									| Уникальные возможности VRV Daikin Проявляют себя с новой силой в паре с контроллерами
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/2.jpg)")
+								.h4.articles__item__title
+									| Ответ Daikin на пандемию COVID-19
+								.articles__item__text
+									| Важность промышленной вентиляции в местах большого скопления людей
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/3.jpg)")
+								.h4.articles__item__title
+									| Бытовые кондиционеры Daikin: на&nbsp;шаг впереди. Климатическая техника.
+								.articles__item__text
+									| Климатическая техника Daikin для бытового использования
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/1.jpg)")
+								.h4.articles__item__title
+									| Уникальные возможности VRV&nbsp;Daikin
+								.articles__item__text
+									| Уникальные возможности VRV Daikin Проявляют себя с новой силой в паре с контроллерами
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/2.jpg)")
+								.h4.articles__item__title
+									| Ответ Daikin на пандемию COVID-19
+								.articles__item__text
+									| Важность промышленной вентиляции в местах большого скопления людей
+				.progress

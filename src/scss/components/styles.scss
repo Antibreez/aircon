@@ -1,0 +1,617 @@
+.styles-intro {
+	&::after {
+		display: none;
+	}
+
+	@include desktop {
+		margin-bottom: vw(80);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 80px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(80);
+	}
+}
+
+.styles-list {
+	margin-bottom: vmin(80);
+
+	.page-text {
+		margin-bottom: vmin(16);
+
+		@include desktop {
+			margin-bottom: vw(32);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 32px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(32);
+		}
+	}
+
+	.page-text-list {
+		margin-bottom: vmin(24);
+
+		@include desktop {
+			margin-bottom: vw(48);
+			width: vw(400);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 48px;
+			width: 400px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(48);
+			width: px(400);
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(152);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 152px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(152);
+	}
+}
+
+.styles-accordion {
+	.accordion__item {
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	.accordion__item__header {
+		@include desktop {
+			min-height: vw(120);
+		}
+
+		@include desktop-xl {
+			min-height: 120px;
+		}
+
+		@include desktop-xxl {
+			min-height: px(120);
+		}
+	}
+}
+
+.styles-box {
+	margin: vmin(36) vmin(-10) vmin(80);
+
+	@include desktop {
+		margin: vw(50) 0 vw(152);
+	}
+
+	@include desktop-xl {
+		margin: 50px 0 152px;
+	}
+
+	@include desktop-xxl {
+		margin: px(50) 0 px(152);
+	}
+}
+
+.styles-buttons {
+	margin-bottom: vmin(15);
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		.button + .button {
+			margin-left: vmin(8);
+
+			@include desktop {
+				margin-left: vw(32);
+			}
+
+			@include desktop-xl {
+				margin-left: 32px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(32);
+			}
+		}
+
+		.button-close {
+			margin-left: vmin(10);
+
+			@include desktop {
+				margin-left: vw(25);
+			}
+
+			@include desktop-xl {
+				margin-left: 25px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(25);
+			}
+		}
+
+		& + & {
+			margin-top: vmin(15);
+
+			@include desktop {
+				margin-top: 0;
+				margin-left: vw(32);
+			}
+
+			@include desktop-xl {
+				margin-left: 32px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(32);
+			}
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		margin-bottom: vw(40);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 40px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(40);
+	}
+}
+
+.styles-links {
+	margin: vmin(40) 0;
+
+	&__item {
+		& + & {
+			margin-top: vmin(15);
+
+			@include desktop {
+				margin-top: 0;
+				margin-left: vw(64);
+			}
+
+			@include desktop-xl {
+				margin-left: 64px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(64);
+			}
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		margin: vw(76) 0 vw(40);
+	}
+
+	@include desktop-xl {
+		margin: 76px 0 40px;
+	}
+
+	@include desktop-xxl {
+		margin: px(76) 0 px(40);
+	}
+}
+
+.styles-navigation {
+	margin-bottom: vmin(80);
+
+	@include desktop {
+		margin-bottom: vw(150);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 150px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(150);
+	}
+}
+
+.styles-table {
+	margin-bottom: vmin(40);
+	width: 100%;
+
+	@include desktop {
+		margin-bottom: vw(25);
+		border: 1px solid $color-geyser;
+		padding: vw(65);
+		width: vw(612);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 25px;
+		padding: 65px;
+		width: 612px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(25);
+		padding: px(65);
+		width: px(612);
+	}
+}
+
+.styles-table--2 {
+	margin-bottom: vmin(40);
+
+	@include desktop {
+		margin-bottom: vw(85);
+		padding: vw(65) vw(30);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 85px;
+		padding: 65px 30px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(85);
+		padding: px(65) px(30);
+	}
+}
+
+.styles-tag {
+	margin-bottom: vmin(70);
+
+	&__buttons {
+		display: flex;
+		margin-bottom: vmin(20);
+
+		&__item {
+			a {
+				display: inline-block;
+				border-radius: vmin(80);
+				padding: vmin(7) vmin(17);
+				background: $color-athens-gray;
+
+				&.is-active {
+					color: $color-white;
+					background: $color-cod-gray;
+				}
+
+				&.is-cross {
+					position: relative;
+					padding-right: vmin(37);
+
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						right: vmin(12);
+						top: 50%;
+						margin-top: -1px;
+						width: vmin(12);
+						height: vmin(2);
+						background: $color-cod-gray;
+						transform: translateX(-50%) rotate(45deg);
+
+						@include desktop {
+							right: vw(12);
+							width: vw(12);
+							height: vw(2);
+						}
+
+						@include desktop-xl {
+							right: 12px;
+							width: 12px;
+							height: 2px;
+						}
+
+						@include desktop-xxl {
+							right: px(12);
+							width: px(12);
+							height: px(2);
+						}
+					}
+
+					&::after {
+						transform: translateX(-50%) rotate(-45deg);
+					}
+
+					@include desktop {
+						padding-right: vw(37);
+					}
+
+					@include desktop-xl {
+						padding-right: 37px;
+					}
+
+					@include desktop-xxl {
+						padding-right: px(37);
+					}
+				}
+
+				@include desktop {
+					border-radius: vw(80);
+					padding: vw(7) vw(17);
+
+					&:hover {
+						color: $color-cod-gray;
+						background: $color-geyser;
+					}
+				}
+
+				@include desktop-xl {
+					border-radius: 80px;
+					padding: 7px 17px;
+				}
+
+				@include desktop-xxl {
+					border-radius: px(80);
+					padding: px(7) px(17);
+				}
+			}
+
+			a + a {
+				margin-left: vmin(8);
+
+				@include desktop {
+					margin-left: vw(8);
+				}
+
+				@include desktop-xl {
+					margin-left: 8px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(8);
+				}
+			}
+
+			& + & {
+				margin-left: vmin(20);
+
+				@include desktop {
+					margin-left: vw(20);
+				}
+
+				@include desktop-xl {
+					margin-left: 20px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(20);
+				}
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	&__type {
+		.tab-list {
+			@include desktop {
+				margin-bottom: 0;
+			}
+		}
+
+		&__item {
+			.table__status {
+				margin-right: vmin(15);
+				margin-bottom: vmin(10);
+
+				@include desktop {
+					margin-right: vw(15);
+					margin-bottom: 0;
+				}
+
+				@include desktop-xl {
+					margin-right: 15px;
+				}
+
+				@include desktop-xxl {
+					margin-right: px(15);
+				}
+			}
+
+			@include desktop {
+				margin-left: vw(47);
+			}
+
+			@include desktop-xl {
+				margin-left: 47px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(47);
+			}
+		}
+
+		@include desktop {
+			display: flex;
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(152);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 152px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(152);
+	}
+}
+
+.styles-articles {
+	margin-bottom: vmin(44);
+
+	@include desktop {
+		margin-bottom: vw(152);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 152px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(152);
+	}
+}
+
+.styles-form {
+	margin-bottom: vmin(40);
+
+	&__item {
+		width: 100%;
+
+		@include desktop {
+			width: vw(328);
+		}
+
+		@include desktop-xl {
+			width: 328px;
+		}
+
+		@include desktop-xxl {
+			width: px(328);
+		}
+	}
+
+	.input {
+		@include desktop {
+			margin-bottom: vw(37);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 37px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(37);
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: vw(145);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 145px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(145);
+	}
+}
+
+.styles-option {
+	margin-bottom: vmin(80);
+
+	&__item {
+		& + & {
+			margin-top: vmin(20);
+
+			@include desktop {
+				margin-top: 0;
+				margin-left: vw(60);
+			}
+
+			@include desktop-xl {
+				margin-left: 60px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(60);
+			}
+		}
+	}
+
+	.checkbox,
+	.radio {
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	.multiple-file {
+		margin-bottom: vmin(20);
+
+		@include desktop {
+			margin-bottom: vw(55);
+			width: vw(328);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 55px;
+			width: 328px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(55);
+			width: px(328);
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		margin-bottom: vw(152);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 152px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(152);
+	}
+}
+
+.styles-margin-50 {
+	margin-bottom: vmin(50);
+
+	@include desktop {
+		margin-bottom: vw(50);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 50px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(50);
+	}
+}

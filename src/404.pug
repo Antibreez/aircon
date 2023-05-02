@@ -1,0 +1,14 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	//-
+
+block content
+	.main
+		include pug/components/header
+		.content.content--404
+			include pug/pages/404
+		include pug/components/footer

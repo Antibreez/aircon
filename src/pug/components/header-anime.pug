@@ -1,0 +1,107 @@
+header.header.anime(data-app="header")
+	.header__line
+	.container
+		.header__container
+			.header__logo
+				a(href=""): img(src="./images/logo.svg" alt="")
+			.header__right
+				ul.header__menu.for-desktop
+					li: a(href="#") Каталог
+					li: a(href="#") Мобильное управление
+					li: a(href="#") Облачный кондиционер
+					li: a(href="#") Где купить
+					li: a(href="#") Для партнеров
+					li
+						a.is-arrow(href="#") Еще
+						.header__menu__drop
+							.header__menu__drop__content
+								.header__menu__drop__wrap
+									ul.header__menu__drop__menu
+										li: a(href="#") Поддержка
+										li: a(href="#") Статьи
+										li: a(href="#") Контакты
+									.header__menu__drop__contacts
+										.header__menu__drop__contacts__phone
+											a(href="tel:8 800 200 00 05") 8 800 200 00 05
+										.header__menu__drop__contacts__phone-label
+											| Служба поддержки
+										.header__menu__drop__contacts__callback
+											a(href="#callback" data-fancybox)
+												+svg('comment')
+												| Обратная связь
+								.header__menu__drop__footer
+									.header__menu__drop__lang
+										a(href="#")
+											+svg('world')
+											| Русский
+									.header__menu__drop__location
+										a(href="#location" data-fancybox)
+											+svg('location')
+											| Москва
+									.is-hidden
+										.modal.form.location#location(data-param="change-city")
+											.h3.form__title
+												| Выбор города
+											.location__field.input(data-app="select-location" data-ajax="./ajax/location.json")
+												.input__field.input__field--search
+													select(data-placeholder="Введите название города")
+														option
+											.location__list
+												ul
+													li: a(href="?change-city=Москва") Москва
+													li: a(href="?change-city=Петербург") Санкт-Петербург
+													li: a(href="?change-city=Калининград") Калининград
+												ul
+													li: a(href="?change-city=Краснодар") Краснодар
+													li: a(href="?change-city=Красноярск") Красноярск
+													li: a(href="?change-city=Севастополь") Севастополь
+												ul
+													li: a(href="?change-city=Симферополь") Симферополь
+													li: a(href="?change-city=Уфа") Уфа
+													li: a(href="?change-city=Ялта") Ялта
+				.header__search-open
+					a(href="#"): +svg('search')
+				form.header__search(action="search.html" method="get" data-app="form" data-type="submit")
+					input.header__search__field(type="text" name="q" placeholder="Поиск по сайту"  data-validation={
+						maxlength: 300,
+						messages: {
+							required: "Введите поисковый запрос"
+						}
+					} required)
+					button.header__search__submit(type="submit"): +svg('search')
+				button.header__burger.for-mobile
+					i
+					i
+					i
+			.modal.header__location.for-desktop
+				.h3.form__title
+					| Ваш город — Москва?
+				.modal__footer
+					a.button.button--white(href="#location" data-fancybox) Выбрать другой
+					button.button.header__location__confirm(type="button") Верно
+
+.mobile-menu.for-mobile(data-app="mobile-menu")
+	.mobile-menu__list
+		ul
+			li
+				a(href="#") Каталог
+				ul
+					li: a(href="#") Настенные сплит-системы
+					li: a(href="#") Мультисистемы
+					li: a(href="#") Полупромышленная серия
+					li: a(href="#") DFT
+					li: a(href="#") Контроллеры
+			li: a(href="#") Мобильное управление
+			li: a(href="#") Облачный кондиционер
+			li: a(href="#") Где купить
+			li: a(href="#") Для партнеров
+			li: a(href="#") Поддержка
+			li: a(href="#") Статьи
+			li: a(href="#") Контакты
+	.mobile-menu__support
+		.mobile-menu__support__phone
+			a(href="tel:+78002000005") 8 800 200 00 05
+		.mobile-menu__support__text
+			| Служба поддержки
+	.mobile-menu__button
+		a(href="#callback" data-fancybox) Обратная связь

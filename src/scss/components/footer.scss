@@ -1,0 +1,433 @@
+.footer {
+	padding: vmin(66) 0 vmin(10);
+	background: $color-athens-gray;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		& + & {
+			margin-top: vmin(62);
+
+			@include desktop {
+				margin-top: vw(104);
+			}
+
+			@include desktop-xl {
+				margin-top: 104px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(104);
+			}
+		}
+
+		@include desktop {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__left {
+		@include desktop {
+			flex-shrink: 0;
+			margin-bottom: 0;
+			width: vw(530);
+		}
+
+		@include desktop-xl {
+			width: 530px;
+		}
+
+		@include desktop-xxl {
+			width: px(530);
+		}
+	}
+
+	&__right {
+		width: 100%;
+
+		@include desktop {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+
+		@include mobile {
+			margin-bottom: vmin(68);
+		}
+	}
+
+	&__logo {
+		flex-shrink: 0;
+		margin: vmin(-8) vmin(42) 0 0;
+
+		img {
+			width: vmin(64);
+
+			@include desktop {
+				width: vw(64);
+			}
+
+			@include desktop-xl {
+				width: 64px;
+			}
+
+			@include desktop-xxl {
+				width: px(64);
+			}
+		}
+
+		@include desktop {
+			margin: vw(-8) vw(42) 0 0;
+		}
+
+		@include desktop-xl {
+			margin: -8px 42px 0 0;
+		}
+
+		@include desktop-xxl {
+			margin: px(-8) px(42) 0 0;
+		}
+	}
+
+	&__phone {
+		margin-bottom: vmin(18);
+
+		&__number {
+			margin-bottom: vmin(4);
+			font-weight: 500;
+			font-size: vmin(18);
+			line-height: 1.35;
+
+			a {
+				text-decoration: none;
+			}
+
+			@include desktop {
+				margin-bottom: vw(4);
+				font-size: vw(18);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 4px;
+				font-size: 18px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(4);
+				font-size: px(18);
+			}
+		}
+
+		&__label {
+			font-size: vmin(12);
+			line-height: 1.5;
+			color: $color-gull-gray;
+
+			@include desktop {
+				font-size: vw(12);
+			}
+
+			@include desktop-xl {
+				font-size: 12px;
+			}
+
+			@include desktop-xxl {
+				font-size: px(12);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(18);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 18px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(18);
+		}
+	}
+
+	&__callback {
+		font-size: vmin(14);
+
+		a {
+			text-decoration: none;
+
+			svg {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: vmin(16);
+				width: vmin(16);
+				height: vmin(16);
+
+				@include desktop {
+					margin-right: vw(16);
+					width: vw(16);
+					height: vw(16);
+				}
+
+				@include desktop-xl {
+					margin-right: 16px;
+					width: 16px;
+					height: 16px;
+				}
+
+				@include desktop-xxl {
+					margin-right: px(16);
+					width: px(16);
+					height: px(16);
+				}
+			}
+		}
+
+		@include desktop {
+			font-size: vw(14);
+		}
+
+		@include desktop-xl {
+			font-size: 14px;
+		}
+
+		@include desktop-xxl {
+			font-size: px(14);
+		}
+	}
+
+	&__menu {
+		display: flex;
+		font-weight: 700;
+
+		ul {
+			flex-shrink: 0;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			+ ul {
+				margin-left: auto;
+
+				@include desktop {
+					margin-left: vw(120);
+				}
+
+				@include desktop-xl {
+					margin-left: 120px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(120);
+				}
+			}
+
+			li {
+				+ li {
+					margin-top: vmin(16);
+
+					@include desktop {
+						margin-top: vw(16);
+					}
+
+					@include desktop-xl {
+						margin-top: 16px;
+					}
+
+					@include desktop-xxl {
+						margin-top: px(16);
+					}
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+
+		@include mobile {
+			margin-bottom: vmin(48);
+		}
+	}
+
+	&__catalog {
+		a {
+			text-decoration: none;
+		}
+
+		&__title {
+			margin-bottom: vmin(16);
+			font-weight: 700;
+
+			@include desktop {
+				margin-bottom: vw(16);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 16px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(16);
+			}
+		}
+
+		&__list {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			font-size: vmin(14);
+			line-height: 1.6;
+
+			li {
+				+ li {
+					margin-top: vmin(8);
+
+					@include desktop {
+						margin-top: vw(8);
+					}
+
+					@include desktop-xl {
+						margin-top: 8px;
+					}
+
+					@include desktop-xxl {
+						margin-top: px(8);
+					}
+				}
+			}
+
+			@include desktop {
+				font-size: vw(14);
+			}
+
+			@include desktop-xl {
+				font-size: 14px;
+			}
+
+			@include desktop-xxl {
+				font-size: px(14);
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		list-style-type: none;
+		margin: 0 0 vmin(16);
+		padding: 0;
+		font-size: vmin(12);
+		line-height: 1.5;
+		color: $color-gull-gray;
+
+		li {
+			margin-right: vmin(24);
+
+			a {
+				text-decoration: none;
+				color: inherit;
+
+				&:hover {
+					color: $color-blue-ribbon;
+				}
+			}
+
+			@include desktop {
+				margin-right: vw(16);
+			}
+
+			@include desktop-xl {
+				margin-right: 16px;
+			}
+
+			@include desktop-xxl {
+				margin-right: px(16);
+			}
+		}
+
+		@include desktop {
+			margin: 0;
+			font-size: vw(12);
+		}
+
+		@include desktop-xl {
+			font-size: 12px;
+		}
+
+		@include desktop-xxl {
+			font-size: px(12);
+		}
+	}
+
+	&__list--list {
+		@include mobile {
+			display: block;
+
+			li {
+				+ li {
+					margin: vmin(16) 0 0;
+				}
+
+				&.for-desktop {
+					+ li {
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&__list--social {
+		@include mobile {
+			order: -1;
+		}
+	}
+
+	&__dev {
+		font-size: vmin(12);
+		line-height: 1.5;
+		color: $color-gull-gray;
+
+		a {
+			text-decoration: none;
+			color: inherit;
+
+			&:hover {
+				color: $color-blue-ribbon;
+			}
+		}
+
+		@include mobile {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@include desktop {
+			font-size: vw(12);
+		}
+
+		@include desktop-xl {
+			font-size: 12px;
+		}
+
+		@include desktop-xxl {
+			font-size: px(12);
+		}
+	}
+
+	@include desktop {
+		padding: vw(72) 0 vw(24);
+	}
+
+	@include desktop-xl {
+		padding: 72px 0 24px;
+	}
+
+	@include desktop-xxl {
+		padding: px(72) 0 px(24);
+	}
+}

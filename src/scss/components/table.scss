@@ -1,0 +1,247 @@
+.table {
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		box-sizing: border-box;
+
+		tr {
+			border-bottom: 1px solid $color-geyser;
+		}
+
+		th {
+			padding: vmin(15);
+			font-weight: 400;
+			font-size: vmin(14);
+			text-align: left;
+			color: $color-gull-gray;
+
+			&.width-130 {
+				@include mobile {
+					min-width: vmin(130);
+				}
+			}
+
+			@include desktop {
+				padding: vw(15);
+				font-size: vw(14);
+			}
+
+			@include desktop-xl {
+				padding: 15px;
+				font-size: 14px;
+			}
+
+			@include desktop-xxl {
+				padding: px(15);
+				font-size: px(14);
+			}
+		}
+
+		td {
+			padding: vmin(16);
+
+			@include desktop {
+				padding: vw(16);
+			}
+
+			@include desktop-xl {
+				padding: 16px;
+			}
+
+			@include desktop-xxl {
+				padding: px(16);
+			}
+		}
+	}
+
+	&__sort {
+		position: relative;
+		padding-right: vmin(32);
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: vmin(-5);
+			width: vmin(24);
+			height: vmin(24);
+			background: url("../images/sort.svg") 50% 50% no-repeat;
+			background-size: cover;
+
+			@include desktop {
+				top: vw(-5);
+				width: vw(24);
+				height: vw(24);
+			}
+
+			@include desktop-xl {
+				top: -5px;
+				width: 24px;
+				height: 24px;
+			}
+
+			@include desktop-xxl {
+				top: px(-5);
+				width: px(24);
+				height: px(24);
+			}
+		}
+
+		@include desktop {
+			padding-right: vw(32);
+		}
+
+		@include desktop-xl {
+			padding-right: 32px;
+		}
+
+		@include desktop-xxl {
+			padding-right: px(32);
+		}
+	}
+
+	&__check {
+		display: flex;
+		margin: 0;
+
+		label {
+			padding: 0;
+			width: vmin(24);
+			height: vmin(24);
+
+			@include desktop {
+				width: vw(24);
+				height: vw(24);
+			}
+
+			@include desktop-xl {
+				width: 24px;
+				height: 24px;
+			}
+
+			@include desktop-xxl {
+				width: px(24);
+				height: px(24);
+			}
+		}
+	}
+
+	&__status {
+		display: inline-block;
+		border-radius: vmin(80);
+		padding: vmin(4) vmin(12) vmin(2);
+		font-size: vmin(12);
+		text-align: center;
+		background: $color-geyser;
+
+		&--new {
+			color: $color-white;
+			background: $color-mountain-meadow;
+		}
+
+		&--canceled {
+			color: $color-white;
+			background: $color-flamingo;
+		}
+
+		&--date {
+			color: $color-white;
+			background: $color-blue-ribbon;
+		}
+
+		@include desktop {
+			border-radius: vw(80);
+			padding: vw(4) vw(12) vw(2);
+			font-size: vw(12);
+		}
+
+		@include desktop-xl {
+			border-radius: 80px;
+			padding: 4px 12px 2px;
+			font-size: 12px;
+		}
+
+		@include desktop-xxl {
+			border-radius: px(80);
+			padding: px(4) px(12) px(2);
+			font-size: px(12);
+		}
+	}
+
+	&__close {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		outline: none;
+		border: none;
+		padding: 0;
+		width: vmin(24);
+		height: vmin(24);
+		background: transparent;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: vmin(12);
+			height: vmin(2);
+			background: $color-cod-gray;
+			transform: translate(-50%, -50%) rotate(45deg);
+
+			@include desktop {
+				width: vw(12);
+				height: vw(2);
+			}
+
+			@include desktop-xl {
+				width: 12px;
+				height: 2px;
+			}
+
+			@include desktop-xxl {
+				width: px(12);
+				height: px(2);
+			}
+		}
+
+		&::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+
+		@include desktop {
+			width: vw(24);
+			height: vw(24);
+		}
+
+		@include desktop-xl {
+			width: 24px;
+			height: 24px;
+		}
+
+		@include desktop-xxl {
+			width: px(24);
+			height: px(24);
+		}
+	}
+
+	@include mobile {
+		overflow: auto;
+		padding-bottom: vmin(10);
+	}
+}
+
+.table--option {
+	table {
+		tr {
+			transition: $duration-normal;
+
+			@include desktop {
+				&:hover {
+					background: $color-athens-gray;
+				}
+			}
+		}
+	}
+}

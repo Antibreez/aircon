@@ -1,0 +1,16 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Блог—статьи
+
+	.blog(data-app="blog")
+		h1.page-title.anime.fadeUp
+			| Блог—статьи
+		.tab-list.anime.fadeUp
+			ul
+				li: a(href="#") Новости
+				li: a(href="#") Статьи
+				li: a.is-active(href="#") Видео
+		.blog__list.anime.fadeUp
+			.blog__row(data-list="blog-list" data-ajax="blog-video-load.html")

@@ -1,0 +1,180 @@
+.technologies {
+	margin-bottom: vmin(80);
+
+	&__title {
+		margin-bottom: vmin(24);
+
+		@include mobile {
+			font-size: vmin(24);
+			line-height: 1.32;
+		}
+
+		@include desktop {
+			margin: 0 0 vw(42);
+		}
+
+		@include desktop-xl {
+			margin: 0 0 42px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 0 px(42);
+		}
+	}
+
+	&__slider {
+		.swiper-container {
+			overflow: visible;
+		}
+
+		.swiper-slide {
+			width: auto;
+		}
+	}
+
+	&__item {
+		position: relative;
+		width: vmin(260);
+		box-sizing: border-box;
+
+		&__image {
+			padding-bottom: 100%;
+			background: 50% 50% no-repeat;
+			background-size: cover;
+		}
+
+		&__content {
+			margin-top: vmin(24);
+
+			@include desktop {
+				margin-top: vw(32);
+			}
+
+			@include desktop-xl {
+				margin-top: 32px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(32);
+			}
+		}
+
+		&__title {
+			margin: 0 0 vmin(8);
+
+			@include mobile {
+				font-size: vmin(18);
+			}
+
+			@include desktop {
+				margin: 0 0 vw(8);
+			}
+
+			@include desktop-xl {
+				margin: 0 0 8px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 0 px(8);
+			}
+		}
+
+		@include desktop {
+			width: vw(294);
+		}
+
+		@include desktop-xl {
+			width: 294px;
+		}
+
+		@include desktop-xxl {
+			width: px(294);
+		}
+	}
+
+	&__item--big {
+		.technologies {
+			&__item {
+				&__image {
+					@include desktop {
+						padding-bottom: 76.9625%;
+					}
+				}
+
+				&__content {
+					@include desktop {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						z-index: 2;
+						margin: 0;
+						padding: vw(40) vw(24);
+						width: 100%;
+					}
+
+					@include desktop-xl {
+						padding: 40px 24px;
+					}
+
+					@include desktop-xxl {
+						padding: px(40) px(24);
+					}
+				}
+			}
+		}
+
+		@include desktop {
+			width: vw(612);
+		}
+
+		@include desktop-xl {
+			width: 612px;
+		}
+
+		@include desktop-xxl {
+			width: px(612);
+		}
+	}
+
+	&.anime {
+		.technologies {
+			&__title {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: $duration-normal * 3;
+			}
+
+			&__slider {
+				opacity: 0;
+				transform: translateX(20%);
+				transition: $duration-normal * 4;
+			}
+		}
+
+		&.animated {
+			.technologies {
+				&__title {
+					opacity: 1;
+					transform: translateY(0);
+				}
+
+				&__slider {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(144);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 144px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(144);
+	}
+}

@@ -1,0 +1,651 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Хлебные крошки
+
+	.styles-intro.intro.anime
+		.intro__head
+			h1.intro__title
+				| Страница&nbsp;стилей Header H1+
+			.h3.intro__subtitle
+				| Комфортная среда вашего дома
+		.intro__video
+			img(src="./images/temp/29.jpg" alt="")
+
+	.wrapper
+		.wrapper__side
+		.wrapper__content
+			h1 Изящество и легкость Header H1
+			.page-subtext
+				| Популярное и эффективное решение для охлаждения или нагрева воздуха в вентиляционной обработке это – фреоновый теплообменник в сочетании с компрессорно-конденсаторным блоком. Подобная схема проста в проектировании и довольно бюджетна.
+			.page-text
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+			h2 Изящество и легкость Header H2
+			.page-text
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+			h3 Header H3
+			.page-text
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+			h4 Header H4
+			.page-text.page-text--medium
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+				br
+				br
+				| Незаметный и комфортный климат в доме — гармония и уют. Тропическое настроение в любую погоду. Изящество и легкость в вашем пространстве. Низкий уровень шума создает комфортный звуковой фон, который не мешает во время сна или отдыха. #[a(href="#") Ссылка в тексте] #[a(href="#") Ссылка в тексте при наведении]
+			.h4
+			.page-text.page-text--small
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+				br
+				br
+				| Незаметный и комфортный климат в доме — гармония и уют. Тропическое настроение в любую погоду. Изящество и легкость в вашем пространстве. Низкий уровень шума создает комфортный звуковой фон, который не мешает во время сна или отдыха.
+
+			.h2 Списки
+			.styles-list
+				.page-text
+					b Маркированный список
+				.page-text-list
+					ul
+						li Незаметный и комфортный климат в&nbsp;доме
+						li Гармония и уют
+							ul
+								li Комфортный звуковой фон, который не мешает во время сна или отдыха
+						li Тропическое настроение в любую погоду
+				.page-text
+					b Нумерованный список
+				.page-text-list
+					ol
+						li Незаметный и комфортный климат в&nbsp;доме
+							li
+								| Гармония и уют
+								ol
+									li Комфортный звуковой фон, который не мешает во время сна или отдыха
+							li Тропическое настроение в любую погоду
+
+	.styles-accordion.accordion.anime(data-offset="25" data-app="accordion")
+		.container
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.accordion__title
+						| Аккордеон
+					.accordion__list
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									.h3.accordion__item__title Заголовок 1
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Если действия важны и часто используются, не убирайте их в меню. Пользователь не сможет найти их. Ему придется постоянно открывать меню, чтобы выполнить действия
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									.h3.accordion__item__title Заголовок 2
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Если действия важны и часто используются, не убирайте их в меню. Пользователь не сможет найти их. Ему придется постоянно открывать меню, чтобы выполнить действия
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									.h3.accordion__item__title Заголовок 3
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Если действия важны и часто используются, не убирайте их в меню. Пользователь не сможет найти их. Ему придется постоянно открывать меню, чтобы выполнить действия
+						.accordion__item.is-disabled
+							.accordion__item__header
+								.accordion__item__header__text
+									.h3.accordion__item__title Неактивно
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Если действия важны и часто используются, не убирайте их в меню. Пользователь не сможет найти их. Ему придется постоянно открывать меню, чтобы выполнить действия
+
+	.technologies.anime(data-app="technologies" data-offset="25")
+		.h2.technologies__title
+			| Галерея с модульными иллюстрациями
+		.technologies__slider
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.technologies__item.technologies__item--big
+							.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Большой модуль. Галерея может полностью состоять из больших модулей.
+								.technologies__item__text
+									| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Малый модуль. Применяется по необходимости
+								.technologies__item__text
+									| Удаленное онлайн-управление через «облако Даичи».
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Full DC Inverter
+								.technologies__item__text
+									| Комфорт, тишина и эффективный расход электроэнергии.
+					.swiper-slide
+						.technologies__item.technologies__item--big
+							.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Комплексная очистка воздуха
+								.technologies__item__text
+									| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Wi-Fi управление
+								.technologies__item__text
+									| Удаленное онлайн-управление через «облако Даичи».
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Full DC Inverter
+								.technologies__item__text
+									| Комфорт, тишина и эффективный расход электроэнергии.
+					.swiper-slide
+						.technologies__item.technologies__item--big
+							.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Комплексная очистка воздуха
+								.technologies__item__text
+									| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Wi-Fi управление
+								.technologies__item__text
+									| Удаленное онлайн-управление через «облако Даичи».
+					.swiper-slide
+						.technologies__item
+							.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+							.technologies__item__content
+								.h4.technologies__item__title
+									| Full DC Inverter
+								.technologies__item__text
+									| Комфорт, тишина и эффективный расход электроэнергии.
+			.progress
+
+	.wrapper
+		.wrapper__side
+		.wrapper__content
+			.h2 Цитата и врезка, иллюстрация
+			.page-text.styles-margin-50
+				| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы. Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на теплообменнике и простота подбора и проектирования. Также можно использовать дополнительные функции системы VRV/VRF, например, технология непрерывного отопления Daikin. Это значительно повышает комфорт пользователей системы.
+			.page-image
+				.page-image__item
+					img(src="./images/temp/7.jpg" alt="")
+				.page-image__signature
+					| Подпись к иллюстрации в тексте
+			.quote
+				.quote__icon
+					+svg('quotes')
+				.quote__text
+					| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки на&nbsp;теплообменнике и простота подбора и проектирования
+				.quote__signature
+					| Подпись автора цитаты
+			.styles-box.page-box
+				.h3.page-box__title
+					| Заголовок врезки
+				.page-box__text
+					| Наружные блоки систем VRV/VRF используются в качестве компрессорно-конденсаторных блоков. Основной плюс подобного решения - возможность гибко подстраиваться под изменение нагрузки
+
+			.h1 Кнопки, ссылки и пагинация
+			.styles-buttons
+				.styles-buttons__item
+					a.button(href="#") Главная
+					a.button(href="#")
+						+svg('email')
+						| Главная
+				.styles-buttons__item
+					a.button.button--white(href="#") Кнопка 2
+					a.button.button--white(href="#")
+						+svg('email')
+						| Кнопка 2
+				.styles-buttons__item
+					button.arrow-next(type="button"): +svg('arrow-right')
+					button.button-close(type="button"): +svg('plus')
+			.styles-buttons
+				.styles-buttons__item
+					a.button.is-disabled(href="#") Главная
+					a.button.is-disabled(href="#")
+						+svg('email')
+						| Главная
+				.styles-buttons__item
+					a.button.button--white.is-disabled(href="#") Кнопка 2
+					a.button.button--white.is-disabled(href="#")
+						+svg('email')
+						| Кнопка 2
+				.styles-buttons__item
+					button.arrow-next(type="button" disabled): +svg('arrow-right')
+					button.button-close(type="button" disabled): +svg('plus')
+			.styles-buttons
+				.styles-buttons__item
+					a.button.is-loading(href="#") Главная
+				.styles-buttons__item
+					a.button.button--white.is-loading(href="#") Кнопка 2
+				.styles-buttons__item
+					button.arrow-next.is-loading(type="button"): +svg('arrow-right')
+					button.button-close.is-loading(type="button"): +svg('plus')
+			.styles-buttons
+				.styles-buttons__item
+					a.button.is-success(href="#") Главная
+				.styles-buttons__item
+					a.button.button--white.is-success(href="#") Текст
+			.styles-links
+				.styles-links__item
+					a.link-icon(href="#")
+						+svg('bookmark')
+						| Ссылка
+				.styles-links__item
+					a.link-arrow(href="#") Ссылка
+				.styles-links__item
+					a(href="#") Ссылка
+				.styles-links__item
+					a.is-loading(href="#") Ссылка
+				.styles-links__item
+					a.is-success(href="#") Выполнено
+			.styles-navigation.navigation
+				a.navigation__prev(href="#")
+				ul.navigation__list
+					li: a.is-active(href="#") 1
+					li: a(href="#") 2
+					li: a(href="#") 3
+					li ...
+					li: a(href="#") 16
+				a.navigation__next.is-active(href="#")
+
+			.h1 Таблицы и теги
+			.page-text.page-text--big.styles-margin-50
+				| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+			.styles-table.table
+				table
+					thead
+						tr
+							th Заголовок 1
+							th Заголовок 2
+							th Заголовок 3
+					tbody
+						tr
+							td Ячейка 1
+							td Ячейка 1
+							td Ячейка 1
+						tr
+							td Ячейка 2
+							td Ячейка 2
+							td Ячейка 2
+						tr
+							td Ячейка 3
+							td Ячейка 3
+							td Ячейка 3
+						tr
+							td Ячейка 4
+							td Ячейка 4
+							td Ячейка 4
+			.styles-table.styles-table--2.table.table--option
+				table
+					thead
+						tr
+							th
+							th.width-130
+								a.table__sort(href="#") № заказа
+							th.width-130
+								a.table__sort(href="#") Сумма, ₽
+							th
+								a.table__sort(href="#") Статус
+							th
+					tbody
+						tr
+							td
+								.checkbox.table__check
+									label
+										input(type="checkbox")
+										i: +svg('check')
+							td 284897
+							td 64 200
+							td
+								span.table__status.table__status--new
+									| Новый
+							td
+								button.table__close(type="button")
+						tr
+							td
+								.checkbox.table__check
+									label
+										input(type="checkbox")
+										i: +svg('check')
+							td 254896
+							td 68 400
+							td
+								span.table__status.table__status--canceled
+									| Отменен
+							td
+								button.table__close(type="button")
+						tr
+							td
+								.checkbox.table__check
+									label
+										input(type="checkbox")
+										i: +svg('check')
+							td 264895
+							td 89 600
+							td
+								span.table__status
+									| Завершен
+							td
+								button.table__close(type="button")
+						tr
+							td
+								.checkbox.table__check
+									label
+										input(type="checkbox")
+										i: +svg('check')
+							td 234894
+							td 75 480
+							td
+								span.table__status
+									| Завершен
+							td
+								button.table__close(type="button")
+			.styles-tag
+				.styles-tag__buttons
+					.styles-tag__buttons__item
+						a.is-active(href="#") Все
+						a(href="#") Daichi
+					.styles-tag__buttons__item
+						a.is-cross(href="#") Daichi
+				.styles-tag__type
+					.tab-list
+						ul
+							li
+								a.is-active(href="#")
+									| Новые
+									span.tab-list__number 16
+							li
+								a(href="#")
+									| Отзывы
+									span.tab-list__number 24
+					.styles-tag__type__item
+						.table__status.table__status--new
+							| Новинка
+						.table__status.table__status--canceled
+							| Специальная цена
+						.table__status.table__status--date
+							| 3 сентября 2020
+
+	.styles-articles.articles.articles--static.anime(data-offset="25")
+		.articles__side
+			.h2.articles__title
+				| Листинг
+		.articles__content
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						a.articles__item(href="#")
+							.articles__item__image(style="background-image:url(./images/temp/1.jpg)")
+							.articles__item__type
+								span Статья
+							.h4.articles__item__title
+								| Уникальные возможности VRV&nbsp;Daikin
+							.articles__item__text
+								| Уникальные возможности VRV Daikin Проявляют себя с новой силой в паре с контроллерами
+					.swiper-slide
+						a.articles__item(href="#")
+							.articles__item__image(style="background-image:url(./images/temp/2.jpg)")
+							.articles__item__type
+								span Статья
+							.h4.articles__item__title
+								| Ответ Daikin на пандемию COVID-19
+							.articles__item__text
+								| Важность промышленной вентиляции в местах большого скопления людей
+					.swiper-slide
+						a.articles__item(href="#")
+							.articles__item__image(style="background-image:url(./images/temp/3.jpg)")
+							.articles__item__type
+								span Статья
+							.h4.articles__item__title
+								| Бытовые кондиционеры Daikin: на&nbsp;шаг впереди. Климатическая техника.
+							.articles__item__text
+								| Климатическая техника Daikin для бытового использования
+
+	.wrapper
+		.wrapper__side
+		.wrapper__content
+			.h1 Формы и поля
+			.styles-form
+				.styles-form__item
+					form(action="#" method="get" data-app="form")
+						.input
+							.input__label
+								| По умолчанию
+							.input__field
+								input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+						.input
+							.input__label
+								| Ошибка
+							.input__field
+								input.error(type="tel" placeholder="+7 905 123-45-67")
+								label.error
+									| Укажите корректный номер телефона
+						.input
+							.input__label
+								| Недоступно
+							.input__field
+								input(type="tel" placeholder="+7 905 123-45-67" disabled)
+						.input
+							.input__label
+								| Загрузка
+							.input__field.is-loading
+								input(type="tel" placeholder="+7 905 123-45-67")
+						.input
+							.input__label
+								| Пароль
+							.input__field
+								input(type="password")
+								a.input__field__eye(href="#")
+						.input
+							.input__label
+								| Дата
+							.input__field
+								+svg('calendar').input__field__calendar
+								input(type="text" data-app="calendar" name="date" autocomplete="off" placeholder="__.__.____")
+				.styles-form__item
+					form(action="#" method="get" data-app="form")
+						.input(data-app="select")
+							.input__label
+								| По умолчаиню с подсказкой
+							.input__field
+								select(data-placeholder="Введите или выберите вариант")
+									option(value="")
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+									option(value="5") Вариант 5
+						.input(data-app="select")
+							.input__label
+								| Ошибка
+							.input__field
+								select.error(data-placeholder="Введите или выберите вариант")
+									option(value="")
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+									option(value="5") Вариант 5
+								label.error
+									| Выберите значение из списка
+						.input(data-app="select")
+							.input__label
+								| Недоступно
+							.input__field
+								select(data-placeholder="Введите или выберите вариант" disabled)
+									option(value="")
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+									option(value="5") Вариант 5
+						.input(data-app="select")
+							.input__label
+								| Загрузка
+							.input__field
+								select(data-placeholder="Введите или выберите вариант")
+									option(value="")
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+									option(value="5") Вариант 5
+						.input(data-app="select" data-search="1")
+							.input__label
+								| Нет совпадений
+							.input__field.input__field--search
+								select()
+									option(value="1") Вариант 1
+									option(value="2") Вариант 2
+									option(value="3") Вариант 3
+									option(value="4") Вариант 4
+									option(value="5") Вариант 5
+			.styles-option
+				.styles-option__item
+					.checkbox
+						label
+							input(type="checkbox" checked)
+							i: +svg('check')
+							span on
+					.checkbox
+						label
+							input(type="checkbox")
+							i: +svg('check')
+							span off
+					.checkbox
+						label
+							input(type="checkbox" checked disabled)
+							i: +svg('check')
+							span disabled on
+					.checkbox
+						label
+							input(type="checkbox" disabled)
+							i: +svg('check')
+							span disabled off
+					.checkbox
+						label
+							input.error(type="checkbox" name="checkbox" required)
+							i: +svg('check')
+							span off error
+				.styles-option__item
+					.radio
+						label
+							input(type="radio" name="radio" checked)
+							i
+							span on
+					.radio
+						label
+							input(type="radio" name="radio")
+							i
+							span off
+					.radio
+						label
+							input(type="checkbox" checked disabled)
+							i
+							span disabled on
+					.radio
+						label
+							input(type="checkbox" disabled)
+							i
+							span disabled off
+					.radio
+						label
+							input.error(type="checkbox" name="checkbox" required)
+							i
+							span off error
+				.styles-option__item
+					.multiple-file(data-app="multiple-file" data-max="1")
+						template.multiple-file__template
+							.multiple-file__item
+								label.multiple-file__item__upload
+									input(type="file" name="file[]" data-validate={
+										size: 10,
+										messages: {
+											size: "123",
+										},
+									})
+									.multiple-file__item__upload__row
+										.multiple-file__item__upload__title
+											| Выберите файл или&nbsp;перетащите его сюда
+										.multiple-file__item__upload__icon
+											+svg('upload')
+									.multiple-file__item__upload__info
+										| Файлы .jpg,.png. Макс. размер 5 Мб
+									.multiple-file__item__upload__error
+								.multiple-file__item__file
+									.multiple-file__item__file__name
+									button.multiple-file__item__file__remove(type="button")
+						.multiple-file__list
+
+					.multiple-file(data-app="multiple-file" data-max="1")
+						template.multiple-file__template
+							.multiple-file__item.is-error
+								label.multiple-file__item__upload
+									input(type="file" name="file[]" data-validate={
+										size: 10,
+										messages: {
+											size: "123",
+										},
+									})
+									.multiple-file__item__upload__row
+										.multiple-file__item__upload__title
+											| Выберите файл или&nbsp;перетащите его сюда
+										.multiple-file__item__upload__icon
+											+svg('upload')
+									.multiple-file__item__upload__info
+										| Файлы .jpg,.png. Макс. размер 5 Мб
+								.multiple-file__item__error
+									| Прикрепите файл
+								.multiple-file__item__file.is-loading
+									.multiple-file__item__file__name
+									button.multiple-file__item__file__remove(type="button")
+						.multiple-file__list
+
+			.h1 Табы
+			.tab(data-app="tab")
+				.tab-list
+					ul
+						li
+							a.is-active(href="#" data-tab="tab-1")
+								| Новые
+								span.tab-list__number 16
+						li
+							a(href="#" data-tab="tab-2")
+								| В процессе
+								span.tab-list__number 8
+						li
+							a(href="#" data-tab="tab-3")
+								| Завершено
+								span.tab-list__number 32
+				.tab__content
+					.tab__item.is-active(data-tab="tab-1")
+						| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+					.tab__item(data-tab="tab-2")
+						| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+					.tab__item(data-tab="tab-3")
+						| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+

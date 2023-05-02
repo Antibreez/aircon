@@ -1,0 +1,180 @@
+.tab-list {
+	margin-bottom: vmin(15);
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			flex-shrink: 0;
+
+			+ li {
+				margin-left: vmin(16);
+
+				@include desktop {
+					margin-left: vw(32);
+				}
+
+				@include desktop-xl {
+					margin-left: 32px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(32);
+				}
+			}
+
+			a {
+				position: relative;
+				display: block;
+				text-decoration: none;
+				color: $color-gull-gray;
+
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: vmin(-15);
+					width: 100%;
+					height: vmin(2);
+					background: $color-cod-gray;
+					opacity: 0;
+					visibility: hidden;
+					transition: $duration-normal;
+
+					@include desktop {
+						bottom: vw(-20);
+						height: vw(2);
+					}
+
+					@include desktop-xl {
+						bottom: -20px;
+						height: 2px;
+					}
+
+					@include desktop-xxl {
+						bottom: px(-20);
+						height: px(2);
+					}
+				}
+
+				span {
+					margin-left: vmin(8);
+					border-radius: vmin(80);
+					padding: vmin(6) vmin(8) vmin(5);
+					font-size: vmin(12);
+					color: $color-cod-gray;
+					background: $color-geyser;
+
+					@include desktop {
+						margin-left: vw(8);
+						border-radius: vw(80);
+						padding: vw(7) vw(8) vw(5);
+						font-size: vw(12);
+					}
+
+					@include desktop-xl {
+						margin-left: 8px;
+						border-radius: 80px;
+						padding: 7px 8px 5px;
+						font-size: 12px;
+					}
+
+					@include desktop-xxl {
+						margin-left: px(8);
+						border-radius: px(80);
+						padding: px(7) px(8) px(5);
+						font-size: px(12);
+					}
+				}
+
+				&.is-active {
+					color: $color-cod-gray;
+
+					&::after {
+						opacity: 1;
+						visibility: visible;
+					}
+
+					span {
+						color: $color-white;
+						background: $color-cod-gray;
+					}
+				}
+
+				@include desktop {
+					&:hover {
+						color: $color-cod-gray;
+					}
+				}
+			}
+		}
+
+		@include mobile {
+			overflow-x: scroll;
+			margin: 0 vmin(-10);
+			padding: vmin(2) vmin(10) vmin(20);
+			white-space: nowrap;
+
+			&::-webkit-scrollbar {
+				display: none;
+				width: 0;
+				height: 0;
+			}
+		}
+
+		@include desktop {
+			display: flex;
+			align-items: flex-end;
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(40);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 40px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(40);
+	}
+}
+
+.tab {
+	&__item {
+		display: none;
+
+		&.is-active {
+			display: block;
+			animation: tabShow $duration-normal * 2;
+		}
+	}
+}
+
+@keyframes tabShow {
+	0% {
+		opacity: 0;
+		transform: translateY(vmin(50));
+
+		@include desktop {
+			transform: translateY(vw(50));
+		}
+
+		@include desktop-xl {
+			transform: translateY(50px);
+		}
+
+		@include desktop-xxl {
+			transform: translateY(px(50));
+		}
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

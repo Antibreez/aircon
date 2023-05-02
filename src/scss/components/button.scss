@@ -1,0 +1,278 @@
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	outline: none;
+	border: solid vmin(2) $color-black;
+	border-radius: vmin(50);
+	padding: vmin(14) vmin(30);
+	font-weight: 500;
+	text-align: center;
+	color: $color-white;
+	background: $color-black;
+	transition: $duration-normal;
+
+	svg {
+		vertical-align: middle;
+		margin: vmin(-3) vmin(8) 0 vmin(-3);
+		width: vmin(24);
+		height: vmin(24);
+
+		@include desktop {
+			margin: vw(-3) vw(8) 0 vw(-3);
+			width: vw(24);
+			height: vw(24);
+		}
+
+		@include desktop-xl {
+			margin: -3px 8px 0 -8px;
+			width: 24px;
+			height: 24px;
+		}
+
+		@include desktop-xxl {
+			margin: px(-3) px(8) 0 px(-3);
+			width: px(24);
+			height: px(24);
+		}
+	}
+
+	&:focus {
+		border-radius: vmin(80);
+		box-shadow: 0 0 0 vmin(2) $color-white, 0 0 0 vmin(4) $color-blue-ribbon;
+
+		@include desktop {
+			border-radius: vw(80);
+			box-shadow: 0 0 0 vw(2) $color-white, 0 0 0 vw(4) $color-blue-ribbon;
+		}
+
+		@include desktop-xl {
+			border-radius: 80px;
+			box-shadow: 0 0 0 2px $color-white, 0 0 0 4px $color-blue-ribbon;
+		}
+
+		@include desktop-xxl {
+			border-radius: px(80);
+			box-shadow: 0 0 0 px(2) $color-white, 0 0 0 px(4) $color-blue-ribbon;
+		}
+	}
+
+	&:active {
+		border-color: $color-denim;
+		background: $color-denim;
+	}
+
+	&:disabled,
+	&.is-disabled {
+		border-color: $color-geyser;
+		background: $color-geyser;
+		pointer-events: none;
+
+		svg {
+			color: $color-gull-gray;
+		}
+	}
+
+	&.is-loading {
+		position: relative;
+		color: transparent;
+		pointer-events: none;
+		user-select: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: vmin(-9) 0 0 vmin(-9);
+			border: solid vmin(2) $color-white;
+			border-bottom-color: rgba($color-white, 0.2);
+			border-radius: 50%;
+			width: vmin(18);
+			height: vmin(18);
+			animation: buttonLoading linear 1s infinite;
+
+			@include desktop {
+				margin: vw(-9) 0 0 vw(-9);
+				border: solid vw(2) $color-white;
+				border-bottom-color: rgba($color-white, 0.2);
+				width: vw(18);
+				height: vw(18);
+			}
+
+			@include desktop-xl {
+				margin: -9px 0 0 -9px;
+				border: solid 2px $color-white;
+				border-bottom-color: rgba($color-white, 0.2);
+				width: 18px;
+				height: 18px;
+			}
+
+			@include desktop-xxl {
+				margin: px(-9) 0 0 px(-9);
+				border: solid px(2) $color-white;
+				border-bottom-color: rgba($color-white, 0.2);
+				width: px(18);
+				height: px(18);
+			}
+		}
+	}
+
+	&.is-success {
+		position: relative;
+		border-color: $color-mountain-meadow;
+		padding-left: vmin(55);
+		color: $color-white;
+		background: $color-mountain-meadow;
+		pointer-events: none;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: vmin(28);
+			top: 50%;
+			margin-top: vmin(-3);
+			border-right: vmin(2) solid $color-white;
+			border-bottom: vmin(2) solid $color-white;
+			width: vmin(10);
+			height: vmin(16);
+			transform: translateY(-50%) rotate(45deg);
+
+			@include desktop {
+				left: vw(28);
+				margin-top: vw(-3);
+				border-right: vw(2) solid $color-white;
+				border-bottom: vw(2) solid $color-white;
+				width: vw(10);
+				height: vw(16);
+			}
+
+			@include desktop-xl {
+				left: 28px;
+				margin-top: -3px;
+				border-right: 2px solid $color-white;
+				border-bottom: 2px solid $color-white;
+				width: 10px;
+				height: 16px;
+			}
+
+			@include desktop-xxl {
+				left: px(28);
+				margin-top: px(-3);
+				border-right: px(2) solid $color-white;
+				border-bottom: px(2) solid $color-white;
+				width: px(10);
+				height: px(16);
+			}
+		}
+
+		@include desktop {
+			padding-left: vw(55);
+		}
+
+		@include desktop-xl {
+			padding-left: 55px;
+		}
+
+		@include desktop-xxl {
+			padding-left: px(55);
+		}
+	}
+
+	.is-browser-ie & {
+		@include desktop {
+			padding: vw(16) vw(30) vw(12);
+		}
+
+		@include desktop-xl {
+			padding: 16px 30px 12px;
+		}
+
+		@include desktop-xxl {
+			padding: px(16) px(30) px(12);
+		}
+	}
+
+	@include desktop {
+		border: solid vw(2) $color-black;
+		border-radius: vw(50);
+		padding: vw(14) vw(30);
+
+		&:hover {
+			border-color: $color-blue-ribbon;
+			color: $color-white;
+			background: $color-blue-ribbon;
+		}
+	}
+
+	@include desktop-xl {
+		border: solid 2px $color-black;
+		border-radius: 50px;
+		padding: 14px 30px;
+	}
+
+	@include desktop-xxl {
+		border: solid px(2) $color-black;
+		border-radius: px(50);
+		padding: px(14) px(30);
+	}
+}
+
+.button--blue {
+	border-color: $color-blue-ribbon;
+	background: $color-blue-ribbon;
+
+	@include desktop {
+		&:hover {
+			border-color: $color-black;
+			background: $color-black;
+		}
+	}
+}
+
+.button--gray {
+	border-color: $color-geyser;
+	background: $color-geyser;
+
+	@include desktop {
+		&:hover {
+			border-color: $color-black;
+			background: $color-black;
+		}
+	}
+}
+
+.button--white {
+	border-color: $color-geyser;
+	color: $color-cod-gray;
+	background: $color-white;
+
+	&:disabled,
+	&.is-disabled {
+		border-color: $color-athens-gray;
+		color: $color-gull-gray;
+		background: $color-white;
+	}
+
+	&.is-loading {
+		&::before {
+			border-color: $color-blue-ribbon;
+			border-bottom-color: $color-geyser;
+		}
+	}
+
+	&.is-success {
+		color: $color-mountain-meadow;
+		background: $color-white;
+
+		&::before {
+			border-color: $color-mountain-meadow;
+		}
+	}
+	@include desktop {
+		&:hover {
+			border-color: $color-blue-ribbon;
+			color: $color-cod-gray;
+			background: $color-white;
+		}
+	}
+}

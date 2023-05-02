@@ -1,0 +1,292 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Оптовым покупателям
+
+	.page-dealers.is-show-list(data-app="dealers")
+		.page-dealers__head
+			.page-dealers__head__content
+				h1.page-title.anime.fadeUp
+					| Оптовым покупателям
+				.page-dealers__head__text.anime.fadeUp
+					| Вводный текст про розничную торговлю. Кондиционеры подключены к&nbsp;облачной системе Daichi, которая обеспечивает онлайн-мониторинг работы устройства. Пользователь и&nbsp;члены семьи могут управлять кондиционером со&nbsp;смартфона с&nbsp;помощью мобильного приложения Daichi Comfort и&nbsp;настроить различные автоматические сценарии, например, включение оборудования при&nbsp;приближении пользователя к&nbsp;дому. Кроме того, кондиционер работает с&nbsp;популярными голосовыми.
+			.page-dealers__head__image.anime.fadeUp.for-desktop
+				img(src="./images/buyers.jpg" alt="")
+		form.page-dealers__filter(action="./ajax/dealers.json" method="get")
+			.page-dealers__filter__row
+				.page-dealers__filter__left
+					.page-dealers__filter__item 
+						.page-dealers__filter__item__label
+							| Регион:
+						.page-dealers__filter__select
+							.input(data-app="select")
+								.input__field
+									select()
+										option(value="1") Екатеринбург
+										option(value="2") Екатеринбург
+										option(value="3") Екатеринбург
+										option(value="4") Екатеринбург
+										option(value="5") Екатеринбург
+				.page-dealers__filter__right
+					.page-dealers__filter__item
+						.page-dealers__filter__type
+							a.is-active(href="#" data-off="Показать списком" data-on="Показать карту") Показать карту
+		.page-dealers__map-container
+			.page-dealers__map(data-lat=55.755829 data-lng=37.617627 data-pin="./images/dealer-map-pin.svg" data-pin-active="./images/dealer-map-pin-active.svg" data-pin-main="./images/map-pin-main.svg")
+			.page-dealers__map-list
+				.page-dealers__map-item(data-lat=55.989903 data-lng=37.177189 data-type="main")
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Сибирь
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Новосибирск, ул. Коммунистическая, д. 2, оф. 710, 630007
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.912822 data-lng=36.827493)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Омск
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Омск, ул. Лермонтова, 179а к.1, 644009
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=56.006234 data-lng=38.242927)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Красноярск
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Красноярск, ул.Шахтеров д.4, стр. 3, 660020
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.785183 data-lng=38.705024)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Казань
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Казань, ул. Спартаковская, 23, оф. 308, 420107
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.849641 data-lng=37.755851)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Волгоград
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Калининград, ул. Больничная, д. 24, оф. 48а-49а, 236040
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.665360 data-lng=36.640156)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Байкал
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Иркутск, ул.Советская, д. 55, корп. А, оф. 215, 664007,
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.760544 data-lng=37.520639)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Волга
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| Тольятти, ул. Новый проезд, д. 3, оф. 227, 445037
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+
+		.page-dealers__list
+			.page-dealers__list__row
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Сибирь
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Новосибирск, ул. Коммунистическая, д. 2, оф. 710, 630007
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Омск
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Омск, ул. Лермонтова, 179а к.1, 644009
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Красноярск
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Красноярск, ул.Шахтеров д.4, стр. 3, 660020
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Казань
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Казань, ул. Спартаковская, 23, оф. 308, 420107
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Волгоград
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Калининград, ул. Больничная, д. 24, оф. 48а-49а, 236040
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Байкал
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Иркутск, ул.Советская, д. 55, корп. А, оф. 215, 664007,
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Волга
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| Тольятти, ул. Новый проезд, д. 3, оф. 227, 445037
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')

@@ -1,0 +1,438 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Каталог оборудования
+			li: a(href="#") Аксессуары
+			li: a(href="#") Системы индивидуального управления
+			li Daichi DC50W
+	.page-product
+		.page-product__head.anime.fadeUp
+			h1.page-product__title
+				span Проводной пульт управления
+				span Daichi DC50W
+			.h3.page-product__avail
+				| Выгодный климат #[br] для больших помещений
+		.page-product__image.anime.fadeUp
+			img(src="./images/product.png" alt="")
+
+		.tab.page-product__tab.anime.fadeUp(data-app="tab")
+			.tab-list
+				.page-product__tab__label
+					| Daichi DC50W
+				ul
+					li: a.is-active(href="#" data-tab="tab-1") Для кондиционеров
+					li: a(href="#" data-tab="tab-2") Характеристики
+					li: a(href="#" data-tab="tab-3") Где купить
+					li: a(href="#" data-tab="tab-4") Документация
+			.tab__content
+				.tab__item.is-active(data-tab="tab-1")
+					.wrapper
+						.wrapper__side
+						.wrapper__content
+							.h2.page-product__tab__title
+								| Для моделей кондиционеров
+					.page-product__models
+						a.page-product__models__item(href="#")
+							.page-product__models__item__image
+								img(src="./images/product-models.png" alt="")
+							.page-product__models__item__content
+								.h4.page-product__models__item__title
+									| Daichi Alpha
+								.page-product__models__item__list
+									ul
+										li Бесшумный режим
+										li Комфортное воздухораспределение
+										li Энергоэффективность класса&nbsp;А
+										li Функция &laquo;Комфортный сон&raquo;
+						a.page-product__models__item(href="#")
+							.page-product__models__item__image
+								img(src="./images/product-models-2.png" alt="")
+							.page-product__models__item__content
+								.h4.page-product__models__item__title
+									| Daichi Alpha
+								.page-product__models__item__list
+									ul
+										li Встроенные ионизатор и&nbsp;ультрафиолетовая лампа
+										li Инверторная технология DC&nbsp;Inverter
+										li Энергоэффективность&nbsp;А++
+										li Диапазон рабочих температур от &minus;20 до&nbsp;53&deg;С
+						a.page-product__models__item(href="#")
+							.page-product__models__item__image
+								img(src="./images/product-models-3.png" alt="")
+							.page-product__models__item__content
+								.h4.page-product__models__item__title
+									| Daichi X-Treme Peak
+								.page-product__models__item__list
+									ul
+										li Инверторная технология Full DC&nbsp;Inverter
+										li Режим локального комфорта Ifeel
+										li Энергоэффективность&nbsp;А++
+										li Работа на&nbsp;обогрев при низких температурах до &minus;22&deg;С
+				.tab__item(data-tab="tab-2")
+					.wrapper
+						.wrapper__side
+						.wrapper__content
+							.h2.page-product__tab__title
+								| Характеристики
+							.table.page-product__table
+								table
+									thead
+										tr
+											th
+											th
+									tbody
+										tr
+											td Наименование
+											td Проводной пульт управления
+										tr
+											td Габариты, ШхГхВ, мм
+											td 110x50x110
+										tr.page-product__table__hidden.is-hidden
+											td Серия
+											td Air
+										tr.page-product__table__hidden.is-hidden
+											td Инверторные
+											td Да
+										tr.page-product__table__hidden.is-hidden
+											td Потребляемая мощность, охлаждение, кВт
+											td 1,38~0,8~0,24
+										tr.page-product__table__hidden.is-hidden
+											td Класс энергоэффективности, охлаждение
+											td A
+										tr.page-product__table__hidden.is-hidden
+											td Холодопроизводительность, кВт, макс.
+											td 3,30
+										tr.page-product__table__hidden.is-hidden
+											td Теплопроизводительность, кВт, макс.
+											td 3,36
+										tr.page-product__table__hidden.is-hidden
+											td Уровень шума
+											td 22
+										tr.page-product__table__hidden.is-hidden
+											td Гарантия
+											td 3 года
+							.page-product__button-white
+								a.button.button--white.js-show-hide(href="#" data-target=".page-product__table__hidden" data-on="Скрыть" data-off="Все характеристики") Все характеристики
+				.tab__item(data-tab="tab-3")
+					.wrapper
+						.wrapper__side
+						.wrapper__content
+							.h2.page-product__tab__title
+								| Где купить
+							.tab.page-product__buy(data-app="tab")
+								.tab-list
+									ul
+										li: a(href="#" data-tab="tab-list") Списком
+										li: a.is-active(href="#" data-tab="tab-map") На карте
+								.tab__content
+									.tab__item(data-tab="tab-list" data-app="nano")
+										.page-product__shops.nano
+											.nano-content
+												.page-product__shops__row
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Мир Комфорта
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Фреоникс
+															ul.page-product__shops__item__list
+																li г. Москва, Шоссе Энтузиастов, д.31, стр.38, 3 этаж, офис №
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Оптклимат
+															ul.page-product__shops__item__list
+																li мкр 1 мая, д.24 143911 Балашиха
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| СнабТехСтрой
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| ООО "Твоя Безопасность"
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Мир Климата
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| ИП Меркушев С. С.
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Мир Комфорта
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| Фреоникс
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| ООО "Твоя Безопасность"
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| СнабТехСтрой
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| ООО "Твоя Безопасность"
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| СнабТехСтрой
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| СнабТехСтрой
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| ООО "Твоя Безопасность"
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+													.page-product__shops__col
+														.page-product__shops__item
+															.page-product__shops__item__name
+																| СнабТехСтрой
+															ul.page-product__shops__item__list
+																li г. Москва Проезд Завода Серп и молот, д.&nbsp;5, стр. 1 А
+																li: a(href="tel:+74956486817") +7 (495) 648-68-17
+																li: a(href="http://air-shop.ru" target="_blank") air-shop.ru
+									.tab__item.is-active(data-tab="tab-map")
+										.page-product__map(data-app="product-map" data-lat=55.755829 data-lng=37.617627 data-icon="./images/map-pin-small.svg" data-points=[
+											{
+												name: "Мир Комфорта",
+												lat: 55.989903,
+												lng: 37.177189,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.912822,
+												lng: 36.827493,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 56.006234,
+												lng: 38.242927,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.785183,
+												lng: 38.705024,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.849641,
+												lng: 37.755851,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.665360,
+												lng: 36.640156,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.760544,
+												lng: 37.520639,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.686532,
+												lng: 37.451949,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.665360,
+												lng: 37.553944,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.714744,
+												lng: 37.924454,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.664184,
+												lng: 38.188807,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.384335,
+												lng: 36.983607,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.508565,
+												lng: 37.354118,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.556967,
+												lng: 37.803726,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.577019,
+												lng: 38.018123,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+											{
+												name: "Мир Комфорта",
+												lat: 55.405659,
+												lng: 38.700861,
+												address: "г. Москва Проезд Завода Серп и молот, д. 5, стр. 1 А",
+												tel: "+7 (495) 648-68-17",
+												site: "air-shop.ru",
+											},
+										])
+				.tab__item(data-tab="tab-4")
+					.wrapper
+						.wrapper__side
+						.wrapper__content
+							.page-product__documentation
+								.page-product__documentation__title
+									| Документация
+								a.page-product__documentation__item(href="#")
+									.page-product__documentation__item__icon
+										+svg('pdf')
+									.page-product__documentation__item__content
+										.page-product__documentation__item__title
+											| Настенные сплит-системы Daichi Air
+										.page-product__documentation__item__text
+											| 2,5 Мб, PDF
+								a.page-product__documentation__item(href="#")
+									.page-product__documentation__item__icon
+										+svg('pdf')
+									.page-product__documentation__item__content
+										.page-product__documentation__item__title
+											| Инструкция по монтажу и эксплуатации
+										.page-product__documentation__item__text
+											| 2,5 Мб, PDF
+								a.page-product__documentation__item(href="#")
+									.page-product__documentation__item__icon
+										+svg('pdf')
+									.page-product__documentation__item__content
+										.page-product__documentation__item__title
+											| DAICHI. Cертификат соответствия
+										.page-product__documentation__item__text
+											| 2,5 Мб, PDF
+								a.page-product__documentation__item(href="#")
+									.page-product__documentation__item__icon
+										+svg('pdf')
+									.page-product__documentation__item__content
+										.page-product__documentation__item__title
+											| Мобильное управление
+										.page-product__documentation__item__text
+											| 2,5 Мб, PDF
+								a.page-product__documentation__item(href="#")
+									.page-product__documentation__item__icon
+										+svg('pdf')
+									.page-product__documentation__item__content
+										.page-product__documentation__item__title
+											| Рекламные материалы
+										.page-product__documentation__item__text
+											| 2,5 Мб, PDF

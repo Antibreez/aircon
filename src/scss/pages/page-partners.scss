@@ -1,0 +1,358 @@
+.page-partners {
+	.intro {
+		margin-bottom: vmin(40);
+
+		&__head {
+			@include desktop {
+				margin-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 40px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(40);
+			}
+		}
+
+		&__video {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: vw(64);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 64px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(64);
+		}
+	}
+
+	.tab-list {
+		margin-bottom: vmin(32);
+		border-bottom: solid 1px #d1d8e1;
+
+		ul {
+			@include mobile {
+				padding-bottom: vmin(15);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+			padding-bottom: vw(20);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+			padding-bottom: 20px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+			padding-bottom: px(20);
+		}
+	}
+
+	.wrapper__content {
+		min-width: 0;
+	}
+
+	&__image {
+		margin-bottom: vmin(32);
+		text-align: center;
+
+		@include desktop {
+			margin-bottom: 0;
+			max-width: vw(294);
+		}
+
+		@include desktop-xl {
+			max-width: 294px;
+		}
+
+		@include desktop-xxl {
+			max-width: px(294);
+		}
+	}
+
+	.page-subtext {
+		margin-bottom: vmin(32);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	.page-text {
+		margin-bottom: vmin(32);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	&__list {
+		margin-top: vmin(24);
+
+		&__col {
+			& + & {
+				margin-top: vmin(12);
+
+				@include desktop {
+					margin-top: 0;
+				}
+			}
+
+			@include desktop {
+				padding: 0 vw(20);
+				width: 50%;
+			}
+
+			@include desktop-xl {
+				padding: 0 20px;
+			}
+
+			@include desktop-xxl {
+				padding: 0 px(20);
+			}
+		}
+
+		@include desktop {
+			display: flex;
+			margin: vw(24) vw(-4) 0 vw(-20);
+		}
+
+		@include desktop-xl {
+			margin: 24px -4px 0 -20px;
+		}
+
+		@include desktop-xxl {
+			margin: px(24) px(-4) 0 px(-20);
+		}
+	}
+
+	&__form {
+		margin-top: vmin(60);
+
+		&__title {
+			margin-bottom: 40px;
+
+			@include desktop {
+				margin-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 40px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(40);
+			}
+		}
+
+		@include desktop {
+			margin-top: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-top: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(80);
+		}
+	}
+
+	&__tab-subtitle {
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		margin-top: 0;
+		font-size: vmin(24, 376);
+
+		@include desktop {
+			font-size: 24px;
+		}
+	}
+
+	&__request-form {
+		background-color: #fff;
+		border: 1px solid $color-geyser;
+		// margin-bottom: 48px;
+		margin-bottom: vmin(40);
+		margin-left: 0;
+		margin-right: 0;
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 48px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+
+		.input__field input {
+			background: $color-athens-gray;
+		}
+
+		.checkbox i {
+			background: $color-athens-gray;
+		}
+
+		.h3 {
+			font-weight: 600;
+			// font-size: 24px;
+			font-size: vmin(24, 376);
+
+			@include desktop {
+				font-size: 24px;
+			}
+		}
+
+		.form__bottom {
+			display: flex;
+			justify-content: space-between;
+			// padding-top: 18px;
+			flex-direction: column;
+			align-items: flex-start;
+			padding-top: vmin(20);
+
+			@include desktop {
+				padding-top: vw(20);
+			}
+
+			@include desktop-xl {
+				padding-top: 18px;
+			}
+
+			@include desktop {
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.checkbox {
+				margin-bottom: vmin(20);
+
+				@include desktop {
+					margin-bottom: 0;
+				}
+			}
+
+			.form__button {
+				width: 100%;
+
+				button {
+					width: 100%;
+
+					@include desktop {
+						width: auto;
+					}
+				}
+
+				@include desktop {
+					width: auto;
+					margin-left: 24px;
+				}
+			}
+		}
+	}
+
+	&__program {
+		padding-top: vmin(80, 376);
+
+		@include desktop {
+			padding-top: vw(80);
+		}
+
+		@include desktop-xl {
+			padding-top: 80px;
+		}
+
+		&-image {
+			width: 100%;
+			height: vmin(250, 376);
+			margin-bottom: vmin(48, 376);
+
+			@include desktop {
+				height: vw(320);
+				margin-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				height: 320px;
+				margin-bottom: 40px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: top center;
+			}
+		}
+
+		.page-text {
+			&:not(:last-child) {
+				margin-bottom: vmin(8, 376);
+
+				@include desktop {
+					margin-bottom: vw(8);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 8px;
+				}
+			}
+		}
+
+		.button {
+			margin-top: vmin(16, 376);
+			width: 100%;
+			margin-bottom: vmin(48, 376);
+
+			@include desktop {
+				margin-top: vw(16);
+				width: auto;
+				margin-bottom: vw(48);
+			}
+
+			@include desktop-xl {
+				margin-top: 16px;
+				margin-bottom: 48px;
+			}
+		}
+	}
+}

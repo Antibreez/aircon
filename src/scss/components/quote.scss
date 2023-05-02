@@ -1,0 +1,92 @@
+.quote {
+	position: relative;
+
+	&__icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		svg {
+			display: block;
+			width: vmin(27);
+			height: vmin(24);
+
+			@include desktop {
+				width: vw(57);
+				height: vw(51);
+			}
+
+			@include desktop-xl {
+				width: 57px;
+				height: 51px;
+			}
+
+			@include desktop-xxl {
+				width: px(57);
+				height: px(51);
+			}
+		}
+
+		@include desktop {
+			left: vw(-94);
+		}
+
+		@include desktop-xl {
+			left: -94px;
+		}
+
+		@include desktop-xxl {
+			left: px(-94);
+		}
+	}
+
+	&__text {
+		margin-bottom: vmin(12);
+		font-weight: 500;
+		font-size: vmin(18);
+		line-height: 1.35;
+
+		@include desktop {
+			margin-bottom: vw(22);
+			font-size: vw(24);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 22px;
+			font-size: 24px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(22);
+			font-size: px(24);
+		}
+	}
+
+	&__signature {
+		margin-top: vmin(12);
+		font-size: vmin(12);
+
+		@include mobile {
+			color: rgba($color-cod-gray, 0.7);
+		}
+
+		@include desktop {
+			margin-top: vw(22);
+			font-size: vw(12);
+		}
+
+		@include desktop-xl {
+			margin-top: 22px;
+			font-size: 12px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(22);
+			font-size: px(12);
+		}
+	}
+
+	@include mobile {
+		padding-left: vmin(45);
+	}
+}

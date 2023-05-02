@@ -1,0 +1,171 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Поддержка
+			li Обслуживание и&nbsp;ремонт
+
+	.page-repair
+		.intro.anime
+			.intro__head
+				h1.intro__title
+					| Обслуживание и&nbsp;ремонт
+			.intro__video
+				img(src="./images/repair.jpg" alt="")
+
+		.page-repair__center.anime.fadeUp
+			.wrapper
+				.wrapper__side
+					.h2
+						| Инженерный центр «Даичи»
+				.wrapper__content
+					.page-subtext
+						| Это по-настоящему отлаженная справочно-сервисная служба, готовая решить любые задачи, связанные с технической поддержкой. Помимо этого, обладатели оборудования от «Даичи» могут подключиться к программам #[a(href="#") «Климат онлайн»] и #[a(href="#") «Мой комфорт»], доступным по подписке.
+					.page-text
+						| Эти опции предусматривают онлайн-мониторинг работы климатической техники, дистанционное выявление возможных проблем, а также полную гарантию бесперебойной работы системы кондиционирования с последующей бесплатной заменой кондиционера на новый.
+
+		.page-repair__list
+			.page-repair__list__col
+				.page-repair__list__item.anime.fadeUp
+					.page-repair__list__item__image
+						img(src="./images/repair-item-1.jpg" alt="")
+					.page-repair__list__item__content
+						.h4.page-repair__list__item__title
+							| Поставка запасных частей и комплектующих
+						.page-repair__list__item__text
+							p Для ремонта оборудования клиента на складе Инженерного центра «Даичи» всегда в наличии больше 10 000 наименований часто востребованных запасных частей.
+				.page-repair__list__item.anime.fadeUp
+					.page-repair__list__item__image.page-repair__list__item__image--small
+						img(src="./images/repair-item-2.jpg" alt="")
+					.page-repair__list__item__content
+						.h4.page-repair__list__item__title
+							| Шефмонтаж, пуско-наладка и сдача оборудования в&nbsp;эксплуатацию
+						.page-repair__list__item__text
+							p Специалисты Инженерного центра «Даичи» предоставляют клиенту услуги по шеф-монтажу и&nbsp;пусконаладке оборудования по стандартам производителя с гарантией качества своей работы.
+			.page-repair__list__col
+				.page-repair__list__item.anime.fadeUp
+					.page-repair__list__item__image
+						img(src="./images/repair-item-3.jpg" alt="")
+					.page-repair__list__item__content
+						.h4.page-repair__list__item__title
+							| Плановое техническое обслуживание
+						.page-repair__list__item__text
+							p Продлить работу, поддержать работоспособность систем кондиционирования, хладоснабжения и&nbsp;вентиляции, предупредить неисправность можно с&nbsp;помощью плановых профилактических работ. Специалисты Инженерного центра «Даичи» по&nbsp;договору выполняют эти работы в удобное время. Это&nbsp;снижает риск возникновения неожиданных поломок.
+				.page-repair__list__item.anime.fadeUp
+					.page-repair__list__item__image
+						img(src="./images/repair-item-4.jpg" alt="")
+					.page-repair__list__item__content
+						.h4.page-repair__list__item__title
+							| Ремонт
+						.page-repair__list__item__text
+							p Специалисты проходят обучение на заводах производителей оборудования. Высокий уровень квалификации и большой опыт специалистов Инженерного центра «Даичи» позволяет в&nbsp;минимальные сроки найти и локализовать проблему в работе оборудования. Все бригады обеспечены необходимым диагностическим оборудованием и современным инструментом для&nbsp;ремонта.
+
+		.page-repair__order.anime.fadeUp
+			.wrapper
+				.wrapper__side
+					.page-repair__order__content
+						.h2.page-repair__order__title
+							| Принимаем обращения 24/7
+						.page-repair__order__text
+							| Оставьте свою заявку, и наши специалисты свяжутся с&nbsp;Вами #[br.for-desktop]в ближайшее время!
+					a.page-repair__order__file(href="#" download target="_blank")
+						.page-repair__order__file__icon
+							+svg('file')
+						.h4.page-repair__order__file__name
+							| Прейскурант на услуги Инженерного центра «Даичи»
+						.page-repair__order__file__info
+							| 690МБ, PDF
+				.wrapper__content
+					form.page-repair__form.form(action="./ajax/test.json" method="get" data-app="form")
+						.form__row
+							.form__col
+								.input
+									.input__label
+										| Имя
+									.input__field
+										input(type="text" name="firstname" placeholder="Иван" data-validation={
+											regex: ['^[^\\d]+$', 'ig'],
+											maxlength: 300,
+											messages: {
+												regex: "Поле может содержать только буквы и символы"
+											}
+										} required)
+							.form__col
+								.input
+									.input__label
+										| Фамилия
+									.input__field
+										input(type="text" name="surname" placeholder="Иванов" data-validation={
+											regex: ['^[^\\d]+$', 'ig'],
+											maxlength: 300,
+											messages: {
+												regex: "Поле может содержать только буквы и символы"
+											}
+										} required)
+							.form__col
+								.input
+									.input__label
+										| Отчество
+									.input__field
+										input(type="text" name="middlename" placeholder="Иванович" data-validation={
+											regex: ['^[^\\d]+$', 'ig'],
+											maxlength: 300,
+											messages: {
+												regex: "Поле может содержать только буквы и символы"
+											}
+										} required)
+							.form__col
+								.input
+									.input__label
+										| Телефон
+									.input__field
+										input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+							.form__col
+								.input
+									.input__label
+										| E-mail
+									.input__field
+										input(type="email" name="email" placeholder="E-mail" data-validation={
+											regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+											maxlength: 254,
+											messages: {
+												regex: "Неверный или некорректный e-mail адрес"
+											}
+										} required)
+							.form__col
+								.input(data-app="select" data-type="outside")
+									.input__label
+										| Город
+									.input__field
+										select(name="select" data-placeholder="Введите или выберите вариант" required)
+											option(value="")
+											option(value="1" selected) Москва
+											option(value="2") Москва 2
+											option(value="3") Москва 3
+											option(value="4") Москва 4
+											option(value="5") Москва 5
+						.input
+							.input__label
+								| Сообщение
+							.input__field
+								textarea(name="subject" placeholder="Подсказка" data-validation={
+									maxlength: 300,
+								} required)
+						.checkbox
+							label
+								input(type="checkbox" name="checkbox" required)
+								i: +svg('check')
+								span Разрешаю обработку #[a(href="#" target="_blank") персональных данных]
+						.form__button
+							button.button(type="submit") Отправить
+
+		.page-repair__service(style="background-image:url(./images/repair-service.jpg)")
+			.page-repair__service__content
+				.h2.page-repair__service__title
+					| Авторизованные сервисные центры
+				.page-repair__service__text
+					| Покупателям техники, торговой марки Daichi, всегда доступно техническое обслуживание и ремонт климатического оборудования.
+					br
+					| По всей России оно осуществляется с помощью системы авторизованных сервисных центров, расположенных в 100 городах Российской Федерации.
+				.page-repair__service__button
+					a.button(href="#") Найти ближайший сервисный центр

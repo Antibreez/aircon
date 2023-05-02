@@ -1,0 +1,25 @@
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// COLORS
+
+$color-black: #000;
+$color-white: #fff;
+$color-cod-gray: #151515;
+$color-blue-ribbon: #2858ff;
+$color-denim: #113ee0;
+$color-geyser: #d1d8e1;
+$color-gull-gray: #94a0b1;
+$color-mountain-meadow: #1ed77e;
+$color-flamingo: #f25248;
+$color-athens-gray: #f4f4f8;
+
+// FONTS
+
+$font-family-SuisseIntl: "Suisse Intl", sans-serif;
+
+// EASING TRANSITIONS
+$duration-normal: 0.4s;
+$easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.com/#.25,.74,.22,1.1
+$easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
+$easing-out: ease-out;
+$easing-in: ease-in;

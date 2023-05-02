@@ -1,0 +1,367 @@
+.page-become-dealer {
+	.intro {
+		margin-bottom: vmin(80);
+
+		&__head {
+			@include desktop {
+				margin-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 40px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(40);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(88);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 88px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(88);
+		}
+	}
+
+	&__profit {
+		margin-bottom: vmin(64);
+
+		&__content {
+			@include desktop {
+				max-width: vw(718);
+			}
+
+			@include desktop-xl {
+				max-width: 718px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(718);
+			}
+		}
+
+		&__button {
+			margin-top: vmin(24);
+
+			@include desktop {
+				margin-top: vw(32);
+			}
+
+			@include desktop-xl {
+				margin-top: 32px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(32);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__list {
+		margin-bottom: vmin(80);
+
+		&__col {
+			&:nth-child(1) {
+				.page-become-dealer__list__item__content {
+					@include desktop {
+						margin-left: auto;
+					}
+				}
+
+				@include desktop {
+					padding-top: vw(104);
+					width: vw(612);
+				}
+
+				@include desktop-xl {
+					padding-top: 104px;
+					width: 612px;
+				}
+
+				@include desktop-xxl {
+					padding-top: px(104);
+					width: px(612);
+				}
+			}
+
+			&:nth-child(2) {
+				@include desktop {
+					margin-left: vw(130);
+					width: vw(506);
+				}
+
+				@include desktop-xl {
+					margin-left: 130px;
+					width: 506px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(130);
+					width: px(506);
+				}
+			}
+
+			@include mobile {
+				margin-bottom: vmin(36);
+				width: 100%;
+			}
+		}
+
+		&__item {
+			&__image {
+				margin-bottom: vmin(12);
+
+				img {
+					width: 100%;
+				}
+
+				@include desktop {
+					margin-bottom: vw(40);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 40px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(40);
+				}
+			}
+
+			&__content {
+				@include desktop {
+					max-width: vw(400);
+				}
+
+				@include desktop-xl {
+					max-width: 400px;
+				}
+
+				@include desktop-xxl {
+					max-width: px(400);
+				}
+			}
+
+			&__title {
+				@include mobile {
+					font-size: vmin(18);
+				}
+			}
+
+			&__text {
+				// color: #94a0b1;
+			}
+
+			& + & {
+				margin-top: vmin(36);
+
+				@include desktop {
+					margin-top: vw(104);
+				}
+
+				@include desktop-xl {
+					margin-top: 104px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(104);
+				}
+			}
+		}
+
+		@include desktop {
+			display: flex;
+			margin-bottom: vw(120);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 120px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(120);
+		}
+	}
+
+	&__order {
+		.wrapper__side {
+			align-self: flex-start;
+		}
+
+		.wrapper__content {
+			min-width: 0;
+		}
+
+		&__content {
+			margin-bottom: vmin(24);
+
+			@include desktop {
+				margin-bottom: 0;
+				max-width: vw(400);
+			}
+
+			@include desktop-xl {
+				max-width: 400px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(400);
+			}
+		}
+	}
+
+	&__form {
+		padding: 0;
+		background: #f4f4f8;
+
+		.swiper-slide {
+			@include desktop {
+				height: auto;
+			}
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			padding: vmin(20);
+			height: 100%;
+			box-sizing: border-box;
+
+			.form {
+				padding: 0;
+			}
+
+			.form__col + .form__col {
+				@include mobile {
+					margin-top: vmin(16);
+				}
+			}
+
+			.radio,
+			.checkbox {
+				margin-bottom: vmin(16);
+
+				@include desktop {
+					margin-bottom: vw(16);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 16px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(16);
+				}
+			}
+
+			h4,
+			.h4 {
+				margin-top: vmin(26);
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				@include mobile {
+					margin-bottom: vmin(16);
+					font-size: vmin(18);
+				}
+
+				@include desktop {
+					margin-top: vw(26);
+				}
+
+				@include desktop-xl {
+					margin-top: 26px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(26);
+				}
+			}
+
+			.input__field {
+				textarea {
+					height: vmin(180);
+
+					@include desktop {
+						height: vw(180);
+					}
+
+					@include desktop-xl {
+						height: 180px;
+					}
+
+					@include desktop-xxl {
+						height: px(180);
+					}
+				}
+			}
+
+			&__footer {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				margin-top: vmin(24);
+
+				.button {
+					margin-left: vmin(20);
+
+					@include desktop {
+						margin-left: vw(24);
+					}
+
+					@include desktop-xl {
+						margin-left: 24px;
+					}
+
+					@include desktop-xxl {
+						margin-left: px(24);
+					}
+				}
+
+				@include desktop {
+					margin-top: auto;
+				}
+
+				@include desktop-xl {
+					padding-top: 26px;
+				}
+
+				@include desktop-xxl {
+					padding-top: px(26);
+				}
+			}
+
+			@include desktop {
+				padding: vw(48) vw(40);
+			}
+
+			@include desktop-xl {
+				padding: 48px 40px;
+			}
+
+			@include desktop-xxl {
+				padding: px(48) px(40);
+			}
+		}
+	}
+}

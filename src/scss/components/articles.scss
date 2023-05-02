@@ -1,0 +1,258 @@
+.articles {
+	&__side {
+		@include desktop {
+			flex-shrink: 0;
+			margin-right: vw(24);
+			width: vw(294);
+		}
+
+		@include desktop-xl {
+			margin-right: 24px;
+			width: 294px;
+		}
+
+		@include desktop-xxl {
+			margin-right: px(24);
+			width: px(294);
+		}
+	}
+
+	&__content {
+		width: 100%;
+		min-width: 0;
+	}
+
+	&__title {
+		margin-bottom: vmin(24);
+
+		@include mobile {
+			font-size: vmin(24);
+		}
+
+		@include desktop {
+			margin: 0 0 vw(48);
+		}
+
+		@include desktop-xl {
+			margin: 0 0 48px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 0 px(48);
+		}
+	}
+
+	&__menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			+ li {
+				margin-top: vw(16);
+
+				@include desktop-xl {
+					margin-top: 16px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(16);
+				}
+			}
+		}
+	}
+
+	&__item {
+		display: block;
+		text-decoration: none;
+
+		&__image {
+			margin-bottom: vmin(24);
+			padding-bottom: 70.75%;
+			background: 50% 50% no-repeat;
+			background-size: cover;
+
+			@include desktop {
+				margin-bottom: vw(24);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+			}
+		}
+
+		&__type {
+			margin-bottom: vmin(16);
+			font-size: vmin(12);
+			line-height: 1.5;
+
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: vmin(25);
+				padding: vmin(3) vmin(8);
+				background: $color-athens-gray;
+
+				@include desktop {
+					border-radius: vw(25);
+					padding: vw(3) vw(8);
+				}
+
+				@include desktop-xl {
+					border-radius: 25px;
+					padding: 3px 8px;
+				}
+
+				@include desktop-xxl {
+					border-radius: px(25);
+					padding: px(3) px(8);
+				}
+			}
+
+			@include desktop {
+				margin-bottom: vw(16);
+				font-size: vw(12);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 16px;
+				font-size: 12px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(16);
+				font-size: px(12);
+			}
+		}
+
+		&__title {
+			margin: 0 0 vmin(8);
+			transition: $duration-normal;
+
+			@include mobile {
+				font-size: vmin(18);
+			}
+
+			@include desktop {
+				margin: 0 0 vw(8);
+			}
+
+			@include desktop-xl {
+				margin: 0 0 8px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 0 px(8);
+			}
+		}
+
+		&__text {
+			display: box;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			overflow: hidden;
+			-webkit-box-orient: vertical;
+			height: vmin(72);
+			text-overflow: ellipsis;
+			white-space: normal;
+
+			@include desktop {
+				height: vw(72);
+			}
+
+			@include desktop-xl {
+				height: 72px;
+			}
+
+			@include desktop-xxl {
+				height: px(72);
+			}
+		}
+
+		@include desktop {
+			&:hover {
+				color: inherit;
+
+				.articles__item__title {
+					color: $color-denim;
+				}
+			}
+		}
+	}
+
+	&.anime {
+		.articles {
+			&__content {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: $duration-normal * 4;
+
+				@include desktop {
+					transform: translateX(20%);
+				}
+			}
+		}
+
+		&.animated {
+			.articles {
+				&__content {
+					opacity: 1;
+					transform: translate(0);
+
+					@include desktop {
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
+
+	&--static {
+		.swiper-wrapper {
+			flex-wrap: wrap;
+			margin: 0 vmin(-12);
+			width: auto;
+
+			@include desktop {
+				margin: 0 vw(-12);
+			}
+
+			@include desktop-xl {
+				margin: 0 -12px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 px(-12);
+			}
+		}
+
+		.swiper-slide {
+			margin-bottom: vmin(36);
+			padding: 0 vmin(12);
+			width: 100%;
+			box-sizing: border-box;
+
+			@include desktop {
+				margin-bottom: 0;
+				padding: 0 vw(12);
+				width: 33.33334%;
+			}
+
+			@include desktop-xl {
+				padding: 0 12px;
+			}
+
+			@include desktop-xxl {
+				padding: 0 px(12);
+			}
+		}
+	}
+
+	@include desktop {
+		display: flex;
+	}
+}

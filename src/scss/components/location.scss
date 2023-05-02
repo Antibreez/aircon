@@ -1,0 +1,22 @@
+.location {
+	max-width: 832px;
+
+	&__field {
+	}
+
+	&__list {
+		display: flex;
+		margin-bottom: -12px;
+
+		ul {
+			flex: 1;
+			list-style-type: none;
+			margin: 0;
+			padding: 0 30px 0 0;
+
+			li {
+				margin-bottom: 12px;
+			}
+		}
+	}
+}

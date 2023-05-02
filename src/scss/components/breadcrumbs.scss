@@ -1,0 +1,83 @@
+.breadcrumbs {
+	margin-bottom: vmin(16);
+	font-size: vmin(14);
+	color: $color-gull-gray;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			position: relative;
+			display: inline;
+			margin-right: vmin(7);
+
+			+ li {
+				&::before {
+					content: "";
+					display: inline-block;
+					vertical-align: middle;
+					margin: vmin(-2) vmin(12) 0 0;
+					border-top: 1px solid $color-gull-gray;
+					border-right: 1px solid $color-gull-gray;
+					width: vmin(7);
+					height: vmin(7);
+					transform: rotate(45deg);
+
+					@include desktop {
+						position: absolute;
+						left: vw(-17);
+						top: vw(3);
+						display: block;
+						margin: 0;
+						width: vw(7);
+						height: vw(7);
+						transform: rotate(45deg);
+					}
+
+					@include desktop-xl {
+						left: -17px;
+						top: 3px;
+						width: 7px;
+						height: 7px;
+					}
+
+					@include desktop-xxl {
+						left: px(-17);
+						top: px(3);
+						width: px(7);
+						height: px(7);
+					}
+				}
+			}
+
+			@include desktop {
+				margin-right: vw(22);
+			}
+
+			@include desktop-xl {
+				margin-right: 22px;
+			}
+
+			@include desktop-xxl {
+				margin-right: px(22);
+			}
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(34);
+		font-size: vw(14);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 34px;
+		font-size: 14px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(34);
+		font-size: px(14);
+	}
+}

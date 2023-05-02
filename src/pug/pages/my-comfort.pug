@@ -1,0 +1,604 @@
+.my-comfort
+	.container
+		.breadcrumbs
+			ul
+				li: a(href="index.html") Главная
+				li: a(href="#") Поддержка
+				li Программа обслуживания «Мой комфорт»
+		.intro.anime(data-app="intro")
+			.intro__head
+				h1.intro__title
+					| Программа обслуживания «Мой комфорт»
+				.h3.intro__subtitle
+					| Сервис премиального уровня, включающий ремонт и бесплатную замену устаревшего блока на новый
+			.intro__video
+				.intro__video__preview(style="background-image:url(./images/my-comfort-intro.jpg)")
+				video(src="./images/intro.mp4")
+				button.intro__video__play(type="button"): +svg('play')
+				button.intro__video__pause(type="button")
+
+		.my-comfort__description
+			.wrapper
+				.wrapper__side
+					.my-comfort__description__logo.anime.fadeUp(data-offset="25")
+						img(src="./images/logo-comfort.svg" alt="")
+					.my-comfort__description__footnote.for-desktop.anime.fadeUp(data-offset="25")
+						| Услуга предоставляется инженерным центром «Даичи». В&nbsp;2020–2021 году услуга доступна на&nbsp;территории Москвы и&nbsp;Московской области.
+						br
+						| Не&nbsp;является публичной офертой.
+				.wrapper__content
+					.h1.my-comfort__description__title.anime.fadeUp(data-offset="25")
+						| Хотите, чтобы кондиционер прослужил вечно?
+					.page-subtext.my-comfort__description__text.anime.fadeUp(data-offset="25")
+						| Ваш кондиционер&nbsp;— прекрасная инвестиция в&nbsp;комфорт и&nbsp;здоровье вас и&nbsp;ваших близких. Но&nbsp;любая инвестиция требует защиты.
+						br
+						| Купите подписку на&nbsp;программы «Мой комфорт» и&nbsp;получите бессрочную бесперебойную работу системы кондиционирования независимо от&nbsp;срока ее&nbsp;эксплуатации, а&nbsp;также право на&nbsp;бесплатную замену устаревшего блока на&nbsp;новый.
+					.my-comfort__description__footnote.for-mobile.anime.fadeUp(data-offset="25")
+						| Услуга предоставляется инженерным центром «Даичи». В&nbsp;2020–2021 году услуга доступна на&nbsp;территории Москвы и&nbsp;Московской области.
+						br
+						| Не&nbsp;является публичной офертой.
+
+		.my-comfort__tariffs
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.my-comfort__tariffs__title.anime.fadeUp(data-offset="25")
+						| Подписка на программу «Мой комфорт» предлагается в 3‑х вариантах
+
+			.my-comfort__tariffs__table.anime.fadeUp(data-offset="25")
+				table
+					thead
+						tr
+							th
+							th
+								| Мой комфорт Премиум
+								span Все включено
+							th
+								| Мой комфорт Плюс
+								span Обслуживание за&nbsp;отдельную плату
+							th
+								| Мой комфорт
+								span Запчасти и блоки включены
+					tbody
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Один раз в&nbsp;год техническое обслуживание кондиционера
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__minus
+									.my-comfort__tariffs__table__value__text
+										| Или за отдельную плату
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Мониторинг* ошибок работы кондиционера с&nbsp;выездом специалистов
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Замена блока или его части в&nbsp;случае отказа в&nbsp;результате естественного износа или заводской неисправности независимо от&nbsp;срока службы
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+									.my-comfort__tariffs__table__value__text
+										| Запчасти не включены
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+									.my-comfort__tariffs__table__value__text
+										| Скидка на работы 10%
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Устранение любой неисправности в&nbsp;течение 48 часов
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Консьерж-служба. Личный ассистент по&nbsp;вопросам климата
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+						tr
+							td
+								.my-comfort__tariffs__table__key
+									| Бесплатная замена блока через 7&nbsp;лет
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+							td
+								.my-comfort__tariffs__table__value
+									.my-comfort__tariffs__table__value__plus
+									.my-comfort__tariffs__table__value__text
+										| Скидка на установку 10%
+						tr
+							td.my-comfort__tariffs__table__footnote
+									| * При наличии контроллера Daichi
+							td
+								.my-comfort__tariffs__table__price
+									| от 5000 ₽
+								.my-comfort__tariffs__table__button
+									a.button.js-set-value(href="#order" data-value="Мой комфорт премиум" data-fancybox) Заказать
+							td
+								.my-comfort__tariffs__table__price
+									| от 3000 ₽
+								.my-comfort__tariffs__table__button
+									a.button.js-set-value(href="#order" data-value="Мой комфорт +" data-fancybox) Заказать
+							td
+								.my-comfort__tariffs__table__price
+									| от 2000 ₽
+								.my-comfort__tariffs__table__button
+									a.button.js-set-value(href="#order" data-value="Мой комфорт" data-fancybox) Заказать
+
+				.is-hidden
+					form.modal.form#order(action="./ajax/test.json" method="get" data-app="form")
+						.h3.form__title
+							| Заказать услугу
+						.radio
+							label
+								input(type="radio" name="type" value="Мой комфорт" required)
+								i
+								span Мой комфорт
+						.radio
+							label
+								input(type="radio" name="type" value="Мой комфорт +" required)
+								i
+								span Мой комфорт +
+						.radio
+							label
+								input(type="radio" name="type" value="Мой комфорт премиум" checked required)
+								i
+								span Мой комфорт премиум
+						.form__row
+							.form__col
+								.input
+									.input__label
+										| Имя
+									.input__field
+										input(type="text" name="firstname" data-validation={
+										regex: ['^[^\\d]+$', 'ig'],
+										maxlength: 300,
+										messages: {
+											regex: "Поле может содержать только буквы и символы"
+										}
+									})
+							.form__col
+								.input
+									.input__label
+										| Фамилия
+									.input__field
+										input(type="text" name="surname" data-validation={
+										regex: ['^[^\\d]+$', 'ig'],
+										maxlength: 300,
+										messages: {
+											regex: "Поле может содержать только буквы и символы"
+										}
+									})
+						.input
+							.input__label
+								| E-mail
+							.input__field
+								input(type="email" name="email" data-validation={
+									regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+									maxlength: 254,
+									messages: {
+										regex: "Неверный или некорректный e-mail адрес."
+									}
+								} required)
+						.input
+							.input__label
+								| Телефон
+							.input__field
+								input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required)
+						.checkbox
+							label
+								input(type="checkbox" name="checkbox" required)
+								i: +svg('check')
+								span Разрешаю обработку #[a(href="#") персональных данных]
+						.form__button
+							button.button(type="submit") Отправить
+
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.my-comfort__tariffs__text.anime.fadeUp(data-offset="25")
+						| Другими словами, если подписка «Мой комфорт Премиум» сделана по&nbsp;принципу «все включено», то&nbsp;в&nbsp;«Мой комфорт Плюс» ежегодное техническое обслуживание предоставляется за&nbsp;дополнительную плату, а&nbsp;«Мой комфорт» следует формуле «запчасти и&nbsp;блоки включены», а&nbsp;работы оплачиваются отдельно.
+
+		.my-comfort__devices
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.my-comfort__devices__title.anime.fadeUp(data-offset="25")
+						| Контроллеры Daichi и мобильное управление
+					.page-subtext.my-comfort__devices__text.anime.fadeUp(data-offset="25")
+						| При наличии установленного контроллера Daichi, услуга предусматривает круглосуточный онлайн-прием и анализ диагностических сигналов кондиционера в центре мониторинга «Даичи». Неполадки диагностируются и устраняются в удобное для владельца время в течение двух рабочих дней.
+					.my-comfort__devices__list(data-app="tab")
+						.tab-list.anime.fadeUp(data-offset="25")
+							ul
+								li
+									a.is-active(href="#" data-tab="tab-1") Сплит-системы
+								li
+									a(href="#" data-tab="tab-2") Системы VRF
+						.tab__content
+							.tab__item.is-active(data-tab="tab-1")
+								.page-product__accessories.anime.fadeUp(data-offset="25")
+									.page-product__accessories__image
+										img(src="./images/temp/43.jpg" alt="")
+									.page-product__accessories__content
+										.page-product__accessories__head
+											.h4.page-product__accessories__title
+												| Wi-Fi-контроллер Daichi DW11-BL
+											.h4.page-product__accessories__price
+												| от 5 990 ₽
+										.page-product__accessories__row
+											.page-product__accessories__info
+												ul
+													li
+														.page-product__accessories__info__label Габариты, ШхГхВ, мм
+														span 100x22x55
+													li
+														.page-product__accessories__info__label Вес нетто
+														span 0,156
+													li
+														.page-product__accessories__info__label Шифрование
+														span WEP/TKIP/AES
+													li
+														.page-product__accessories__info__label Безопасность
+														span WPA/WPA2
+											.page-product__accessories__button
+												a.button(href="#") Подробнее
+								.page-product__accessories.anime.fadeUp(data-offset="25")
+									.page-product__accessories__image
+										img(src="./images/temp/61.jpg" alt="")
+									.page-product__accessories__content
+										.page-product__accessories__head
+											.h4.page-product__accessories__title
+												| Мобильное приложение для кoнтpoллepa Daichi
+											.h4.page-product__accessories__price
+												| Бесплатно
+										.page-product__accessories__row
+											.page-product__accessories__info
+												ul
+													li Доступно для iOS и Android
+													li ★★★★☆ 4,2
+											.page-product__accessories__button
+												a.button(href="#") Подробнее
+							.tab__item(data-tab="tab-2")
+								.page-product__accessories.anime.fadeUp(data-offset="25")
+									.page-product__accessories__image
+										img(src="./images/temp/61.jpg" alt="")
+									.page-product__accessories__content
+										.page-product__accessories__head
+											.h4.page-product__accessories__title
+												| Мобильное приложение для кoнтpoллepa Daichi
+											.h4.page-product__accessories__price
+												| Бесплатно
+										.page-product__accessories__row
+											.page-product__accessories__info
+												ul
+													li Доступно для iOS и Android
+													li ★★★★☆ 4,2
+											.page-product__accessories__button
+												a.button(href="#") Подробнее
+								.page-product__accessories.anime.fadeUp(data-offset="25")
+									.page-product__accessories__image
+										img(src="./images/temp/43.jpg" alt="")
+									.page-product__accessories__content
+										.page-product__accessories__head
+											.h4.page-product__accessories__title
+												| Wi-Fi-контроллер Daichi DW11-BL
+											.h4.page-product__accessories__price
+												| от 5 990 ₽
+										.page-product__accessories__row
+											.page-product__accessories__info
+												ul
+													li
+														.page-product__accessories__info__label Габариты, ШхГхВ, мм
+														span 100x22x55
+													li
+														.page-product__accessories__info__label Вес нетто
+														span 0,156
+													li
+														.page-product__accessories__info__label Шифрование
+														span WEP/TKIP/AES
+													li
+														.page-product__accessories__info__label Безопасность
+														span WPA/WPA2
+											.page-product__accessories__button
+												a.button(href="#") Подробнее
+
+		.my-comfort__app
+			.wrapper
+				.wrapper__side
+					.my-comfort__app__market
+						.my-comfort__app__market__item.anime.fadeUp(data-offset="25")
+							.my-comfort__app__market__item__qr
+								img(src="./images/app-store-qr.png" alt="")
+							.my-comfort__app__market__item__logo
+								a(href="#"): img(src="./images/app-store.svg" alt="")
+						.my-comfort__app__market__item.anime.fadeUp(data-offset="25")
+							.my-comfort__app__market__item__qr
+								img(src="./images/google-play-qr.png" alt="")
+							.my-comfort__app__market__item__logo
+								a(href="#"): img(src="./images/google-play.svg" alt="")
+				.wrapper__content
+					.h3.my-comfort__app__title.anime.fadeUp(data-offset="25")
+						| Бесплатное мобильное приложение
+					.page-subtext.my-comfort__app__text.anime.fadeUp(data-offset="25")
+						| Приобретая контроллер, вы&nbsp;также получаете возможность бесплатно воспользоваться программой «Мобильное управление».
+						br
+						| Загрузите бесплатное мобильное приложение Daichi Comfort и&nbsp;ваше мобильное устройство/ПК&nbsp;превратятся в&nbsp;интеллектуальный пульт управления всеми кондиционерами в&nbsp;доме.
+					.my-comfort__app__button.anime.fadeUp(data-offset="25")
+						a.button(href="#") Подробнее
+
+	.accordion.anime(data-offset="25" data-app="accordion")
+		.container
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h3.accordion__title
+						| Вопросы и ответы
+					.accordion__list
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Какие операции входят в ежегодное сервисное (техническое) обслуживание кондиционера и&nbsp;какова их стоимость?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Для каких кондиционеров доступны программы?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Почему услугу нельзя возобновить после перерыва?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Для чего необходимо проверять наличие действующего сертификата авторизованного партнера программы у компании, установившей кондиционер?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Что будет, если из строя выйдет блок целиком?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Вы обещаете отремонтировать за два рабочих дня, а если запчастей не окажется на складе?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Почему требуется какая-то дополнительная оплата запчастей и работы, которые мне полагаются бесплатно в период гарантийного обслуживания?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Подписка распространяется только на внутренний блок или на всю систему целиком?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Обязательно ли устанавливать контроллер для подключения услуги?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Если я уже подписан на «Климат онлайн» и хочу подписаться на «Мой комфорт Плюс», можно ли&nbsp;зачесть уже оплаченную услугу в стоимость новой услуги?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b Что делать, если, например, после пяти лет эксплуатации у меня вышел из строя целый блок?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									b При продаже дома или квартиры с оборудованием с уже действующей услугой могу я получить абонентскую плату обратно?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item.accordion__item--hidden.is-hidden
+							.accordion__item__header
+								.accordion__item__header__text
+									b Обязательно ли устанавливать контроллер для подключения услуги?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item.accordion__item--hidden.is-hidden
+							.accordion__item__header
+								.accordion__item__header__text
+									b Если я уже подписан на «Климат онлайн» и хочу подписаться на «Мой комфорт Плюс», можно ли&nbsp;зачесть уже оплаченную услугу в стоимость новой услуги?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item.accordion__item--hidden.is-hidden
+							.accordion__item__header
+								.accordion__item__header__text
+									b Что делать, если, например, после пяти лет эксплуатации у меня вышел из строя целый блок?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__item.accordion__item--hidden.is-hidden
+							.accordion__item__header
+								.accordion__item__header__text
+									b При продаже дома или квартиры с оборудованием с уже действующей услугой могу я получить абонентскую плату обратно?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text.page-text-list.page-text
+									| Услуга предоставляется для кондиционеров:
+									ul
+										li торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.
+										li установленных не более 4-х лет назад
+										li установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».
+										li зарегистрированных на сайте компании «Даичи»
+									| #[a(href="#") Зарегистрироваться] можно самостоятельно онлайн или во время регистрации договора на услугу.
+						.accordion__more.anime.fadeUp(data-offset="25")
+							a.button.button--white.js-show-hide(href="#" data-target=".accordion__item--hidden" data-on="Скрыть" data-off="Показать еще") Показать еще
+
+	include ../components/bottom-menu

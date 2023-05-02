@@ -1,0 +1,769 @@
+.page-dealers {
+	transition: $duration-normal;
+
+	&__head {
+		display: flex;
+		margin-bottom: vmin(40);
+
+		&__content {
+			width: 100%;
+		}
+
+		&__image {
+			flex-shrink: 0;
+			margin-left: 129px;
+			width: 612px;
+
+			img {
+				width: 100%;
+			}
+
+			@include desktop {
+				margin-left: vw(129);
+				width: vw(612);
+			}
+
+			@include desktop-xl {
+				margin-left: 129px;
+				width: 612px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(129);
+				width: px(612);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__filter {
+		.tab-list {
+			margin-bottom: 0;
+
+			ul {
+				@include mobile {
+					padding-bottom: vmin(15);
+				}
+			}
+
+			@include desktop {
+				margin-bottom: vw(20);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 20px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(20);
+			}
+		}
+
+		&__tab {
+			input {
+				display: none;
+			}
+		}
+
+		&__row {
+			border-top: solid 1px #d1d8e1;
+			padding: vmin(20) 0;
+
+			@include desktop {
+				display: flex;
+				justify-content: space-between;
+				padding: vw(28) 0;
+			}
+
+			@include desktop-xl {
+				padding: 28px 0;
+			}
+
+			@include desktop-xxl {
+				padding: px(28) 0;
+			}
+		}
+
+		&__left {
+			display: flex;
+
+			@include mobile {
+				display: block;
+				margin-bottom: vmin(12);
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__right {
+			@include desktop {
+				display: flex;
+			}
+		}
+
+		&__item {
+			display: flex;
+
+			&__label {
+				margin-right: vmin(8);
+				color: #94a0b1;
+
+				@include desktop {
+					margin-right: vw(8);
+				}
+
+				@include desktop-xl {
+					margin-right: 8px;
+				}
+
+				@include desktop-xxl {
+					margin-right: px(8);
+				}
+			}
+
+			& + & {
+				margin-top: vmin(12);
+
+				@include desktop {
+					margin-top: 0;
+					margin-left: vw(24);
+				}
+
+				@include desktop-xl {
+					margin-left: 24px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(24);
+				}
+			}
+		}
+
+		&__select {
+			.input {
+				margin: 0;
+
+				&__field {
+					select {
+						appearance: none;
+						border: none;
+						padding: 0;
+						padding-right: vmin(18);
+						width: 100%;
+						height: vmin(22);
+						font-weight: 400;
+						font-size: vmin(15);
+						background: url("../images/triangle.svg") 100% 50% no-repeat;
+
+						@include desktop {
+							padding-right: vw(18);
+							height: vw(22);
+							font-size: vw(15);
+							background-size: vw(11) vw(8);
+						}
+
+						@include desktop-xl {
+							padding-right: 18px;
+							height: 22px;
+							font-size: 15px;
+							background-size: 11px 8px;
+						}
+
+						@include desktop-xxl {
+							padding-right: px(18);
+							height: px(22);
+							font-size: px(15);
+							background-size: px(11) px(8);
+						}
+					}
+
+					.select2-container--default {
+						.select2-selection--single {
+							height: vmin(24);
+
+							@include desktop {
+								height: vw(24);
+							}
+
+							@include desktop-xl {
+								height: 24px;
+							}
+
+							@include desktop-xxl {
+								height: px(24);
+							}
+						}
+
+						.select2-selection__rendered {
+							border: none;
+							padding: 0 vmin(16) 0 0;
+							background: transparent;
+
+							@include desktop {
+								padding: 0 vw(16) 0 0;
+							}
+
+							@include desktop-xl {
+								padding: 0 16px 0 0;
+							}
+
+							@include desktop-xxl {
+								padding: 0 px(16) 0 0;
+							}
+						}
+
+						.select2-selection__placeholder {
+							color: inherit;
+						}
+
+						.select2-selection__arrow {
+							right: 0;
+							margin-top: vmin(-2);
+							border-right: solid 1px $color-black;
+							border-bottom: solid 1px $color-black;
+							width: vmin(6);
+							height: vmin(6);
+							background: none;
+							transform: translate(-50%, -50%) rotate(45deg);
+
+							@include desktop {
+								margin-top: vw(-2);
+								width: vw(6);
+								height: vw(6);
+							}
+
+							@include desktop-xl {
+								margin-top: -2px;
+								width: 6px;
+								height: 6px;
+							}
+
+							@include desktop-xxl {
+								margin-top: px(-2);
+								width: px(6);
+								height: px(6);
+							}
+						}
+
+						.select2-dropdown {
+							min-width: vmin(180);
+
+							@include desktop {
+								min-width: vw(180);
+							}
+
+							@include desktop-xl {
+								min-width: 180px;
+							}
+
+							@include desktop-xxl {
+								min-width: px(180);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__link {
+			font-weight: 700;
+
+			a {
+				color: $color-blue-ribbon;
+				transition: $duration-normal;
+
+				@include desktop {
+					&:hover {
+						color: $color-denim;
+					}
+				}
+			}
+		}
+	}
+
+	&__map {
+		height: vmin(300);
+
+		&-container {
+			position: relative;
+		}
+
+		&-item {
+			position: relative;
+			display: none;
+			padding: vmin(20);
+			width: vmin(300);
+			background: $color-white;
+
+			&__close {
+				position: absolute;
+				right: vmin(10);
+				top: vmin(10);
+				outline: none;
+				border: none;
+				padding: 0;
+				width: vmin(20);
+				height: vmin(20);
+				background: none;
+				transition: $duration-normal;
+
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					margin-top: -1px;
+					width: 100%;
+					height: vmin(2);
+					background: currentColor;
+
+					@include desktop {
+						height: vw(2);
+					}
+
+					@include desktop-xl {
+						height: 2px;
+					}
+
+					@include desktop-xxl {
+						height: px(2);
+					}
+				}
+
+				&::before {
+					transform: rotate(45deg);
+				}
+
+				&::after {
+					transform: rotate(-45deg);
+				}
+
+				@include desktop {
+					right: vw(24);
+					top: vw(24);
+					width: vw(24);
+					height: vw(24);
+
+					&:hover {
+						color: $color-blue-ribbon;
+					}
+				}
+
+				@include desktop-xl {
+					right: 24px;
+					top: 24px;
+					width: 24px;
+					height: 24px;
+				}
+
+				@include desktop-xxl {
+					right: px(24);
+					top: px(24);
+					width: px(24);
+					height: px(24);
+				}
+			}
+
+			&__title {
+				margin-top: 0;
+				margin-bottom: vmin(10);
+
+				@include mobile {
+					font-size: vmin(18);
+				}
+
+				@include desktop {
+					margin-bottom: vw(32);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 32px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(32);
+				}
+			}
+
+			&__list {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					+ li {
+						margin-top: vmin(10);
+
+						@include desktop {
+							margin-top: vw(16);
+						}
+
+						@include desktop-xl {
+							margin-top: 16px;
+						}
+
+						@include desktop-xxl {
+							margin-top: px(16);
+						}
+					}
+				}
+
+				&__key {
+					margin-bottom: vmin(8);
+					font-weight: 700;
+					font-size: vmin(15);
+					line-height: 1.33;
+
+					@include desktop {
+						margin-bottom: vw(8);
+						font-size: vw(18);
+					}
+
+					@include desktop-xl {
+						margin-bottom: 8px;
+						font-size: 18px;
+					}
+
+					@include desktop-xxl {
+						margin-bottom: px(8);
+						font-size: px(18);
+					}
+				}
+			}
+
+			&__link {
+				margin-top: vmin(20);
+
+				svg {
+					display: inline-block;
+					vertical-align: middle;
+					margin: vmin(-2) 0 0 vmin(2);
+					width: vmin(22);
+					height: vmin(22);
+
+					@include desktop {
+						margin: vw(-2) 0 0 vw(2);
+						width: vw(24);
+						height: vw(24);
+					}
+
+					@include desktop-xl {
+						margin: -2px 0 0 2px;
+						width: 24px;
+						height: 24px;
+					}
+
+					@include desktop-xxl {
+						margin: px(-2) 0 0 px(2);
+						width: px(24);
+						height: px(24);
+					}
+				}
+
+				@include desktop {
+					margin-top: vw(80);
+				}
+
+				@include desktop-xl {
+					margin-top: 80px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(80);
+				}
+			}
+
+			&.is-active {
+				display: block;
+			}
+
+			@include desktop {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				z-index: 5;
+				padding: vw(48) vw(40);
+				width: vw(400);
+			}
+
+			@include desktop-xl {
+				padding: 48px 40px;
+				width: 400px;
+			}
+
+			@include desktop-xxl {
+				padding: px(48) px(40);
+				width: px(400);
+			}
+		}
+
+		.is-show-list & {
+			display: none;
+		}
+
+		@include desktop {
+			height: vw(704);
+		}
+
+		@include desktop-xl {
+			height: 704px;
+		}
+
+		@include desktop-xxl {
+			height: px(704);
+		}
+	}
+
+	&__list {
+		display: none;
+		border-top: solid 1px #d1d8e1;
+		padding-top: vmin(24);
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 vmin(-12) vmin(-24);
+
+			@include desktop {
+				margin: 0 vw(-12) vw(-24);
+			}
+
+			@include desktop-xl {
+				margin: 0 -12px -24px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 px(-12) px(-24);
+			}
+		}
+
+		&__col {
+			margin-bottom: vmin(24);
+			padding: 0 vmin(12);
+			width: 100%;
+
+			@include desktop {
+				margin-bottom: vw(24);
+				padding: 0 vw(12);
+				width: 33.33334%;
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+				padding: 0 12px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+				padding: 0 px(12);
+			}
+		}
+
+		&__item {
+			position: relative;
+			z-index: 5;
+			border: solid 1px #d1d8e1;
+			padding: vmin(20);
+			height: 100%;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(180deg, #ffa3b9 0%, #ffe4aa 100%);
+				opacity: 0;
+				visibility: hidden;
+				transition: $duration-normal;
+			}
+
+			&__title {
+				@include mobile {
+					font-size: vmin(18);
+				}
+
+				@include desktop {
+					margin-bottom: vw(32);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 32px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(32);
+				}
+			}
+
+			&__list {
+				list-style-type: none;
+				margin: 0 0 vmin(24);
+				padding: 0;
+
+				li {
+					+ li {
+						margin-top: vmin(16);
+
+						@include desktop {
+							margin-top: vw(16);
+						}
+
+						@include desktop-xl {
+							margin-top: 16px;
+						}
+
+						@include desktop-xxl {
+							margin-top: px(16);
+						}
+					}
+				}
+
+				&__key {
+					margin-bottom: vmin(8);
+					font-weight: 700;
+					line-height: 1.33;
+
+					@include desktop {
+						margin-bottom: vw(8);
+						font-size: vw(18);
+					}
+
+					@include desktop-xl {
+						margin-bottom: 8px;
+						font-size: 18px;
+					}
+
+					@include desktop-xxl {
+						margin-bottom: px(8);
+						font-size: px(18);
+					}
+				}
+
+				@include desktop {
+					margin-bottom: vw(40);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 40px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(40);
+				}
+			}
+
+			&__link {
+				margin-top: auto;
+
+				svg {
+					display: inline-block;
+					vertical-align: middle;
+					margin: vmin(-2) 0 0 vmin(2);
+					width: vmin(24);
+					height: vmin(24);
+
+					@include desktop {
+						margin: vw(-2) 0 0 vw(2);
+						width: vw(24);
+						height: vw(24);
+					}
+
+					@include desktop-xl {
+						margin: -2px 0 0 2px;
+						width: 24px;
+						height: 24px;
+					}
+
+					@include desktop-xxl {
+						margin: px(-2) 0 0 px(2);
+						width: px(24);
+						height: px(24);
+					}
+				}
+			}
+
+			.state-daichi-market & {
+				&::before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
+			@include desktop {
+				display: flex;
+				flex-direction: column;
+				padding: vw(48) vw(40);
+
+				&:hover {
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+
+			@include desktop-xl {
+				padding: 48px 40px;
+			}
+
+			@include desktop-xxl {
+				padding: px(48) px(40);
+			}
+		}
+
+		&__more {
+			margin-top: vmin(24);
+			text-align: center;
+
+			@include desktop {
+				margin-top: v(24);
+			}
+
+			@include desktop-xl {
+				margin-top: 24px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(24);
+			}
+		}
+
+		.is-show-list & {
+			display: block;
+		}
+
+		@include desktop {
+			padding-top: vw(40);
+		}
+
+		@include desktop-xl {
+			padding-top: 40px;
+		}
+
+		@include desktop-xxl {
+			padding-top: px(40);
+		}
+	}
+
+	&.is-loading {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}

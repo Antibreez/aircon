@@ -1,0 +1,291 @@
+.page-index(data-app="index")
+	.intro.anime(data-app="intro")
+		.container
+			.intro__head
+				h1.intro__title
+					| Климатическая техника Daichi
+				.h3.intro__subtitle
+					| Комфортная среда вашего дома
+			.intro__video
+				video(src="./images/intro.mp4" playsinline autoplay muted loop)
+	.container
+		.app-subscribe-trigger
+		.app-subscribe-wrapper
+			.app-subscribe.anime(data-offset="25")
+				.app-subscribe__cloud
+					video(src="./images/clouds.mp4" autoplay muted loop)
+				.app-subscribe__container
+					.app-subscribe__side
+						.app-subscribe__logo
+							.app-subscribe__logo__o
+								+svg('o')
+							.app-subscribe__logo__d
+								+svg('d')
+					.app-subscribe__content
+						.app-subscribe__image
+							img(src="./images/app-subscribe.png" alt="")
+						.h2.app-subscribe__title
+							| Облачный кондиционер — управляется со смартфона, работает по подписке
+						.app-subscribe__text
+							| Платите за климат, когда он нужен, и управляете кондиционером со смартфона. В сервис также включена онлайн диагностика оборудования, сопровождение и год гарантии в подарок.
+						.app-subscribe__footer
+							.app-subscribe__price
+								| #[sup.text-gradient от]#[span.text-gradient 10 999]
+							.app-subscribe__button
+								a.button(href="#") Подробнее
+		.equipment.anime(data-app="equipment" data-offset="25")
+			.equipment__side
+				.equipment__side__fixed
+					.h1.equipment__title
+						| Наше оборудование
+					.equipment__text
+						| Кондиционеры Daichi создают комфортный климат в ваших домах и общественных пространствах.
+					.equipment__button.for-desktop
+						a.button(href="#") Каталог
+			.equipment__content
+				.equipment__slider
+					.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								.equipment__slider__item
+									.equipment__slider__item__image(style="background-image:url(./images/temp/7.jpg)")
+							.swiper-slide
+								.equipment__slider__item
+									.equipment__slider__item__image(style="background-image:url(./images/temp/8.jpg)")
+							.swiper-slide
+								.equipment__slider__item
+									.equipment__slider__item__image(style="background-image:url(./images/temp/7.jpg)")
+							.swiper-slide
+								.equipment__slider__item
+									.equipment__slider__item__image(style="background-image:url(./images/temp/8.jpg)")
+				.equipment__list
+					.equipment__list__row
+						.equipment__list__col
+							.equipment__list__item
+								.equipment__list__item__label
+									| Кондиционеры для дома
+								ul
+									li: a(href="#") Настенные сплит-системы
+									li: a(href="#") Мульти-сплит-системы
+						.equipment__list__col
+							.equipment__list__item
+								.equipment__list__item__label
+									| Для технологического охлаждения
+								ul
+									li: a(href="#") Системы DFT
+						.equipment__list__col
+							.equipment__list__item
+								.equipment__list__item__label
+									| Для общественных помещений
+								ul
+									li: a(href="#") Серия полупромышленных кондиционеров City Line
+						.equipment__list__col
+							.equipment__list__item
+								.equipment__list__item__label
+									| Мобильное управление
+								ul
+									li: a(href="#") Wi-Fi контроллеры для сплит-и&nbsp;мульти-сплит-систем
+									li: a(href="#") Wi-Fi- контроллеры для&nbsp;полупромышленных кондиционеров
+									li: a(href="#") Контроллер централизованного управления для систем VRF
+					.equipment__button.for-mobile
+						a.button(href="#") Каталог
+
+		.technologies.anime(data-app="technologies" data-offset="25")
+			.h3.technologies__title
+				| В оборудовании Daichi применены наиболее современные технологии
+			.technologies__slider
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							.technologies__item.technologies__item--big
+								.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Комплексная очистка воздуха
+									.technologies__item__text
+										| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Wi-Fi управление
+									.technologies__item__text
+										| Удаленное онлайн-управление через «облако Даичи».
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Full DC Inverter
+									.technologies__item__text
+										| Комфорт, тишина и эффективный расход электроэнергии.
+						.swiper-slide
+							.technologies__item.technologies__item--big
+								.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Комплексная очистка воздуха
+									.technologies__item__text
+										| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Wi-Fi управление
+									.technologies__item__text
+										| Удаленное онлайн-управление через «облако Даичи».
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Full DC Inverter
+									.technologies__item__text
+										| Комфорт, тишина и эффективный расход электроэнергии.
+						.swiper-slide
+							.technologies__item.technologies__item--big
+								.technologies__item__image(style="background-image:url(./images/temp/4.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Комплексная очистка воздуха
+									.technologies__item__text
+										| Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/5.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Wi-Fi управление
+									.technologies__item__text
+										| Удаленное онлайн-управление через «облако Даичи».
+						.swiper-slide
+							.technologies__item
+								.technologies__item__image(style="background-image:url(./images/temp/6.jpg)")
+								.technologies__item__content
+									.h4.technologies__item__title
+										| Full DC Inverter
+									.technologies__item__text
+										| Комфорт, тишина и эффективный расход электроэнергии.
+				.progress
+
+	.comfort-app-trigger
+	.comfort-app-wrapper
+		.comfort-app
+			.comfort-app__bg
+			.container
+				.comfort-app__scroll-text
+					.comfort-app__scroll-text__text
+						| Управляйте климатом с помощью телефона или голоса, дома или на расстоянии
+				.comfort-app__content
+					.comfort-app__logo
+						img(src="./images/comfort-app.svg" alt="")
+					.h2.comfort-app__title
+						| Умные решения для контроля  климата через приложение Daichi Comfort
+					.comfort-app__text
+						| Благодаря контроллеру Daichi теперь можно управлять кондиционированием через смартфон или ноутбук. Центр управления всего климатического оборудования, установленного дома, в офисе или на предприятии, теперь всегда у вас в кармане.
+					.comfort-app__button
+						a.button(href="#") Узнать больше
+					.comfort-app__apps
+						.comfort-app__apps__item
+							a(href="#"): img(src="./images/app-store.svg" alt="")
+						.comfort-app__apps__item
+							a(href="#"): img(src="./images/google-play.svg" alt="")
+				.comfort-app__image
+					.comfort-app__image__1
+						img.for-desktop(src="./images/comfort-app-1.png" alt="")
+						img.for-mobile(src="./images/comfort-app-1-mobile.png" alt="")
+						canvas.comfort-app__progress(data-path="./images/app/")
+					.comfort-app__image__2
+						img(src="./images/comfort-app-2.png" alt="")
+
+	.container
+		.climate-online-wrapper
+			.climate-online-trigger
+			.climate-online
+				.climate-online__container
+					.climate-online__logo
+						img(src="./images/climate-online.svg" alt="")
+					.climate-online__man
+						img(src="./images/climate-online.png" alt="")
+					.climate-online__content
+						.climate-online__conditioner
+							.climate-online__conditioner__image
+								img(src="./images/climate-online-conditioner.svg" alt="")
+								.climate-online__conditioner__image__pulse
+									.climate-online__conditioner__image__pulse__svg
+										svg(width='40' height='41' viewBox='0 0 40 41' fill='none')
+											circle(cx='19.8873' cy='20.2846' r='19.3871' stroke='url(#climate-online-pulse-gradient)')
+											defs
+												lineargradient#climate-online-pulse-gradient(x1='19.8873' y1='0.397461' x2='19.8873' y2='40.1717' gradientUnits='userSpaceOnUse')
+													stop(stop-color='#71D6C8')
+													stop(offset='0.99185' stop-color='#FFDECB')
+							.climate-online__conditioner__pulse
+								i
+								i
+								i
+								.climate-online__conditioner__pulse__image
+									img(src="./images/climate-online-pulse.png" alt="")
+
+						.h2.climate-online__title
+							| Интеллектуальная система сервисной поддержки
+						.climate-online__text
+							| Наличие встроенного контроллера позволяет инженерному центру Даичи следить за параметрами работы системы и предупреждать владельца и его сервисную организацию.
+						.climate-online__button
+							a.button(href="#") Узнать больше
+		.comfort-subscribe
+			.comfort-subscribe__image.for-desktop(style="background-image:url(./images/comfort-subscribe.jpg)")
+			.comfort-subscribe__content
+				.comfort-subscribe__logo
+					img(src="./images/my-comfort.svg" alt="")
+				.comfort-subscribe__img.for-mobile
+					img(src="./images/comfort-subscribe-mobile.jpg" alt="")
+				.h2.comfort-subscribe__title
+					| Абонентская плата по&nbsp;принципу «всё включено»
+				.h4.comfort-subscribe__subtitle
+					| Подписывайтесь на программу «Мой комфорт» при покупке техники Daichi
+				ul.comfort-subscribe__list
+					li Гарантия бесперебойной работы системы и консьерж-служба по вопросам климата
+					li Беплатный ремонт или замена блока кондиционера или его частей в течение 2 дней
+					li Новый кондиционер такого же класса через 7 лет
+				.comfort-subscribe__button
+					a.button(href="#") Узнать больше
+		.articles.articles--static.anime(data-offset="25")
+			.articles__side
+				.h2.articles__title
+					| Статьи
+				ul.articles__menu.for-desktop
+					li: a.link-arrow(href="#") Новости
+					li: a.link-arrow(href="#") Статьи
+					li: a.link-arrow(href="#") Видеобзоры
+			.articles__content
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/1.jpg)")
+								.articles__item__type
+									span Статья
+								.h4.articles__item__title
+									| Уникальные возможности VRV&nbsp;Daikin
+								.articles__item__text
+									| Уникальные возможности VRV Daikin Проявляют себя с новой силой в паре с контроллерами
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/2.jpg)")
+								.articles__item__type
+									span Статья
+								.h4.articles__item__title
+									| Ответ Daikin на пандемию COVID-19
+								.articles__item__text
+									| Важность промышленной вентиляции в местах большого скопления людей
+						.swiper-slide
+							a.articles__item(href="#")
+								.articles__item__image(style="background-image:url(./images/temp/3.jpg)")
+								.articles__item__type
+									span Статья
+								.h4.articles__item__title
+									| Бытовые кондиционеры Daikin: на&nbsp;шаг впереди. Климатическая техника.
+								.articles__item__text
+									| Климатическая техника Daikin для бытового использования

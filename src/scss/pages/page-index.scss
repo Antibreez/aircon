@@ -1,0 +1,84 @@
+.page-index {
+	.intro {
+		margin-top: vmin(-36);
+		padding-top: vmin(36);
+		background: $color-white;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			height: vmin(150);
+			background: linear-gradient(to bottom, $color-white 0%, rgba($color-white, 0) 100%);
+
+			@include desktop {
+				display: block;
+				height: vw(300);
+			}
+
+			@include desktop-xl {
+				height: 300px;
+			}
+
+			@include desktop-xxl {
+				height: px(300);
+			}
+		}
+
+		&__video {
+			overflow: hidden;
+			height: vmin(225);
+
+			video {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				object-fit: cover;
+				transform: translate(-50%, -50%);
+			}
+
+			@include desktop {
+				height: vw(584);
+			}
+
+			@include desktop-xl {
+				height: 700px;
+			}
+
+			@include desktop-xxl {
+				height: px(700);
+			}
+		}
+
+		&.anime {
+			.intro {
+				&__head {
+					transition-delay: $duration-normal * 1.5;
+				}
+
+				&__video {
+					&::before {
+						transition-delay: $duration-normal * 1.5;
+					}
+				}
+			}
+		}
+
+		@include desktop {
+			margin-top: vw(-32);
+			padding-top: vw(32);
+		}
+
+		@include desktop-xl {
+			margin-top: -32px;
+			padding-top: 32px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(-32);
+			padding-top: px(32);
+		}
+	}
+}

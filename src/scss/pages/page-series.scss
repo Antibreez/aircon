@@ -1,0 +1,961 @@
+.page-series {
+	.intro {
+		&__head {
+			align-items: flex-start;
+
+			@include desktop {
+				margin-bottom: vw(48);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 48px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(48);
+			}
+		}
+
+		&__title {
+			font-size: vmin(26);
+
+			@include desktop {
+				max-width: vw(718);
+				font-size: vw(40);
+			}
+
+			@include desktop-xl {
+				max-width: 718px;
+				font-size: 40px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(718);
+				font-size: px(40);
+			}
+		}
+	}
+
+	&__image {
+		margin-top: vmin(36);
+		margin-bottom: vmin(36);
+		text-align: center;
+
+		img {
+			width: 100%;
+
+			@include desktop {
+				max-width: vw(652);
+				max-height: vw(652);
+			}
+
+			@include desktop-xl {
+				max-width: 652px;
+				max-height: 652px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(652);
+				max-height: px(652);
+			}
+		}
+
+		@include desktop {
+			margin-top: 0;
+			margin-bottom: vw(100);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 100px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(100);
+		}
+	}
+
+	&__benefits {
+		margin-bottom: vmin(64);
+
+		&__row {
+			display: flex;
+			justify-content: center;
+
+			@include mobile {
+				flex-wrap: wrap;
+			}
+		}
+
+		&__col {
+			margin-bottom: vmin(24);
+			padding: 0 vmin(20);
+			width: 50%;
+
+			@include desktop {
+				margin-bottom: 0;
+				padding: 0 vw(20);
+				width: auto;
+			}
+
+			@include desktop-xl {
+				padding: 0 20px;
+			}
+
+			@include desktop-xxl {
+				padding: 0 px(20);
+			}
+		}
+
+		&__item {
+			min-width: vmin(120);
+			text-align: center;
+
+			&__icon {
+				margin-bottom: vmin(8);
+
+				img {
+					height: vmin(40);
+
+					@include desktop {
+						height: vw(40);
+					}
+
+					@include desktop-xl {
+						height: 40px;
+					}
+
+					@include desktop-xxl {
+						height: px(40);
+					}
+				}
+
+				@include desktop {
+					margin-bottom: vw(8);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 8px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(8);
+				}
+			}
+
+			&__text {
+				font-weight: 600;
+				font-size: vmin(12);
+				line-height: 1.2;
+
+				@include desktop {
+					font-size: vw(12);
+				}
+
+				@include desktop-xl {
+					font-size: 12px;
+				}
+
+				@include desktop-xxl {
+					font-size: px(12);
+				}
+			}
+
+			@include desktop {
+				min-width: vw(120);
+			}
+
+			@include desktop-xl {
+				min-width: 120px;
+			}
+
+			@include desktop-xxl {
+				min-width: px(120);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(112);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 112px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(112);
+		}
+	}
+
+	.page-split__menu {
+		margin-bottom: vmin(64);
+
+		&__label {
+			@include desktop {
+				width: vw(302);
+			}
+
+			@include desktop-xl {
+				width: 302px;
+			}
+
+			@include desktop-xxl {
+				width: px(302);
+			}
+		}
+
+		&__list {
+			@include desktop {
+				margin-left: vw(16);
+			}
+
+			@include desktop-xl {
+				margin-left: 16px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(16);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(129);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 129px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(129);
+		}
+	}
+
+	&__models {
+		margin-bottom: vmin(6);
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 vmin(-12) vmin(-30);
+
+			@include desktop {
+				margin: 0 vw(-12) vw(-30);
+			}
+
+			@include desktop-xl {
+				margin: 0 -12px -30px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 px(-12) px(-30);
+			}
+		}
+
+		&__col {
+			margin-bottom: vmin(30);
+			padding: 0 vmin(12);
+			width: 100%;
+
+			@include desktop {
+				margin-bottom: vw(30);
+				padding: 0 vw(12);
+				width: 25%;
+			}
+
+			@include desktop-xl {
+				margin-bottom: 30px;
+				padding: 0 12px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(30);
+				padding: 0 px(12);
+			}
+		}
+
+		&__item {
+			&__title {
+				border-bottom: solid 1px $color-geyser;
+				padding-bottom: vmin(6);
+
+				@include desktop {
+					padding-bottom: vw(6);
+				}
+
+				@include desktop-xl {
+					padding-bottom: 6px;
+				}
+
+				@include desktop-xxl {
+					padding-bottom: px(6);
+				}
+			}
+
+			&__list {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				color: $color-cod-gray;
+
+				li {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					border-bottom: solid 1px $color-geyser;
+					padding: vmin(5) 0;
+
+					@include desktop {
+						padding: vw(5) 0;
+					}
+
+					@include desktop-xl {
+						padding: 5px 0;
+					}
+
+					@include desktop-xxl {
+						padding: px(5) 0;
+					}
+				}
+
+				&__key {
+					font-size: vmin(12);
+					line-height: 1.5;
+
+					@include desktop {
+						font-size: vw(12);
+					}
+
+					@include desktop-xl {
+						font-size: 12px;
+					}
+
+					@include desktop-xxl {
+						font-size: px(12);
+					}
+				}
+
+				&__value {
+					flex-shrink: 0;
+					font-weight: 700;
+				}
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(128);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 128px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(128);
+		}
+	}
+
+	.page-product__slider {
+		margin-bottom: vmin(64);
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	.page-content {
+		margin-bottom: vmin(64);
+
+		@include desktop {
+			margin-bottom: vw(95);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 95px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(95);
+		}
+	}
+
+	&__design {
+		margin-bottom: vmin(64);
+
+		.wrapper__side {
+			align-self: flex-start;
+		}
+
+		&__content {
+			@include desktop {
+				max-width: vw(360);
+			}
+
+			@include desktop-xl {
+				max-width: 360px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(360);
+			}
+		}
+
+		&__image {
+			img {
+				width: 100%;
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__comfort {
+		margin-bottom: vmin(64);
+
+		.wrapper__side {
+			align-self: flex-start;
+		}
+
+		.wrapper__content {
+			min-width: 0;
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 vmin(-12) vmin(12);
+
+			&__col {
+				padding: 0 vmin(12) vmin(24);
+				width: 100%;
+
+				@include desktop {
+					padding: 0 vw(12) vw(24);
+					width: 25%;
+				}
+
+				@include desktop-xl {
+					padding: 0 12px 24px;
+				}
+
+				@include desktop-xxl {
+					padding: 0 px(12) px(24);
+				}
+			}
+
+			&__item {
+				&__icon {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: vmin(16);
+					height: vmin(120);
+					background: #f4f4f8;
+
+					img {
+						height: vmin(78);
+
+						@include desktop {
+							height: vw(78);
+						}
+
+						@include desktop-xl {
+							height: 78px;
+						}
+
+						@include desktop-xxl {
+							height: px(78);
+						}
+					}
+
+					@include desktop {
+						margin-bottom: vw(16);
+						height: vw(120);
+					}
+
+					@include desktop-xl {
+						margin-bottom: 16px;
+						height: 120px;
+					}
+
+					@include desktop-xxl {
+						margin-bottom: px(16);
+						height: px(120);
+					}
+				}
+
+				&__title {
+					margin-bottom: vmin(8);
+
+					@include desktop {
+						margin-bottom: vw(8);
+					}
+
+					@include desktop-xl {
+						margin-bottom: 8px;
+					}
+
+					@include desktop-xxl {
+						margin-bottom: px(8);
+					}
+				}
+
+				&__text {
+					font-size: vmin(12);
+					line-height: 1.5;
+
+					@include desktop {
+						font-size: vw(12);
+					}
+
+					@include desktop-xl {
+						font-size: 12px;
+					}
+
+					@include desktop-xxl {
+						font-size: px(12);
+					}
+				}
+			}
+
+			@include desktop {
+				margin: 0 vw(-12) vw(56);
+			}
+
+			@include desktop-xl {
+				margin: 0 -12px 56px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 px(-12) px(56);
+			}
+		}
+
+		&__gallery {
+			min-width: 0;
+
+			.swiper-container {
+				@include desktop {
+					margin-right: calc(-50vw + #{vw(632)});
+				}
+
+				@include desktop-xl {
+					margin-right: calc(-50vw + 632px);
+				}
+
+				@include desktop-xxl {
+					margin-right: calc(-50vw + #{px(632)});
+				}
+			}
+
+			.swiper-slide {
+				@include desktop {
+					width: auto;
+				}
+			}
+
+			&__item {
+				@include desktop {
+					width: vw(612);
+				}
+
+				@include desktop-xl {
+					width: 612px;
+				}
+
+				@include desktop-xxl {
+					width: px(612);
+				}
+			}
+
+			&__item--small {
+				@include desktop {
+					width: vw(294);
+				}
+
+				@include desktop-xl {
+					width: 294px;
+				}
+
+				@include desktop-xxl {
+					width: px(294);
+				}
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__details {
+		margin-bottom: vmin(64);
+
+		.wrapper__side {
+			align-self: flex-start;
+		}
+
+		.accordion {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__control {
+		margin-bottom: vmin(64);
+
+		&__title {
+			@include desktop {
+				margin-bottom: vw(56);
+				max-width: vw(623);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 56px;
+				max-width: 623px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(56);
+				max-width: px(623);
+			}
+		}
+
+		.wrapper__side {
+			align-self: flex-start;
+		}
+
+		&__controller {
+			margin-bottom: vmin(36);
+
+			&__image {
+				margin: vmin(24) auto 0;
+				max-width: vmin(188);
+
+				img {
+					width: 100%;
+				}
+
+				@include desktop {
+					margin: vw(24) 0 0;
+					max-width: vw(188);
+				}
+
+				@include desktop-xl {
+					margin: 24px 0 0;
+					max-width: 188px;
+				}
+
+				@include desktop-xxl {
+					margin: px(24) 0 0;
+					max-width: px(188);
+				}
+			}
+
+			@include desktop {
+				margin-bottom: 0;
+				padding-top: vw(80);
+				max-width: vw(294);
+			}
+
+			@include desktop-xl {
+				padding-top: 80px;
+				max-width: 294px;
+			}
+
+			@include desktop-xxl {
+				padding-top: px(80);
+				max-width: px(294);
+			}
+		}
+
+		&__item {
+			&__image {
+				margin: 0 auto vmin(24);
+				width: vmin(200);
+
+				@include desktop {
+					flex-shrink: 0;
+					margin: 0 vw(76) 0 0;
+					width: vw(348);
+				}
+
+				@include desktop-xl {
+					margin: 0 76px 0 0;
+					width: 348px;
+				}
+
+				@include desktop-xxl {
+					margin: 0 px(76) 0 0;
+					width: px(348);
+				}
+			}
+
+			&__content {
+				@include desktop {
+					padding-top: vw(80);
+					width: vw(294);
+				}
+
+				@include desktop-xl {
+					padding-top: 80px;
+					width: 294px;
+				}
+
+				@include desktop-xxl {
+					padding-top: px(80);
+					width: px(294);
+				}
+			}
+
+			&__title {
+			}
+
+			@include desktop {
+				display: flex;
+			}
+		}
+
+		&__market {
+			display: flex;
+			margin-top: vmin(24);
+			margin-left: vmin(-32);
+
+			&__item {
+				margin-left: vmin(32);
+
+				&__qr {
+					margin-bottom: vmin(24);
+
+					img {
+						height: vmin(80);
+
+						@include desktop {
+							height: vw(80);
+						}
+
+						@include desktop-xl {
+							height: 80px;
+						}
+
+						@include desktop-xxl {
+							height: px(80);
+						}
+					}
+
+					@include desktop {
+						margin-bottom: vw(24);
+					}
+
+					@include desktop-xl {
+						margin-bottom: 24px;
+					}
+
+					@include desktop-xxl {
+						margin-bottom: px(24);
+					}
+				}
+
+				&__logo {
+					img {
+						height: vmin(32);
+
+						@include desktop {
+							height: vw(32);
+						}
+
+						@include desktop-xl {
+							height: 32px;
+						}
+
+						@include desktop-xxl {
+							height: px(32);
+						}
+					}
+				}
+
+				@include desktop {
+					margin-left: vw(32);
+				}
+
+				@include desktop-xl {
+					margin-left: 32px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(32);
+				}
+			}
+
+			@include desktop {
+				margin-top: vw(48);
+				margin-left: vw(-32);
+			}
+
+			@include desktop-xl {
+				margin-top: 48px;
+				margin-left: -32px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(48);
+				margin-left: px(-32);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(113);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 113px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(113);
+		}
+	}
+
+	&__feature {
+		margin-bottom: vmin(80);
+
+		&__title {
+			@include desktop {
+				margin-bottom: vw(56);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 56px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(56);
+			}
+		}
+
+		.table {
+			font-size: vmin(12);
+			line-height: 1.5;
+
+			tr {
+				@include desktop {
+					&:hover,
+					&.is-hover {
+						td {
+							background: #f4f4f8;
+						}
+					}
+				}
+			}
+
+			td {
+				padding: vmin(10) vmin(16);
+
+				@include desktop {
+					padding: vw(10) vw(16);
+				}
+
+				@include desktop-xl {
+					padding: 10px 16px;
+				}
+
+				@include desktop-xxl {
+					padding: px(10) px(16);
+				}
+			}
+
+			b {
+				font-size: vmin(14);
+				line-height: 1.1;
+
+				@include desktop {
+					font-size: vw(14);
+				}
+
+				@include desktop-xl {
+					font-size: 14px;
+				}
+
+				@include desktop-xxl {
+					font-size: px(14);
+				}
+			}
+
+			@include desktop {
+				font-size: vw(12);
+			}
+
+			@include desktop-xl {
+				font-size: 12px;
+			}
+
+			@include desktop-xxl {
+				font-size: px(12);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+
+	&__documents {
+		margin-bottom: vmin(80);
+
+		@include desktop {
+			margin-bottom: vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(80);
+		}
+	}
+}

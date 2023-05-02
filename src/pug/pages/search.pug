@@ -1,0 +1,59 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Поиск
+
+.page-search(data-app="page-search")
+	.container
+		form.page-search__field(action="#" data-app="form" data-type="submit")
+			.input__field
+				input(type="text" name="q" placeholder="Поиск" data-validation={
+					maxlength: 300,
+					messages: {
+						required: "Введите поисковый запрос"
+					}
+				} required)
+			button.page-search__field__reset(type="button")
+			button.page-search__field__submit(type="submit"): +svg('search')
+		.page-search__found
+			| 112 результатов
+		.tab-list
+			ul
+				li
+					a(href="#")
+						| Каталог
+						span.tab-list__number 8
+				li
+					a.is-active(href="#")
+						| Cтатьи
+						span.tab-list__number 16
+				li
+					a(href="#")
+						| Видеообзор
+						span.tab-list__number 32
+		.page-search__list
+			.page-search__item
+				.page-search__item__text
+					| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+				.page-search__item__link
+					a(href="#") https://daichi.market/catalog/kontrollery/DW11_B/
+			.page-search__item
+				.page-search__item__text
+					| Дизайн таблиц строится из отдельных блоков-ячеек
+				.page-search__item__link
+					a(href="#") https://daichi.market/catalog/kontrollery/DW11_B/
+			.page-search__item
+				.page-search__item__text
+					| Дизайн таблиц строится из отдельных блоков-ячеек и заголовков, которые могут включать в себя текст, иконки и другие компоненты. Каждая ячейка-компонент может быть настроена и это даёт максимальную гибкость в стилизации таблицы.
+				.page-search__item__link
+					a(href="#") https://daichi.market/catalog/kontrollery/DW11_B/
+		.navigation
+			a.navigation__prev.is-active(href="#")
+			ul.navigation__list
+				li: a.is-active(href="#") 1
+				li: a(href="#") 2
+				li: a(href="#") 3
+				li ...
+				li: a(href="#") 16
+			a.navigation__next(href="#")

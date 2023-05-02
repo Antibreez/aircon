@@ -1,0 +1,105 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Поддержка
+			li Техническая поддержка
+
+	.page-support
+		.page-support__head
+			.page-support__head__content
+				h1.page-title
+					| Техническая поддержка
+				.page-support__head__text
+					| В этом разделе вы найдете актуальные технические документы и&nbsp;обзоры для работы с оборудованием Daichi
+			.page-support__head__image
+				img(src="./images/support.jpg" alt="Техническая поддержка")
+		.tab(data-app="tab")
+			.tab-list
+				ul
+					li: a.is-active(href="#" data-tab="tab-1") Декларации
+					li: a(href="#" data-tab="tab-2") Инструкции #[br.for-desktop]по монтажу
+					li: a(href="#" data-tab="tab-3") Интсрукции #[br.for-desktop]по обслуживанию
+					li: a(href="#" data-tab="tab-4") Интсрукции #[br.for-desktop]по эксплуатации
+					li: a(href="#" data-tab="tab-4") Рекламные #[br.for-desktop]каталоги
+					li: a(href="#" data-tab="tab-4") Сертификаты
+					li: a(href="#" data-tab="tab-4") Технические #[br.for-desktop]данные
+					li: a(href="#" data-tab="tab-4") Чертежи
+			.tab__content
+				.tab__item.is-active(data-tab="tab-1")
+					.page-support__files(data-list="documents-list-1" data-ajax="document-load.html?type=1")
+				.tab__item(data-tab="tab-2")
+					.page-support__files(data-list="documents-list-2" data-ajax="document-load-2.html?type=2")
+				.tab__item(data-tab="tab-3")
+					| #[b P4] - защита по температуре испарителя
+					br
+					br
+					| #[b P5] - защита по температуре конденсатора
+					br
+					br
+					| #[b P7] - температура нагнетания слишком высока,включена защита компрессора
+					br
+					br
+					| #[b P9] - слишком низкая температура наружного воздуха, при повышении защита отключится автоматически
+					br
+					br
+					| #[b P10] - защита по выходному давлению
+					br
+					br
+					| #[b P11] - защита по давлению всасывания
+					br
+					br
+					| #[b P12] -защита от перегрузки по току
+					br
+					br
+					| #[b E1] - датчик температуры внутреннего воздуха Т1 замкнут/оборван
+					br
+					br
+					| #[b E2] - датчик температуры испарителя Т2 замкнут/оборван
+					br
+					br
+					| #[b E3] - датчик температуры конденсатора Т3 замкнут/оборван
+					br
+					br
+					| #[b E4] - датчик температуры наружного воздуха замкнут Т4 замкнут/оборван
+					br
+					br
+					| #[b E5] - нарушена связь между внутренним и внешним блоками
+					br
+					br
+					| #[b E6] - защита внешнего блока
+					br
+					br
+					| #[b E10] - ошибка по давлению всасывания компрессора
+					br
+					br
+					| #[b E13] - ошибка фазы компрессора
+					br
+					br
+					| #[b E14] - неправильная фазировка компрессора
+					br
+					br
+					| #[b HS] - запуск размораживания
+				.tab__item(data-tab="tab-4")
+					.page-support__video
+						.page-support__video__col
+							a.page-support__video__item(href="https://www.youtube.com/watch?v=FjU_x1106pg&ab_channel=GlobeTrotterAlpha" data-fancybox)
+								.page-support__video__item__image(style="background-image:url(./images/temp/56.jpg)")
+								.page-support__video__item__play: +svg('play')
+						.page-support__video__col
+							a.page-support__video__item(href="https://www.youtube.com/watch?v=FjU_x1106pg&ab_channel=GlobeTrotterAlpha" data-fancybox)
+								.page-support__video__item__image(style="background-image:url(./images/temp/57.jpg)")
+								.page-support__video__item__play: +svg('play')
+						.page-support__video__col
+							a.page-support__video__item(href="https://www.youtube.com/watch?v=FjU_x1106pg&ab_channel=GlobeTrotterAlpha" data-fancybox)
+								.page-support__video__item__image(style="background-image:url(./images/temp/58.jpg)")
+								.page-support__video__item__play: +svg('play')
+						.page-support__video__col
+							a.page-support__video__item(href="https://www.youtube.com/watch?v=FjU_x1106pg&ab_channel=GlobeTrotterAlpha" data-fancybox)
+								.page-support__video__item__image(style="background-image:url(./images/temp/59.jpg)")
+								.page-support__video__item__play: +svg('play')
+						.page-support__video__col
+							a.page-support__video__item(href="https://www.youtube.com/watch?v=FjU_x1106pg&ab_channel=GlobeTrotterAlpha" data-fancybox)
+								.page-support__video__item__image(style="background-image:url(./images/temp/60.jpg)")
+								.page-support__video__item__play: +svg('play')
+

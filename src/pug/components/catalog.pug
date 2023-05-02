@@ -1,0 +1,121 @@
+.catalog.anime#catalog(data-app="catalog" data-offset="25")
+	.container
+		.wrapper
+			.wrapper__side
+			.wrapper__content
+				.h2.catalog__title
+					| Каталог облачных кондиционеров
+	.catalog__slider
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide
+					.catalog__item(data-app="catalog-item")
+						a.catalog__item__image(href="#")
+							.catalog__item__image__container
+								.catalog__item__image__item.is-active(style="background-image:url(./images/temp/21.jpg)")
+							.catalog__item__image__hover
+						.h4.catalog__item__title
+							a(href="#") Daichi Alpha
+						.catalog__item__text
+							ul
+								li Бесшумный режим
+								li Комфортное воздухораспределение
+								li Энергоэффективность класса А
+								li Функция «Комфортный сон»
+						.catalog__item__space
+						.catalog__item__price
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| оборудование
+								.catalog__item__price__number
+									| от 7 999 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| подписка на год
+								.catalog__item__price__number
+									| от 2 799 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| обычная цена
+								.catalog__item__price__number
+									span.catalog__item__price__line 20 999 ₽
+						.catalog__item__button
+							a.button(href="#") Где купить
+				.swiper-slide
+					.catalog__item(data-app="catalog-item")
+						a.catalog__item__image(href="#")
+							.catalog__item__image__container
+								.catalog__item__image__item.is-active(style="background-image:url(./images/temp/22.jpg)")
+								.catalog__item__image__item(style="background-image:url(./images/temp/23.jpg)")
+								.catalog__item__image__item(style="background-image:url(./images/temp/24.jpg)")
+							.catalog__item__image__hover
+								.catalog__item__image__hover__col
+									.catalog__item__image__hover__item.is-active
+								.catalog__item__image__hover__col
+									.catalog__item__image__hover__item
+								.catalog__item__image__hover__col
+									.catalog__item__image__hover__item
+						.h4.catalog__item__title
+							a(href="#") Daichi Air
+						.catalog__item__text
+							ul
+								li Встроенные ионизатор и ультрафиолетовая лампа
+								li Инверторная технология DC Inverter
+								li Энергоэффективность А++
+								li Диапазон рабочих температур от -20 до 53°С
+						.catalog__item__space
+						.catalog__item__price
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| оборудование
+								.catalog__item__price__number
+									| от 21 999 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| подписка на год
+								.catalog__item__price__number
+									| от 3 499 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| обычная цена
+								.catalog__item__price__number
+									span.catalog__item__price__line от 36 999 ₽
+						.catalog__item__button
+							a.button(href="#") Где купить
+				.swiper-slide
+					.catalog__item(data-app="catalog-item")
+						a.catalog__item__image(href="#")
+							.catalog__item__image__container
+								.catalog__item__image__item.is-active(style="background-image:url(./images/temp/25.jpg)")
+							.catalog__item__image__hover
+						.h4.catalog__item__title
+							a(href="#") Daichi X-Treme Peak
+						.catalog__item__text
+							ul
+								li Инверторная технология Full DC Inverter
+								li Режим локального комфорта Ifeel
+								li Энергоэффективность А++
+								li Работа на обогрев при низких температурах до -22°С
+						.catalog__item__space
+						.catalog__item__price
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| оборудование
+								.catalog__item__price__number
+									| от 24 999 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| подписка на год
+								.catalog__item__price__number
+									| от 3 499 ₽
+							.catalog__item__price__item
+								.catalog__item__price__label
+									| обычная цена
+								.catalog__item__price__number
+									span.catalog__item__price__line от 44 999 ₽
+						.catalog__item__button
+							a.button(href="#") Где купить
+		button.arrow-prev.catalog__slider__prev(type="button"): +svg('arrow-right')
+		button.arrow-next.catalog__slider__next(type="button"): +svg('arrow-right')
+	.container
+		.progress

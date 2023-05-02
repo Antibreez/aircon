@@ -1,0 +1,302 @@
+.comfort-app {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: flex-end;
+	overflow: hidden;
+	padding: vmin(450) 0 vmin(54);
+
+	&__bg {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: url("../images/gradient.jpg") 50% 50% no-repeat;
+		background-size: 100% 100%;
+		transform: translate(-50%, -50%);
+
+		@include desktop {
+			background-size: 100vw 100vh;
+		}
+	}
+
+	&__scroll-text {
+		position: absolute;
+		left: 0;
+		top: vmin(198);
+		width: 100%;
+
+		&__text {
+			position: absolute;
+			left: 80%;
+			top: 50%;
+			font-weight: 500;
+			font-size: vmin(18);
+			line-height: 1;
+			white-space: nowrap;
+			transform: translateY(-50%);
+
+			@include desktop {
+				font-size: vw(40);
+			}
+
+			@include desktop-xl {
+				font-size: 40px;
+			}
+
+			@include desktop-xxl {
+				font-size: px(40);
+			}
+		}
+
+		@include desktop {
+			top: 50%;
+		}
+	}
+
+	&__content {
+		position: relative;
+		padding-top: vmin(86);
+
+		@include desktop {
+			position: static;
+			padding-top: 0;
+			max-width: vw(506);
+		}
+
+		@include desktop-xl {
+			max-width: 506px;
+		}
+
+		@include desktop-xxl {
+			max-width: px(506);
+		}
+	}
+
+	&__logo {
+		img {
+			border-radius: vmin(8);
+			width: vmin(56);
+
+			@include desktop {
+				border-radius: vw(8);
+				width: vw(64);
+			}
+
+			@include desktop-xl {
+				border-radius: 8px;
+				width: 64px;
+			}
+
+			@include desktop-xxl {
+				border-radius: px(8);
+				width: px(64);
+			}
+		}
+
+		@include mobile {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__title {
+		margin-bottom: vw(16);
+
+		@include mobile {
+			margin: 0 0 vmin(12);
+			font-size: vmin(24);
+			line-height: 1.25;
+		}
+
+		@include desktop-xl {
+			margin-bottom: 16px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(16);
+		}
+	}
+
+	&__text {
+		margin-bottom: vmin(24);
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	&__apps {
+		display: flex;
+		align-items: center;
+		margin-top: vw(134);
+
+		&__item {
+			img {
+				height: vmin(22);
+
+				@include desktop {
+					height: vw(41);
+				}
+
+				@include desktop-xl {
+					height: 41px;
+				}
+
+				@include desktop-xxl {
+					height: px(41);
+				}
+			}
+
+			& + & {
+				margin-left: vmin(22);
+
+				@include desktop {
+					margin-left: vw(40);
+				}
+
+				@include desktop-xl {
+					margin-left: 40px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(40);
+				}
+			}
+		}
+
+		@include mobile {
+			position: absolute;
+			left: vmin(81);
+			top: vmin(17);
+			margin: 0;
+		}
+
+		@include desktop-xl {
+			margin-top: 134px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(134);
+		}
+	}
+
+	&__image {
+		position: absolute;
+		left: 50%;
+		top: vmin(60);
+
+		&__1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 3;
+			transform: translateX(-50%);
+
+			img {
+				width: vmin(194);
+				max-width: none;
+
+				@include desktop {
+					width: vw(385);
+				}
+
+				@include desktop-xl {
+					width: 385px;
+				}
+
+				@include desktop-xxl {
+					width: px(385);
+				}
+			}
+
+			@include desktop {
+				top: auto;
+				bottom: 0;
+				transform: none;
+			}
+		}
+
+		&__2 {
+			position: absolute;
+			left: vw(300);
+			bottom: 0;
+
+			img {
+				width: vw(311);
+				max-width: none;
+
+				@include desktop {
+				}
+
+				@include desktop-xl {
+					width: 311px;
+				}
+
+				@include desktop-xxl {
+					width: px(311);
+				}
+			}
+
+			@include mobile {
+				display: none;
+			}
+
+			@include desktop-xl {
+				left: 300px;
+			}
+
+			@include desktop-xxl {
+				left: px(300);
+			}
+		}
+
+		@include desktop {
+			top: auto;
+			bottom: 0;
+		}
+	}
+
+	&__progress {
+		position: absolute;
+		left: 14%;
+		top: 22%;
+		border-radius: 50%;
+		width: 68%;
+		background-size: auto 100%;
+
+		img {
+			width: 100%;
+		}
+
+		@include desktop {
+			left: 11%;
+			top: 27%;
+			width: 74.8%;
+		}
+	}
+
+	@include desktop {
+		padding: vw(64) 0;
+		height: 100vh;
+	}
+
+	@include desktop-xl {
+		padding: 64px 0;
+	}
+
+	@include desktop-xxl {
+		padding: px(64) 0;
+	}
+}

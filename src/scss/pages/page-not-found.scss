@@ -1,0 +1,84 @@
+.page-not-found {
+	&__container {
+		position: relative;
+	}
+
+	&__content {
+		@include desktop {
+			max-width: vw(435);
+		}
+
+		@include desktop-xl {
+			max-width: 435px;
+		}
+
+		@include desktop-xxl {
+			max-width: px(435);
+		}
+	}
+
+	&__title {
+		@include desktop {
+			margin-bottom: vw(16);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 16px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(16);
+		}
+	}
+
+	&__text {
+		margin-bottom: vmin(24);
+		line-height: 1.6;
+
+		@include desktop {
+			margin-bottom: vw(48);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 48px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(48);
+		}
+	}
+
+	&__image {
+		position: absolute;
+		left: 50%;
+		top: 0;
+
+		img {
+			max-width: none;
+
+			@include desktop {
+				width: vw(1126);
+			}
+
+			@include desktop-xl {
+				width: 1126px;
+			}
+
+			@include desktop-xxl {
+				width: px(1126);
+			}
+		}
+
+		@include desktop {
+			margin-left: vw(-155);
+		}
+
+		@include desktop-xl {
+			margin-left: -155px;
+		}
+
+		@include desktop-xxl {
+			margin-left: px(-155);
+		}
+	}
+}

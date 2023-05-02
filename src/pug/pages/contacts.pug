@@ -1,0 +1,118 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Контакты
+
+	h1.page-title.anime.fadeUp
+		| Контакты
+	.contacts
+		.contacts__map.anime.fadeUp(data-app="contacts-map" data-lat="55.76419564595946" data-lng="37.55125296383254" data-zoom="10" data-icon="./images/map-pin.svg")
+		.contacts__info
+			.h3.contacts__info__title
+				| Центральный офис Даичи
+			.contacts__info__list
+				ul
+					li ул. Звенигородоское ш., д. 9/27, Москва,&nbsp;123022
+					li: a(href="tel:+74957373733") 7 (495) 737-37-33
+					li: a(href="mailto:info@daichi.ru") info@daichi.ru
+			.h3.contacts__info__title
+				| Ближайший филиал
+			.contacts__info__list
+				ul
+					li ул.Токарей, д.40, г.Екатеринбург, 159188
+					li: a(href="tel:+74957373733") 7 (495) 737-37-33
+					li: a(href="mailto:info@daichi.ru") info@daichi.ru
+
+	.form-wrap.anime.fadeUp
+		.form-wrap__side
+			h2.form-wrap__side__title
+				| Служба #[br.for-desktop] поддержки
+			.h3.form-wrap__side__phone
+				a(href="tel:+78002000005") 8 800 200 00 05
+		form.form(action="./ajax/letter.json" method="get" data-app="form")
+			.h3.form__title
+				| Обратная связь
+			.form__text
+				| Оставьте ваши контактные данные, и наш специалист свяжется с вами в течение 30 минут
+			.form__row
+				.form__col
+					.input
+						.input__label
+							| Имя
+						.input__field
+							input(type="text" name="firstname" placeholder="Иван" data-validation={
+								regex: ['^[^\\d]+$', 'ig'],
+								maxlength: 300,
+								messages: {
+									regex: "Поле может содержать только буквы и символы"
+								}
+							} required)
+				.form__col
+					.input
+						.input__label
+							| Фамилия
+						.input__field
+							input(type="text" name="surname" placeholder="Иванов" data-validation={
+								regex: ['^[^\\d]+$', 'ig'],
+								maxlength: 300,
+								messages: {
+									regex: "Поле может содержать только буквы и символы"
+								}
+							} required)
+				.form__col
+					.input
+						.input__label
+							| Отчество
+						.input__field
+							input(type="text" name="middlename" placeholder="Иванович" data-validation={
+								regex: ['^[^\\d]+$', 'ig'],
+								maxlength: 300,
+								messages: {
+									regex: "Поле может содержать только буквы и символы"
+								}
+							} required)
+				.form__col
+					.input
+						.input__label
+							| Телефон
+						.input__field
+							input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+				.form__col
+					.input
+						.input__label
+							| E-mail
+						.input__field
+							input(type="email" name="email" placeholder="E-mail" data-validation={
+								regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+								maxlength: 254,
+								messages: {
+									regex: "Неверный или некорректный e-mail адрес"
+								}
+							} required)
+				.form__col
+					.input(data-app="select")
+						.input__label
+							| Город
+						.input__field
+							select(name="select" data-placeholder="Введите или выберите вариант" required)
+								option(value="")
+								option(value="1") Москва
+								option(value="2") Москва 2
+								option(value="3") Москва 3
+								option(value="4") Москва 4
+								option(value="5") Москва 5
+			.input
+				.input__label
+					| Сообщение
+				.input__field
+					textarea(placeholder="Подсказка" name="subject" data-validation={
+						maxlength: 300,
+					} required)
+			.checkbox
+				label
+					input(type="checkbox" name="checkbox" required)
+					i: +svg('check')
+					span Разрешаю обработку #[a(href="#") персональных данных]
+			.form__button
+				button.button(type="submit") Отправить

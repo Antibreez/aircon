@@ -1,0 +1,170 @@
+.navigation {
+	display: flex;
+	align-items: center;
+
+	&__prev,
+	&__next {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: vmin(30);
+		height: vmin(30);
+		background: transparent;
+		transition: $duration-normal;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			border-top: vmin(2) solid currentColor;
+			border-left: vmin(2) solid currentColor;
+			width: vmin(8);
+			height: vmin(8);
+			transform: translate(-50%, -50%) rotate(-45deg);
+
+			@include desktop {
+				border-top-width: vw(2);
+				border-left-width: vw(2);
+				width: vw(8);
+				height: vw(8);
+			}
+
+			@include desktop-xl {
+				border-top-width: 2px;
+				border-left-width: 2px;
+				width: 8px;
+				height: 8px;
+			}
+
+			@include desktop-xxl {
+				border-top-width: px(2);
+				border-left-width: px(2);
+				width: px(8);
+				height: px(8);
+			}
+		}
+
+		&.is-active {
+			color: $color-gull-gray;
+			pointer-events: none;
+		}
+
+		@include desktop {
+			width: vw(30);
+			height: vw(30);
+		}
+
+		@include desktop-xl {
+			width: 30px;
+			height: 30px;
+		}
+
+		@include desktop-xxl {
+			width: px(30);
+			height: px(30);
+		}
+	}
+
+	&__next {
+		&::before {
+			transform: translate(-50%, -50%) rotate(135deg);
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		margin: 0 vmin(25);
+		padding: 0;
+
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: vmin(40);
+			height: vmin(40);
+
+			+ li {
+				margin-left: vmin(4);
+
+				@include desktop {
+					margin-left: vw(4);
+				}
+
+				@include desktop-xl {
+					margin-left: 4px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(4);
+				}
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				padding-top: vmin(4);
+				width: 100%;
+				height: 100%;
+				font-size: vmin(14);
+				background: transparent;
+
+				&.is-active {
+					color: $color-white;
+					background: $color-cod-gray;
+					pointer-events: none;
+				}
+
+				@include desktop {
+					padding-top: vw(4);
+					font-size: vw(14);
+				}
+
+				@include desktop-xl {
+					padding-top: 4px;
+					font-size: 14px;
+				}
+
+				@include desktop-xxl {
+					padding-top: px(4);
+					font-size: px(14);
+				}
+			}
+
+			@include desktop {
+				width: vw(40);
+				height: vw(40);
+			}
+
+			@include desktop-xl {
+				width: 40px;
+				height: 40px;
+			}
+
+			@include desktop-xxl {
+				width: px(40);
+				height: px(40);
+			}
+		}
+
+		@include desktop {
+			margin: 0 vw(25);
+		}
+
+		@include desktop-xl {
+			margin: 0 25px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 px(25);
+		}
+	}
+
+	@include mobile {
+		justify-content: center;
+	}
+}

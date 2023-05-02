@@ -1,0 +1,116 @@
+.fancybox-bg {
+	background: #f4f4f8;
+}
+
+.modal {
+	overflow: visible;
+	padding: vmin(48) vmin(20);
+	width: 100%;
+	background: $color-white;
+
+	.input {
+		&__field {
+			input,
+			textarea {
+				background: $color-athens-gray;
+			}
+
+			.select2-container--default .select2-selection--single {
+				background: $color-athens-gray;
+			}
+
+			.select2-container--default .select2-selection__rendered {
+				background: $color-athens-gray;
+			}
+		}
+	}
+
+	.radio,
+	.checkbox {
+		i {
+			background: $color-athens-gray;
+		}
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		margin-top: vmin(30);
+
+		@include desktop {
+			margin-top: vw(30);
+		}
+
+		@include desktop-xl {
+			margin-top: 30px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(30);
+		}
+	}
+
+	&--alert {
+		.form__text {
+			margin-bottom: 0;
+		}
+	}
+
+	@include desktop {
+		padding: vw(48) vw(40);
+		max-width: vw(456);
+	}
+
+	@include desktop-xl {
+		padding: 48px 40px;
+		max-width: 456px;
+	}
+
+	@include desktop-xxl {
+		padding: px(48) px(40);
+		max-width: px(456);
+	}
+
+	&__icon-block {
+		display: flex;
+		justify-content: center;
+		margin-bottom: vmin(24, 376);
+
+		@include desktop {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.modal#success {
+	max-width: 95%;
+
+	@include desktop {
+		max-width: 490px;
+	}
+
+	.form__title {
+		margin-top: 0;
+		text-align: center;
+		font-size: vmin(24, 376);
+		margin-bottom: vmin(24, 376);
+
+		@include desktop {
+			font-size: 32px;
+			margin-bottom: 14px;
+		}
+
+		@include desktop-xl {
+			font-size: 32px;
+			margin-bottom: 14px;
+		}
+	}
+
+	.page-text {
+		text-align: center;
+
+		@include desktop {
+			font-size: 15px;
+		}
+	}
+}

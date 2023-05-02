@@ -1,0 +1,197 @@
+.support-home {
+	.intro {
+		margin-bottom: vmin(32);
+
+		&__head {
+			margin-bottom: 0;
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 vmin(-12) vmin(-24);
+
+		@include desktop {
+			margin: 0 vw(-12) vw(-24);
+		}
+
+		@include desktop-xl {
+			margin: 0 -12px -24px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 px(-12) px(-24);
+		}
+	}
+
+	&__col {
+		margin-bottom: vmin(24);
+		padding: 0 vmin(12);
+		width: 100%;
+
+		@include desktop {
+			margin-bottom: vw(24);
+			padding: 0 vw(12);
+			width: 50%;
+		}
+
+		@include desktop-xl {
+			margin-bottom: 24px;
+			padding: 0 12px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(24);
+			padding: 0 px(12);
+		}
+	}
+
+	&__col--small {
+		width: 50%;
+
+		@include desktop {
+			width: 25%;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		color: $color-white;
+
+		&__image {
+			position: relative;
+			padding-bottom: 60.2%;
+			background: 50% 50% no-repeat;
+			background-size: cover;
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 50%;
+				background: linear-gradient(180deg, rgba($color-black, 0) 0%, rgba($color-black, 0.4) 100%);
+
+				@include desktop {
+					background: linear-gradient(180deg, rgba($color-black, 0) 0%, rgba($color-black, 0.2) 100%);
+				}
+			}
+
+			@include desktop {
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 100%;
+					background: $color-cod-gray;
+					opacity: 0;
+					visibility: hidden;
+					transition: $duration-normal;
+				}
+			}
+		}
+
+		&__caption {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 5;
+			padding: vmin(16);
+			width: 100%;
+
+			@include desktop {
+				padding: vw(24);
+			}
+
+			@include desktop-xl {
+				padding: 24px;
+			}
+
+			@include desktop-xxl {
+				padding: px(24);
+			}
+		}
+
+		&__title {
+			margin: 0;
+		}
+
+		&:hover {
+			@include desktop {
+				color: $color-white;
+
+				.support-home__item__image {
+					&::before {
+						opacity: 0.25;
+						visibility: visible;
+					}
+				}
+			}
+		}
+
+		&--small {
+			color: $color-cod-gray;
+
+			.support-home__item__image {
+				margin-bottom: vmin(16);
+				padding-bottom: 81.65%;
+
+				&::after {
+					display: none;
+				}
+
+				@include desktop {
+					margin-bottom: vw(24);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 24px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(24);
+				}
+			}
+
+			.support-home__item__caption {
+				position: static;
+				padding: 0;
+
+				@include desktop {
+					padding: 0 vw(24) 0 0;
+				}
+
+				@include desktop-xl {
+					padding: 0 24px 0 0;
+				}
+
+				@include desktop-xxl {
+					padding: 0 px(24) 0 0;
+				}
+			}
+
+			@include desktop {
+				&:hover {
+					color: $color-cod-gray;
+				}
+			}
+		}
+	}
+}

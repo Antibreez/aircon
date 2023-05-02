@@ -1,0 +1,287 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Для партнеров
+
+	.page-partners(data-app="become-dealer")
+		.intro.anime
+			.intro__head
+				h1.intro__title
+					| Для партнеров
+			.intro__video
+				img(src="./images/partners.jpg" alt="")
+		.tab(data-app="tab" data-type="hash")
+			.wrapper
+				//- .wrapper__side.for-desktop
+				.wrapper__content
+					.tab-list
+						ul
+							li
+								a.is-active(href="#" data-tab="dealers")
+									| Дилерам
+							li
+								a(href="#" data-tab="designers")
+									| Проектировщикам
+			.tab__content
+				.tab__item.is-active(data-tab="dealers")
+					.wrapper
+						//- .wrapper__side
+						//- 	.page-partners__image
+						//- 		img(src="./images/partners-form-1.jpg" alt="")
+						.wrapper__content
+							.h3.page-partners__tab-subtitle
+								| Выбирая оборудование торговой марки Daichi, вы делаете ставку на перспективу и динамику развития вашего бизнеса
+							//- .page-subtext
+							//- 	| Профессиональные компании являются ключевым звеном развития климатического рынка. Компания «Даичи» на протяжении многих лет выстраивала теплые, взаимовыгодные и долгосрочные отношения с профессионалами климатической отрасли. Квалифицированный инженерный подход к подбору оборудования, профессиональные консультации клиентов при продаже, последующий монтаж и сервисное обслуживание могут обеспечить только компании, для которых создание комфортного микроклимата является основным и любимым делом.
+							.page-text
+								| Профессиональные компании являются ключевым звеном развития климатического рынка. Компания «Даичи» на протяжении многих лет выстраивала теплые, взаимовыгодные и долгосрочные отношения с профессионалами климатической отрасли. Квалифицированный инженерный подход к подбору оборудования, профессиональные консультации клиентов при продаже, последующий монтаж и сервисное обслуживание могут обеспечить только компании, для которых создание комфортного микроклимата является основным и любимым делом.
+								<br/><br/>
+								| Именно профессиональные климатические компании вдохновляют нас на разработку и производство модельных рядов оборудования торговой марки Daichi. Самые внимательные и разборчивые клиенты — дилеры, всегда задают высокие требования к технологиям и качеству нашего оборудования.Нашим дилерам, мы предлагаем не только современное и качественное климатическое оборудование Daichi, мы приглашаем принять участие в развитие современного инновационного бренда, который существенно усилит Ваше товарное предложение.
+							form.page-partners__request-form.form(action="./ajax/test.json" method="get" data-app="form")
+								.h3
+									| Стать партнером Daichi
+								.page-text
+									| Оставьте ваши контактные данные, и наш специалист свяжется с&nbsp;вами в&nbsp;течение 30&nbsp;минут.
+								.form__row
+									.form__col
+										.input
+											.input__label
+												| Имя
+											.input__field
+												input(type="text" name="firstname" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Фамилия
+											.input__field
+												input(type="text" name="surname" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Название компании
+											.input__field
+												input(type="text" name="company" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Город
+											.input__field
+												input(type="text" name="city" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| E-mail
+											.input__field
+												input(type="email" name="email" data-validation={
+													regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+													maxlength: 254,
+													messages: {
+														regex: "Неверный или некорректный e-mail адрес"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Телефон
+											.input__field
+												input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+								.form__bottom
+									.checkbox
+										label
+											input(type="checkbox" name="checkbox" required)
+											i: +svg('check')
+											span Разрешаю обработку #[a(href="#" target="_blank") персональных данных]
+									.form__button
+										button.button(type="submit") Отправить
+
+							//- .page-text
+							//- 	| Именно профессиональные климатические компании вдохновляют нас на разработку и производство модельных рядов оборудования торговой марки Daichi. Самые внимательные и разборчивые клиенты — дилеры, всегда задают высокие требования к технологиям и качеству нашего оборудования.Нашим дилерам, мы предлагаем не только современное и качественное климатическое оборудование Daichi, мы приглашаем принять участие в развитие современного инновационного бренда, который существенно усилит Ваше товарное предложение.
+							//- .page-subtext
+							//- 	| Выбирая оборудование торговой марки Daichi, вы делаете ставку на перспективу и динамику развития вашего бизнеса. Глубоко понимая потребности наших партнеров, мы предлагаем:
+							.h3.page-partners__tab-subtitle
+								| Глубоко понимая потребности наших партнеров, мы предлагаем:
+							.page-partners__list.page-text-list
+								.page-partners__list__col
+									ul
+										li Привлекательные финансовые инструменты, современные методы взаиморасчётов
+										li Поддержка развития фирменной торговли, совместные рекламные компании
+										li Программа привилегированных партнеров Daichi Expert
+								.page-partners__list__col
+									ul
+										li Современный модельный ряд климатического оборудования
+										li Техническая и маркетинговая поддержка, обучение персонала
+										li Оперативные поставки, развитая сеть региональных складов
+							.page-partners__program
+								.page-partners__program-image
+									img(src="./images/daichi-expert.jpg" alt="Daichi Expert")
+								.page-partners__program-content
+									.h3.page-partners__tab-subtitle
+										| Программа Daichi Expert
+									.page-text
+										| За 25 лет компания «Даичи» смогла построить прочные и доверительные отношения с ведущими мировыми производителями климатической техники, благодаря которым мы имеем возможность предлагать нашим клиентам оборудование для любых объектов и запросов.
+									.page-text
+										| Мы стремимся к большему и поэтому для наших партнёров разработали программу «Daichi Expert», которая включает в себя дополнительные возможности и условия, а также разностороннюю поддержку для масшабирования вашего бизнеса и увеличения доходности.
+									.page-text
+										| В течении этого года, мы будем следить за успехами участников программы и по результатам сезона самые активные смогут отправиться на стратегическую конференцию в одном из городов России!
+									a.button(href="#") Подробнее о программе
+									.h3.page-partners__tab-subtitle
+										| Основные преимущества вступления в&nbsp;программу:
+									.page-partners__list.page-text-list
+										.page-partners__list__col
+											ul
+												li Приоритет в поставке оборудования и эксклюзивные модели
+												li Эксклюзивные права на продажу оборудования на определённой территории
+												li Полный доступ к современному порталу Daichi.Business и всем рекламным материалам
+										.page-partners__list__col
+											ul
+												li Участие в программе предварительного заказа оборудования на специальных условиях
+												li Расширенная маркетинговая поддержка: оформление шоу-рума, компенсация до 50%, сайт, и многое другое
+					//- .wrapper
+					//- 	.wrapper__side
+					//- 	.wrapper__content
+					//- 		.page-partners__list.page-text-list
+					//- 			.page-partners__list__col
+					//- 				ul
+					//- 					li Современный модельный ряд климатического оборудования;
+					//- 					li Техническая и маркетинговая поддержка, обучение персонала;
+					//- 					li Оперативные поставки, развитая сеть региональных складов;
+					//- 			.page-partners__list__col
+					//- 				ul
+					//- 					li Привлекательные финансовые инструменты, современные методы взаиморасчётов;
+					//- 					li Поддержка развития фирменной торговли, совместные рекламные компании;
+					//- 					li Программа привилегированных партнеров Daichi&nbsp;Expert.
+					//- 		.page-partners__form
+					//- 			.h2.page-partners__form__title
+					//- 				| Стать дилером Даичи
+					//- 			.page-subtext
+					//- 				| Зарегистрируйтесь на нашем Бизнес портале #[a(href="https://daichi.business/" target="_blank") daichi.business]
+					//- 			.page-partners__button
+					//- 				a.button(href="https://daichi.business/personal/register/" target="_blank") Зарегистрироваться
+
+				.tab__item(data-tab="designers")
+					.wrapper
+						//- .wrapper__side
+						//- 	.page-partners__image
+						//- 		img(src="./images/partners-form-2.jpg" alt="")
+						.wrapper__content
+							.page-text
+								| Выбор проектного решения при проектировании систем кондиционирования и вентиляции воздуха является ключевым фактором для достижения того результата, который ожидает получить клиент. Именно проектировщики, которые доверяют технологиям и качеству оборудования Daichi, помогают нам делать первые шаги при работе с проектом.
+							form.page-partners__request-form.form(action="./ajax/test.json" method="get" data-app="form")
+								.h3
+									| Стать партнером Daichi
+								.page-text
+									| Оставьте ваши контактные данные, и наш специалист свяжется с&nbsp;вами в&nbsp;течение 30&nbsp;минут.
+								.form__row
+									.form__col
+										.input
+											.input__label
+												| Имя
+											.input__field
+												input(type="text" name="firstname" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Фамилия
+											.input__field
+												input(type="text" name="surname" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Название компании
+											.input__field
+												input(type="text" name="company" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Город
+											.input__field
+												input(type="text" name="city" data-validation={
+													regex: ['^[^\\d]+$', 'ig'],
+													maxlength: 300,
+													messages: {
+														regex: "Поле может содержать только буквы и символы"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| E-mail
+											.input__field
+												input(type="email" name="email" data-validation={
+													regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+													maxlength: 254,
+													messages: {
+														regex: "Неверный или некорректный e-mail адрес"
+													}
+												} required)
+									.form__col
+										.input
+											.input__label
+												| Телефон
+											.input__field
+												input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+								.form__bottom
+									.checkbox
+										label
+											input(type="checkbox" name="checkbox" required)
+											i: +svg('check')
+											span Разрешаю обработку #[a(href="#" target="_blank") персональных данных]
+									.form__button
+										button.button(type="submit") Отправить
+							.page-text
+								| Мы глубоко осознаем и ценим важный труд специалистов по проектированию инженерных систем, и&nbsp;в&nbsp;своей работе максимально нацелены на укрепление сотрудничества.
+								<br/><br/>
+								| Для проектирования Ваших проектов на базе оборудования Daichi мы предлагаем вам следующие условия:
+							.page-partners__list.page-text-list
+								.page-partners__list__col
+									ul
+										li Широкий модельный ряд современных систем кондиционирования;
+										li Оборудование для удаленного управления системами кондиционирования на базе Облачной экосистемы Daichi;
+										li Привлекательное соотношения цены и&nbsp;качества для ваших заказчиков;
+								.page-partners__list__col
+									ul
+										li Всесторонняя техническая и маркетинговая поддержка в&nbsp;процессе выбора технического решения и&nbsp;проектирования оборудования;
+										li Современные программы обучения, техническая документация, система регистрации объектов.

@@ -1,0 +1,251 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Для партнеров
+			li Стать дилером
+
+	.page-become-dealer(data-app="become-dealer")
+		.intro.anime
+			.intro__head
+				h1.intro__title
+					| Стать дилером
+			.intro__video
+				img(src="./images/become-dealer.jpg" alt="")
+		.page-become-dealer__profit
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.page-become-dealer__profit__content
+						.h1.page-become-dealer__profit__title.anime.fadeUp
+							| Почему продавцам климатической техники выгодно сотрудничать с&nbsp;нами?
+						.page-become-dealer__profit__text.anime.fadeUp
+							| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+						.page-become-dealer__profit__button.anime.fadeUp
+							a.button.js-goto(href="#order") Стать дилером
+		.page-become-dealer__list
+			.page-become-dealer__list__col
+				.page-become-dealer__list__item.anime.fadeUp
+					.page-become-dealer__list__item__image
+						img(src="./images/become-dealer-item-1.jpg" alt="")
+					.page-become-dealer__list__item__content
+						.h4.page-become-dealer__list__item__title
+							| Широкий спектр климатической техники
+						.page-become-dealer__list__item__text
+							p Мы предлагаем весь спектр климатической техники ведущих мировых производителей для объектов любого типа и назначения
+							p Мы обеспечиваем лучшие цены и условия как&nbsp;на&nbsp;элитную технику, так и на надежные марки класса эконом
+							p «Даичи» обеспечивает постоянное наличие товара на&nbsp;своих складах, удобство и оперативность его получения
+							p «Даичи» поддерживает ассортимент запасных частей и&nbsp;оперативно поставляет их по запросу.
+			.page-become-dealer__list__col
+				.page-become-dealer__list__item.anime.fadeUp
+					.page-become-dealer__list__item__image
+						img(src="./images/become-dealer-item-2.jpg" alt="")
+					.page-become-dealer__list__item__content
+						.h4.page-become-dealer__list__item__title
+							| По всей стране
+						.page-become-dealer__list__item__text
+							p 21 филиал во всех федеральных округах России
+							p В 47 городах России есть сеть складов и развитая система логистики
+							p Координируем сервисное обслуживание оборудования по всей стране
+				.page-become-dealer__list__item.anime.fadeUp
+					.page-become-dealer__list__item__image
+						img(src="./images/become-dealer-item-3.jpg" alt="")
+					.page-become-dealer__list__item__content
+						.h4.page-become-dealer__list__item__title
+							| Обучаем и делимся опытом
+						.page-become-dealer__list__item__text
+							p Осуществляем всестороннюю информационную и&nbsp;техническую поддержку своих партнеров
+							p Осуществляем обучение сотрудников партнерских организаций
+		.page-become-dealer__order#order.anime.fadeUp
+			.wrapper
+				.wrapper__side
+					.page-become-dealer__order__content
+						.h2.page-become-dealer__order__title
+							| После заполнения заявки
+						.page-become-dealer__order__text
+							| В ближайшее время с вами свяжется менеджер Даичи в Вашем регионе и предложит выгодные условия сотрудничества
+							.page-become-dealer__order__text__hidden.is-hidden
+								br
+								| Став нашим дилером, Вы будете работать с лучшим оборудованием на рынке и получите всестороннюю поддержку одного из крупнейших дистрибьюторов климатической техники в России
+								br
+								br
+								| Мы предоставляем нашим клиентам целый комплекс сервисов по поддержке продаж, включая онлайн сервисы в личном кабинете
+				.wrapper__content
+					form.page-become-dealer__form.form(action="./ajax/become-dealer.json" method="get" data-app="form")
+						.swiper-container
+							.swiper-wrapper
+								.swiper-slide
+									.page-become-dealer__form__item
+										.form__row
+											.form__col
+												.input
+													.input__label
+														| Имя
+													.input__field
+														input(type="text" name="firstname" placeholder="Иван" data-validation={
+															regex: ['^[^\\d]+$', 'ig'],
+															maxlength: 300,
+															messages: {
+																regex: "Поле может содержать только буквы и символы"
+															}
+														} required)
+											.form__col
+												.input
+													.input__label
+														| Фамилия
+													.input__field
+														input(type="text" name="surname" placeholder="Иванов" data-validation={
+															regex: ['^[^\\d]+$', 'ig'],
+															maxlength: 300,
+															messages: {
+																regex: "Поле может содержать только буквы и символы"
+															}
+														} required)
+											.form__col
+												.input
+													.input__label
+														| Отчество
+													.input__field
+														input(type="text" name="middlename" placeholder="Иванович" data-validation={
+															regex: ['^[^\\d]+$', 'ig'],
+															maxlength: 300,
+															messages: {
+																regex: "Поле может содержать только буквы и символы"
+															}
+														} required)
+											.form__col
+												.input
+													.input__label
+														| Телефон
+													.input__field
+														input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" placeholder="+7" name="tel" required)
+											.form__col
+												.input
+													.input__label
+														| E-mail
+													.input__field
+														input(type="email" name="email" placeholder="E-mail" data-validation={
+															regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+															maxlength: 254,
+															messages: {
+																regex: "Неверный или некорректный e-mail адрес."
+															}
+														} required)
+											.form__col
+												.input(data-app="select" data-type="outside")
+													.input__label
+														| Город
+													.input__field
+														select(name="select" data-placeholder="Введите или выберите вариант" required)
+															option(value="")
+															option(value="1" selected) Москва
+															option(value="2") Москва 2
+															option(value="3") Москва 3
+															option(value="4") Москва 4
+															option(value="5") Москва 5
+										.page-become-dealer__form__item__footer
+											button.button.button--blue.page-become-dealer__form__item__next(type="button") Далее
+								.swiper-slide
+									.page-become-dealer__form__item
+										.form__row
+											.form__col
+												.h4
+													| Направление деятельности
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="1" required)
+														i: +svg('check')
+														span Продажа
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="2" required)
+														i: +svg('check')
+														span Монтаж
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="3" required)
+														i: +svg('check')
+														span Проектирование
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="4" required)
+														i: +svg('check')
+														span Сервис
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="5" required)
+														i: +svg('check')
+														span Строительство
+												.checkbox
+													label
+														input(type="checkbox" name="direction" value="6" required)
+														i: +svg('check')
+														span Дизайн
+											.form__col
+												.h4
+													| Товарное направление
+												.checkbox
+													label
+														input(type="checkbox" name="direction2" value="1" required)
+														i: +svg('check')
+														span Кондиционирование
+												.checkbox
+													label
+														input(type="checkbox" name="direction2" value="2" required)
+														i: +svg('check')
+														span Вентиляция
+												.checkbox
+													label
+														input(type="checkbox" name="direction2" value="3" required)
+														i: +svg('check')
+														span Увлажнение
+												.checkbox
+													label
+														input(type="checkbox" name="direction2" value="4" required)
+														i: +svg('check')
+														span Отопление
+										.h4
+											| Являетесь ли Вы частным лицом #[br]или представителем организации (юр. лицо/ИП)?
+										.radio
+											label
+												input(type="radio" name="legal[]" required)
+												i
+												span Частное лицо
+										.radio
+											label
+												input(type="radio" name="legal[]" required)
+												i
+												span Представляю организацию
+										.page-become-dealer__form__item__footer
+											button.button.button--gray.page-become-dealer__form__item__back(type="button") Назад
+											button.button.button--blue.page-become-dealer__form__item__next(type="button") Далее
+								.swiper-slide
+									.page-become-dealer__form__item
+										.input
+											.h4
+												| Меня интересует
+											.checkbox
+												label
+													input(type="checkbox" name="interesting" required)
+													i: +svg('check')
+													span Условия сотрудничества
+											.checkbox
+												label
+													input(type="checkbox" name="interesting" required)
+													i: +svg('check')
+													span Доступ к технической документации
+										.input
+											.h4
+												| Комментарий
+											.input__field
+												textarea(name="subject" placeholder="Подсказка" data-validation={
+													maxlength: 300,
+												} required)
+										.checkbox
+											label
+												input(type="checkbox" name="checkbox" required)
+												i: +svg('check')
+												span Разрешаю обработку #[a(href="#" target="_blank") персональных данных]
+										.page-become-dealer__form__item__footer
+											button.button.button--gray.page-become-dealer__form__item__back(type="button") Назад
+											button.button.button--blue(type="submit") Отправить заявку

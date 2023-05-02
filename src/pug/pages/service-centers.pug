@@ -1,0 +1,45 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li: a(href="#") Поддержка
+			li: a(href="#") Обслуживание и ремонт
+			li Авторизованные сервисные центры
+
+	.page-dealers(data-app="dealers")
+		h1.page-title.anime.fadeUp
+			| Авторизованные сервисные центры
+		form.page-dealers__filter(action="./ajax/dealers.json" method="get")
+			.page-dealers__filter__row
+				.page-dealers__filter__left
+					.page-dealers__filter__item
+						.page-dealers__filter__item__label
+							| Регион:
+						.page-dealers__filter__select
+							.input(data-app="select")
+								.input__field
+									select()
+										option(value="1") Екатеринбург
+										option(value="2") Екатеринбург
+										option(value="3") Екатеринбург
+										option(value="4") Екатеринбург
+										option(value="5") Екатеринбург
+				.page-dealers__filter__right
+					.page-dealers__filter__item
+						.page-dealers__filter__select
+							.input(data-app="select")
+								.input__field
+									select(data-placeholder="Сервис по направлениям")
+										option(value="")
+										option(value="2") Кондиционирование
+										option(value="3") Отопление
+										option(value="4") Вентиляция
+					.page-dealers__filter__item
+						.page-dealers__filter__type
+							a(href="#" data-off="Показать списком" data-on="Показать карту") Показать списком
+		.page-dealers__map-container
+			.page-dealers__map(data-pin="./images/dealer-map-pin.svg" data-pin-active="./images/dealer-map-pin-active.svg")
+			.page-dealers__map-list
+
+		.page-dealers__list
+			.page-dealers__list__row

@@ -1,0 +1,296 @@
+.container
+	.breadcrumbs
+		ul
+			li: a(href="index.html") Главная
+			li Где купить — розничные продажи
+
+	.page-dealers(data-app="dealers")
+		h1.page-title.anime.fadeUp
+			| Где купить — розничные продажи
+		form.page-dealers__filter(action="./ajax/dealers.json" method="get")
+			.tab-list
+				ul
+					li
+						a.page-dealers__filter__tab.is-active(href="#")
+							input(type="radio" name="page" value="dealers" checked)
+							| Розничные продажи
+					li
+						a.page-dealers__filter__tab(href="#")
+							input(type="radio" name="page" value="regions")
+							| Оптовые продажи
+			.page-dealers__filter__row
+				.page-dealers__filter__left
+					.page-dealers__filter__item.page-dealers__filter__item--city
+						.page-dealers__filter__item__label
+							| Регион:
+						.page-dealers__filter__select
+							.input(data-app="select")
+								.input__field
+									select()
+										option(value="1") Екатеринбург
+										option(value="2") Екатеринбург
+										option(value="3") Екатеринбург
+										option(value="4") Екатеринбург
+										option(value="5") Екатеринбург
+				.page-dealers__filter__right
+					.page-dealers__filter__item
+						.page-dealers__filter__type
+							a(href="#" data-off="Показать списком" data-on="Показать карту") Показать списком
+		.page-dealers__map-container
+			.page-dealers__map( data-lat=55.755829 data-lng=37.617627 data-pin="./images/dealer-map-pin.svg" data-pin-active="./images/dealer-map-pin-active.svg")
+			.page-dealers__map-list
+				.page-dealers__map-item(data-lat=55.989903 data-lng=37.177189)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Интегра Лайт
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.912822 data-lng=36.827493)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| ИНТЕХКОМ
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=56.006234 data-lng=38.242927)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Омега-К
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.785183 data-lng=38.705024)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| ИП Крашенинникова И.М.
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.849641 data-lng=37.755851)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| СЕВЕРНЫЙ ВЕТЕР
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.665360 data-lng=36.640156)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| ФОРВАРД
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+				.page-dealers__map-item(data-lat=55.760544 data-lng=37.520639)
+					button.page-dealers__map-item__close(type="button")
+					.h3.page-dealers__map-item__title
+						| Гольфстрим-М
+					ul.page-dealers__map-item__list
+						li
+							.page-dealers__map-item__list__key
+								| Адрес
+							.page-dealers__map-item__list__value
+								| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+						li
+							.page-dealers__map-item__list__key
+								| Телефон
+							.page-dealers__map-item__list__value
+								a(href="tel:+73513780010") +7 (351) 378-00-10
+					.page-dealers__map-item__link
+							a(href="#") Перейти на сайт
+								+svg('link')
+
+		.page-dealers__list
+			.page-dealers__list__row
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Интегра Лайт
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| ИНТЕХКОМ
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Омега-К
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| ИП Крашенинникова И.М.
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| СЕВЕРНЫЙ ВЕТЕР
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| ФОРВАРД
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')
+				.page-dealers__list__col
+					.page-dealers__list__item
+						.h3.page-dealers__list__item__title
+							| Гольфстрим-М
+						ul.page-dealers__list__item__list
+							li
+								.page-dealers__list__item__list__key
+									| Адрес
+								.page-dealers__list__item__list__value
+									| г.Екатеринбург, ул.Токарей, д.40, #[br]вход в офисы №2, 2 этаж
+							li
+								.page-dealers__list__item__list__key
+									| Телефон
+								.page-dealers__list__item__list__value
+									a(href="tel:+73513780010") +7 (351) 378-00-10
+						.page-dealers__list__item__link
+								a(href="#") Перейти на сайт
+									+svg('link')

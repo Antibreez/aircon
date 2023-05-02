@@ -1,0 +1,367 @@
+.accordion {
+	margin-bottom: vmin(80);
+
+	&__title {
+		margin: 0 0 vmin(24);
+
+		@include desktop {
+			margin: 0 0 vw(48);
+		}
+
+		@include desktop-xl {
+			margin: 0 0 48px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 0 px(48);
+		}
+	}
+
+	&__item {
+		border-bottom: solid 1px $color-geyser;
+
+		&__header {
+			display: flex;
+			align-items: center;
+			padding: vmin(18) vmin(10) vmin(18) 0;
+			min-height: vmin(60);
+			transition: $duration-normal;
+			cursor: pointer;
+
+			&__text {
+				position: relative;
+				padding-right: vmin(30);
+				width: 100%;
+
+				@include desktop {
+					padding-right: vw(110);
+				}
+
+				@include desktop-xl {
+					padding-right: 110px;
+				}
+
+				@include desktop-xxl {
+					padding-right: px(110);
+				}
+			}
+
+			&__icon {
+				position: absolute;
+				right: 0;
+				top: vmin(-2);
+				width: vmin(24);
+				height: vmin(24);
+				transition: transform $duration-normal;
+
+				@include desktop {
+					top: vw(-2);
+					width: vw(24);
+					height: vw(24);
+				}
+
+				@include desktop-xl {
+					top: -2px;
+					width: 24px;
+					height: 24px;
+				}
+
+				@include desktop-xxl {
+					top: px(-2);
+					width: px(24);
+					height: px(24);
+				}
+			}
+
+			@include desktop {
+				padding: vw(12) vw(16) vw(12) 0;
+				min-height: vw(72);
+
+				&:hover {
+					color: $color-denim;
+				}
+			}
+
+			@include desktop-xl {
+				padding: 12px 16px 12px 0;
+				min-height: 72px;
+			}
+
+			@include desktop-xxl {
+				padding: px(12) px(16) px(12) 0;
+				min-height: px(72);
+			}
+		}
+
+		&__title {
+			margin: 0;
+			font-weight: 700;
+
+			@include mobile {
+				font-size: vmin(18);
+			}
+		}
+
+		&__content {
+			display: none;
+			padding-bottom: vmin(30);
+
+			@include desktop {
+				padding-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				padding-bottom: 40px;
+			}
+
+			@include desktop-xxl {
+				padding-bottom: px(40);
+			}
+		}
+
+		&__text {
+			@include desktop {
+				max-width: vw(736);
+			}
+
+			@include desktop-xl {
+				max-width: 736px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(736);
+			}
+		}
+
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 vmin(-12) vmin(-24);
+
+			@include desktop {
+				margin: 0 vw(-12) vw(-24);
+			}
+
+			@include desktop-xl {
+				margin: 0 -12px -24px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 px(-12) px(-24);
+			}
+		}
+
+		&__col {
+			margin-bottom: vmin(24);
+			padding: 0 vmin(12);
+			width: 100%;
+
+			@include desktop {
+				margin-bottom: vw(24);
+				padding: 0 vw(12);
+				width: 50%;
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+				padding: 0 12px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+				padding: 0 px(12);
+			}
+		}
+
+		&__point {
+			display: flex;
+
+			&__icon {
+				flex-shrink: 0;
+				margin-right: vmin(16);
+
+				img {
+					display: block;
+					width: vmin(32);
+					height: vmin(32);
+
+					@include desktop {
+						width: vw(32);
+						height: vw(32);
+					}
+
+					@include desktop-xl {
+						width: 32px;
+						height: 32px;
+					}
+
+					@include desktop-xxl {
+						width: px(32);
+						height: px(32);
+					}
+				}
+
+				@include desktop {
+					margin-right: vw(16);
+				}
+
+				@include desktop-xl {
+					margin-right: 16px;
+				}
+
+				@include desktop-xxl {
+					margin-right: px(16);
+				}
+			}
+		}
+
+		&.is-active {
+			.accordion__item__header__icon {
+				transform: rotate(45deg);
+			}
+		}
+
+		&.is-disabled {
+			pointer-events: none;
+
+			.accordion__item__header__text {
+				color: $color-gull-gray;
+			}
+		}
+	}
+
+	&__more {
+		margin-top: vmin(24);
+
+		.button {
+			padding: vmin(6) vmin(15);
+
+			@include desktop {
+				padding: vw(6) vw(15);
+			}
+
+			@include desktop-xl {
+				padding: 6px 15px;
+			}
+
+			@include desktop-xxl {
+				padding: px(6) px(15);
+			}
+		}
+
+		@include desktop {
+			margin-top: vw(32);
+		}
+
+		@include desktop-xl {
+			margin-top: 32px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(32);
+		}
+	}
+
+	&.anime {
+		.accordion {
+			&__title {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: $duration-normal * 2;
+			}
+
+			&__item {
+				opacity: 0;
+				transform: translateY(50px);
+				transition: $duration-normal * 2;
+				transition-delay: 0.1s;
+
+				+ .accordion__item {
+					transition-delay: 0.2s;
+
+					+ .accordion__item {
+						transition-delay: 0.3s;
+
+						+ .accordion__item {
+							transition-delay: 0.4s;
+
+							+ .accordion__item {
+								transition-delay: 0.5s;
+
+								+ .accordion__item {
+									transition-delay: 0.6s;
+
+									+ .accordion__item {
+										transition-delay: 0.7s;
+
+										+ .accordion__item {
+											transition-delay: 0.8s;
+
+											+ .accordion__item {
+												transition-delay: 0.9s;
+
+												+ .accordion__item {
+													transition-delay: 1s;
+
+													+ .accordion__item {
+														transition-delay: 1.1s;
+
+														+ .accordion__item {
+															transition-delay: 1.2s;
+
+															+ .accordion__item {
+																transition-delay: 1.3s;
+
+																+ .accordion__item {
+																	transition-delay: 1.4s;
+
+																	+ .accordion__item {
+																		transition-delay: 1.5s;
+
+																		+ .accordion__item {
+																			transition-delay: 1.6s;
+
+																			+ .accordion__item {
+																				transition-delay: 1.7s;
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.animated {
+			.accordion {
+				&__title,
+				&__item {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+
+	@include desktop {
+		margin-bottom: vw(120);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 120px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(120);
+	}
+}

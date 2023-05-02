@@ -1,0 +1,425 @@
+.page-catalog {
+	.intro {
+		@include desktop {
+			margin-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+		}
+	}
+
+	&__banner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: vmin(40);
+		padding: vmin(20);
+		color: $color-white;
+		background: linear-gradient(180deg, #5EA9FF 0%, #D5D3FF 100%);
+
+		&__content {
+			width: vmin(400);
+
+			@include desktop {
+				width: vw(400);
+			}
+
+			@include desktop-xl {
+				width: 400px;
+			}
+
+			@include desktop-xxl {
+				width: px(400);
+			}
+		}
+
+		&__title {
+			margin-bottom: vmin(16);
+
+			@include desktop {
+				margin-bottom: vw(16);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 16px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(16);
+			}
+		}
+
+		&__button {
+			margin-top: vw(40);
+
+			@include desktop-xl {
+				margin-top: 40px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(40);
+			}
+		}
+
+		&__image {
+			flex-shrink: 0;
+
+			img {
+				height: vw(280);
+
+				@include desktop-xl {
+					height: 280px;
+				}
+
+				@include desktop-xxl {
+					height: px(280);
+				}
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(40);
+			padding: vw(60) vw(80);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 40px;
+			padding: 60px 80px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(40);
+			padding: px(60) px(80);
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 vmin(-12) vmin(-24);
+
+		&__col {
+			margin-bottom: vmin(36);
+			padding: 0 vmin(12);
+			width: 100%;
+
+			@include desktop {
+				margin-bottom: vw(24);
+				padding: 0 vw(12);
+				width: 25%;
+
+				&:nth-child(2n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #FFA3B9 0%, #FFE4AA 100%);
+						}
+					}
+				}
+
+				&:nth-child(3n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #71D6C8 0%, #FFDECB 99.19%);
+						}
+					}
+				}
+
+				&:nth-child(4n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #7BBAFF 0%, #CEEEDE 100%);
+						}
+					}
+				}
+
+				&:nth-child(5n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #A0B1FF 0%, #FFDCD6 100%);
+						}
+					}
+				}
+
+				&:nth-child(6n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #FF9986 0%, #FFDCD6 100%);
+						}
+					}
+				}
+
+				&:nth-child(7n) {
+					.page-catalog__item__image {
+						&::before {
+							background: linear-gradient(180deg, #7BBAFF 0%, #FFDECB 100%, #FFDECB 100%);
+						}
+					}
+				}
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+				padding: 0 12px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+				padding: 0 px(12);
+			}
+		}
+
+		&__col--big {
+			@include desktop {
+				width: 50%;
+			}
+		}
+
+		@include desktop {
+			margin: 0 vw(-12) vw(-24);
+		}
+
+		@include desktop-xl {
+			margin: 0 -12px -24px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 px(-12) px(-24);
+		}
+	}
+
+	&__item {
+		display: block;
+
+		&__image {
+			position: relative;
+			z-index: 5;
+			margin-bottom: vmin(24);
+			height: vmin(320);
+			background: #f4f4f8 50% 50% no-repeat;
+			background-size: cover;
+
+			img {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				max-width: 80%;
+				max-height: 70%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include desktop {
+				margin-bottom: vw(24);
+				height: vw(320);
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: -1;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(180deg, #5ea9ff 0%, #d5d3ff 100%);
+					opacity: 0;
+					visibility: hidden;
+					transition: $duration-normal;
+				}
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+				height: 320px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+				height: px(320);
+			}
+		}
+
+		&__cloud {
+			position: absolute;
+			right: vmin(16);
+			top: vmin(16);
+
+			img {
+				position: static;
+				width: vmin(26);
+				max-width: none;
+				max-height: none;
+				transform: none;
+
+				@include desktop {
+					width: vw(26);
+				}
+
+				@include desktop-xl {
+					width: 26px;
+				}
+
+				@include desktop-xxl {
+					width: px(26);
+				}
+			}
+
+			@include desktop {
+				right: vw(16);
+				top: vw(16);
+			}
+
+			@include desktop-xl {
+				right: 16px;
+				top: 16px;
+			}
+
+			@include desktop-xxl {
+				right: px(16);
+				top: px(16);
+			}
+		}
+
+		&__image--slim {
+			height: vmin(200);
+
+			@include desktop {
+				height: vw(200);
+			}
+
+			@include desktop-xl {
+				height: 200px;
+			}
+
+			@include desktop-xxl {
+				height: px(200);
+			}
+		}
+
+		&__title {
+			margin: 0 0 vmin(8);
+
+			@include desktop {
+				margin: 0 0 vw(8);
+			}
+
+			@include desktop-xl {
+				margin: 0 0 8px;
+			}
+
+			@include desktop-xxl {
+				margin: 0 0 px(8);
+			}
+		}
+
+		&__text {
+			font-weight: 700;
+		}
+
+		@include desktop {
+			&:hover {
+				color: $color-cod-gray;
+
+				.page-catalog__item__image {
+					&::before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+
+	&__item--fill {
+		position: relative;
+		z-index: 5;
+		background: #f4f4f8;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, #5ea9ff 0%, #d5d3ff 100%);
+			opacity: 0;
+			visibility: hidden;
+			transition: $duration-normal;
+		}
+
+		.page-catalog__item {
+			&__image {
+				margin: 0;
+				height: vmin(204);
+				background: none;
+
+				&::before {
+					display: none;
+				}
+
+				img {
+					max-height: 100%;
+				}
+
+				@include desktop {
+					height: vw(204);
+				}
+
+				@include desktop-xl {
+					height: 204px;
+				}
+
+				@include desktop-xxl {
+					height: px(204);
+				}
+			}
+
+			&__content {
+				padding: 0 vmin(24) vmin(25);
+
+				@include desktop {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					padding: vw(25) vw(24);
+					width: 100%;
+				}
+
+				@include desktop-xl {
+					padding: 25px 24px;
+				}
+
+				@include desktop-xxl {
+					padding: px(25) px(24);
+				}
+			}
+		}
+
+		@include desktop {
+			padding-top: vw(54);
+			height: vw(368);
+
+			&:hover {
+				&::before {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+
+		@include desktop-xl {
+			padding-top: 54px;
+			height: 368px;
+		}
+
+		@include desktop-xxl {
+			padding-top: px(54);
+			height: px(368);
+		}
+	}
+}

@@ -1,0 +1,637 @@
+.page-control {
+	.intro {
+		@include desktop {
+			margin-bottom: vw(120);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 120px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(120);
+		}
+	}
+
+	&__assistant {
+		margin-bottom: vmin(64);
+
+		&__head {
+			margin-bottom: vmin(36);
+
+			@include desktop {
+				margin-bottom: vw(80);
+				max-width: vw(718);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 80px;
+				max-width: 718px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(80);
+				max-width: px(718);
+			}
+		}
+
+		&__title {
+			@include desktop {
+				margin-bottom: vw(24);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+			}
+		}
+
+		.page-subtext {
+			@include desktop {
+				max-width: vw(718);
+			}
+
+			@include desktop-xl {
+				max-width: 718px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(718);
+			}
+		}
+
+		&__line {
+			margin-bottom: vmin(36);
+
+			&__image {
+				margin-bottom: vmin(24);
+
+				img {
+					width: 100%;
+				}
+
+				@include desktop {
+					flex-shrink: 0;
+					margin-right: vw(130);
+					margin-bottom: 0;
+					width: vw(612);
+				}
+
+				@include desktop-xl {
+					margin-right: 130px;
+					width: 612px;
+				}
+
+				@include desktop-xxl {
+					margin-right: px(130);
+					width: px(612);
+				}
+			}
+
+			&__content {
+				width: 100%;
+			}
+
+			@include desktop {
+				display: flex;
+				margin-bottom: vw(80);
+				padding: 0 vw(106);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 80px;
+				padding: 0 106px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(80);
+				padding: 0 px(106);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(104);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 104px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(104);
+		}
+	}
+
+	&__market {
+		display: flex;
+		margin-top: vmin(40);
+		margin-left: vmin(-28);
+
+		&__item {
+			margin-left: vmin(28);
+
+			&__qr {
+				margin-bottom: vmin(24);
+
+				img {
+					height: vmin(136);
+
+					@include desktop {
+						height: vw(136);
+					}
+
+					@include desktop-xl {
+						height: 136px;
+					}
+
+					@include desktop-xxl {
+						height: px(136);
+					}
+				}
+
+				@include desktop {
+					margin-bottom: vw(24);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 24px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(24);
+				}
+			}
+
+			&__logo {
+				img {
+					height: vmin(32);
+
+					@include desktop {
+						height: vw(32);
+					}
+
+					@include desktop-xl {
+						height: 32px;
+					}
+
+					@include desktop-xxl {
+						height: px(32);
+					}
+				}
+			}
+
+			@include desktop {
+				margin-left: vw(32);
+			}
+
+			@include desktop-xl {
+				margin-left: 32px;
+			}
+
+			@include desktop-xxl {
+				margin-left: px(32);
+			}
+		}
+
+		@include desktop {
+			margin-top: vw(40);
+			margin-left: vw(-32);
+		}
+
+		@include desktop-xl {
+			margin-top: 40px;
+			margin-left: -32px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(40);
+			margin-left: px(-32);
+		}
+	}
+
+	&__ai {
+		margin-bottom: vmin(28);
+
+		&__head {
+			margin-bottom: vmin(36);
+
+			@include desktop {
+				margin-bottom: vw(80);
+				max-width: vw(718);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 80px;
+				max-width: 718px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(80);
+				max-width: px(718);
+			}
+		}
+
+		&__title {
+			@include desktop {
+				margin-bottom: vw(24);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 24px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(24);
+			}
+		}
+
+		&__row {
+			display: flex;
+
+			@include mobile {
+				flex-wrap: wrap;
+			}
+		}
+
+		&__col {
+			&:nth-child(1) {
+				@include desktop {
+					flex-shrink: 0;
+					margin-left: vw(210);
+					padding-top: vw(104);
+					width: vw(400);
+				}
+
+				@include desktop-xl {
+					margin-left: 210px;
+					padding-top: 104px;
+					width: 400px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(210);
+					padding-top: px(104);
+					width: px(400);
+				}
+			}
+
+			&:nth-child(2) {
+				@include desktop {
+					margin-left: vw(132);
+					width: 100%;
+				}
+
+				@include desktop-xl {
+					margin-left: 132px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(132);
+				}
+			}
+
+			@include mobile {
+				margin-bottom: vmin(36);
+				width: 100%;
+			}
+		}
+
+		&__item {
+			&__image {
+				margin-bottom: vmin(24);
+
+				img {
+					width: 100%;
+				}
+
+				@include desktop {
+					margin-bottom: vw(40);
+				}
+
+				@include desktop-xl {
+					margin-bottom: 40px;
+				}
+
+				@include desktop-xxl {
+					margin-bottom: px(40);
+				}
+			}
+
+			&__caption {
+				@include desktop {
+					max-width: vw(400);
+				}
+
+				@include desktop-xl {
+					max-width: 400px;
+				}
+
+				@include desktop-xxl {
+					max-width: px(400);
+				}
+			}
+
+			&__title {
+				@include mobile {
+					font-size: vmin(18);
+				}
+			}
+
+			&__text {
+				color: #606a77;
+			}
+
+			&__footnote {
+				margin-top: vmin(16);
+				font-size: vmin(12);
+				line-height: 1.6;
+				color: #606a77;
+
+				@include desktop {
+					margin-top: vw(16);
+					font-size: vw(12);
+				}
+
+				@include desktop-xl {
+					margin-top: 16px;
+					font-size: 12px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(16);
+					font-size: px(12);
+				}
+			}
+
+			& + & {
+				margin-top: vmin(36);
+
+				@include desktop {
+					margin-top: vw(104);
+				}
+
+				@include desktop-xl {
+					margin-top: 104px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(104);
+				}
+			}
+		}
+
+		&__item--1 {
+			.page-control__ai__item__image {
+				@include desktop {
+					margin-left: vw(-210);
+				}
+
+				@include desktop-xl {
+					margin-left: -210px;
+				}
+
+				@include desktop-xxl {
+					margin-left: px(-210);
+				}
+			}
+		}
+
+		&__item--2 {
+			@include desktop {
+				max-width: vw(294);
+			}
+
+			@include desktop-xl {
+				max-width: 294px;
+			}
+
+			@include desktop-xxl {
+				max-width: px(294);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(120);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 120px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(120);
+		}
+	}
+
+	&__app {
+		margin-bottom: vmin(64);
+
+		&__title {
+			@include desktop {
+				margin-bottom: vw(56);
+				max-width: vw(718);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 56px;
+				max-width: 718px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(56);
+				max-width: px(718);
+			}
+		}
+
+		&__container {
+			@include desktop {
+				padding: 0 vw(106);
+			}
+
+			@include desktop-xl {
+				padding: 0 106px;
+			}
+
+			@include desktop-xxl {
+				padding: 0 px(106);
+			}
+		}
+
+		&__subtitle {
+			@include mobile {
+				font-size: vmin(18);
+			}
+		}
+
+		&__text {
+		}
+
+		&__item {
+			&__image {
+				margin: vmin(24) auto;
+				width: vmin(200);
+
+				img {
+					width: 100%;
+				}
+
+				@include desktop {
+					flex-shrink: 0;
+					margin: 0;
+					width: vw(342);
+				}
+
+				@include desktop-xl {
+					width: 342px;
+				}
+
+				@include desktop-xxl {
+					width: px(342);
+				}
+			}
+
+			&__content {
+				&:first-child {
+					align-self: flex-end;
+
+					@include desktop {
+						margin-right: vw(24);
+						margin-bottom: vw(32);
+					}
+
+					@include desktop-xl {
+						margin-right: 24px;
+						margin-bottom: 32px;
+					}
+
+					@include desktop-xxl {
+						margin-right: px(24);
+						margin-bottom: px(32);
+					}
+				}
+
+				&:last-child {
+					@include desktop {
+						margin-top: vw(80);
+						margin-left: vw(76);
+					}
+
+					@include desktop-xl {
+						margin-top: 80px;
+						margin-left: 76px;
+					}
+
+					@include desktop-xxl {
+						margin-top: px(80);
+						margin-left: px(76);
+					}
+				}
+
+				@include desktop {
+					width: vw(294);
+				}
+
+				@include desktop-xl {
+					width: 294px;
+				}
+
+				@include desktop-xxl {
+					width: px(294);
+				}
+			}
+
+			& + & {
+				margin-top: vmin(36);
+
+				@include desktop {
+					margin-top: vw(80);
+				}
+
+				@include desktop-xl {
+					margin-top: 80px;
+				}
+
+				@include desktop-xxl {
+					margin-top: px(80);
+				}
+			}
+
+			@include desktop {
+				display: flex;
+			}
+		}
+
+		&__also {
+			margin-top: vmin(36);
+
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				margin: 0 vmin(-24);
+
+				@include desktop {
+					margin: 0 vw(-24);
+				}
+
+				@include desktop-xl {
+					margin: 0 -24px;
+				}
+
+				@include desktop-xxl {
+					margin: 0 px(-24);
+				}
+			}
+
+			&__item {
+				padding: 0 vmin(24);
+				width: 100%;
+
+				& + & {
+					@include mobile {
+						margin-top: vmin(24);
+					}
+				}
+
+				@include desktop {
+					padding: 0 vw(24);
+					width: 33.33334%;
+				}
+
+				@include desktop-xl {
+					padding: 0 24px;
+				}
+
+				@include desktop-xxl {
+					padding: 0 px(24);
+				}
+			}
+
+			@include desktop {
+				margin-top: vw(136);
+			}
+
+			@include desktop-xl {
+				margin-top: 136px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(136);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(120);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 120px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(120);
+		}
+	}
+}

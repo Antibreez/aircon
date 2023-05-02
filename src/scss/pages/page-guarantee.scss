@@ -1,0 +1,81 @@
+.page-guarantee {
+	.intro {
+		margin-bottom: vmin(40);
+
+		@include desktop {
+			margin-bottom: vw(64);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 64px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(64);
+		}
+	}
+
+	&__row {
+		@include desktop {
+			display: flex;
+			margin: 0 vw(41) 0 vw(-65);
+		}
+
+		@include desktop-xl {
+			margin: 0 41px 0 -65px;
+		}
+
+		@include desktop-xxl {
+			margin: 0 px(41) 0 px(-65);
+		}
+	}
+
+	&__col {
+		& + & {
+			@include mobile {
+				margin-top: vmin(60);
+			}
+		}
+
+		@include desktop {
+			padding: 0 vw(65);
+			width: 50%;
+		}
+
+		@include desktop-xl {
+			padding: 0 65px;
+		}
+
+		@include desktop-xxl {
+			padding: 0 px(65);
+		}
+	}
+
+	&__item {
+		&__text {
+			margin-bottom: vmin(24);
+
+			@include desktop {
+				margin-bottom: vw(40);
+			}
+
+			@include desktop-xl {
+				margin-bottom: 40px;
+			}
+
+			@include desktop-xxl {
+				margin-bottom: px(40);
+			}
+		}
+
+		&__button {
+			margin-top: auto;
+		}
+
+		@include desktop {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+	}
+}

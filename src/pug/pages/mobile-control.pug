@@ -1,0 +1,440 @@
+.page-control(data-app="page-control")
+	.container
+		.breadcrumbs
+			ul
+				li: a(href="#") Главная
+				li Мобильное управление
+		.intro.anime(data-app="intro")
+			.intro__head
+				h1.intro__title
+					| Мобильное управление
+				.h3.intro__subtitle
+					| Мобильное приложение и #[br]Wi-Fi-контроллеры для кондиционера
+			.intro__video
+				.intro__video__preview(style="background-image:url(./images/control-intro.jpg)")
+				video(src="./images/intro.mp4")
+				button.intro__video__play(type="button"): +svg('play')
+				button.intro__video__pause(type="button")
+
+		.page-control__assistant
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.page-control__assistant__head.anime.fadeUp(data-offset="25")
+						.h1.page-control__assistant__title
+							| Хотите, чтобы кондиционер стал умным помощником?
+						.page-subtext
+							| Многие привыкли управлять кондиционером с помощью пульта. А ведь зачастую дистанционные пульты кондиционера теряются, настенные пульты загромождают стену, и, как правило, пультом можно управлять только из помещения, в котором находится кондиционер.
+			.page-control__assistant__line.anime.fadeUp(data-offset="25")
+				.page-control__assistant__line__image
+					img(src="./images/control-assistant.jpg" alt="")
+				.page-control__assistant__line__content
+					| Гораздо удобнее иметь доступ к кондиционеру из любой точки мира и управлять им с помощью устройства, которое всегда под рукой: мобильного телефона, планшета или ноутбука. Хотели бы вы также иметь «умное управление», которое учитывает ваши предпочтения, запоминает любимые режимы и принимает голосовые команды?
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.page-subtext.anime.fadeUp(data-offset="25")
+						| Установите контроллер Daichi в ваш кондиционер и загрузите бесплатные приложения Daichi Comfort из #[a.link-text(href="#") AppStore] или #[a.link-text(href="#") GooglePlay]. С программой «Мобильное управление» ваш телефон, планшет или ПК превратится в центральный интеллектуальный пульт управления всей системой кондиционирования дома.
+					.page-control__market.anime.fadeUp(data-offset="25")
+						.page-control__market__item
+							.page-control__market__item__qr
+								img(src="./images/app-store-qr.png" alt="")
+							.page-control__market__item__logo
+								a(href="#" target="_blank"): img(src="./images/app-store.svg" alt="")
+						.page-control__market__item
+							.page-control__market__item__qr
+								img(src="./images/google-play-qr.png" alt="")
+							.page-control__market__item__logo
+								a(href="#" target="_blank"): img(src="./images/google-play.svg" alt="")
+
+		.page-control__ai
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.page-control__ai__head.anime.fadeUp(data-offset="25")
+						.h2.page-control__ai__title
+							| Искусственный интеллект вашего кондиционера
+						.page-subtext
+							| Облачные технологии, которые стоят за мобильным управлением, наделяют любой кондиционер функциями премиального класса.
+			.page-control__ai__row
+				.page-control__ai__col
+					.page-control__ai__item.page-control__ai__item--1.anime.fadeUp(data-offset="25")
+						.page-control__ai__item__image
+							img(src="./images/control-ai-1.jpg" alt="")
+						.page-control__ai__item__caption
+							.h4.page-control__ai__item__title
+								| Мне хорошо
+							.page-control__ai__item__text
+								| приложение ведет статистику параметров кондиционера в помещении в различное время года в зависимости от уличной температуры, а затем автоматически воспроизводит их при повторении температурных условий на улице
+					.page-control__ai__item.page-control__ai__item--2.anime.fadeUp(data-offset="25")
+						.page-control__ai__item__image
+							img(src="./images/control-ai-2.gif" alt="")
+						.page-control__ai__item__caption
+							.h4.page-control__ai__item__title
+								| Работа с голосовыми помощниками
+							.page-control__ai__item__text
+								| управляйте голосовыми командами и пользуйтесь достижениями 21 века. Алиса от Yandex  и Маруся от mail.ru уже работают с приложением, в ближайшем будущем очередь за Siri, Alexa, Google*
+							.page-control__ai__item__footnote
+								| *будет доступно в 2021 году
+				.page-control__ai__col
+					.page-control__ai__item.page-control__ai__item--3.anime.fadeUp(data-offset="25")
+						.page-control__ai__item__image
+							img(src="./images/control-ai-3.jpg" alt="")
+						.page-control__ai__item__caption
+							.h4.page-control__ai__item__title
+								| Комфортный сон
+							.page-control__ai__item__text
+								| позволяет плавно изменять температуру в течение ночи в пределах 1-2 градусов, что по исследованиям специалистов Токийского института здравоохранения и Департамента санитарных норм и правил Китая наилучшим образом способствует состоянию глубокого сна
+					.page-control__ai__item.page-control__ai__item--4.anime.fadeUp(data-offset="25")
+						.page-control__ai__item__image
+							img(src="./images/control-ai-4.jpg" alt="")
+						.page-control__ai__item__caption
+							.h4.page-control__ai__item__title
+								| Геолокация
+							.page-control__ai__item__text
+								| включение-выключение группы кондиционеров при приближении/удалении от дома на заданное расстояние
+
+		.page-control__app
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.page-control__app__title.anime.fadeUp(data-offset="25")
+						| И еще больше возможностей в мобильном приложение Daichi Comfort
+			.page-control__app__container
+				.page-control__app__item.anime.fadeUp(data-offset="25")
+					.page-control__app__item__content
+						.h4.page-control__app__subtitle
+							| Быстрые команды
+						.page-control__app__text
+							| режимы, которые пользователь может задать для помещения или нескольких помещений, и управлять одной кнопкой. Например, «Включить все», «Сон в детской» и др.
+					.page-control__app__item__image
+						img(src="./images/control-app-1.png" alt="")
+					.page-control__app__item__content
+						.h4.page-control__app__subtitle
+							| Все функции пульта управления. Из любой точки мира
+						.page-control__app__text
+							| изменение температуры, переключение между режимами («обогрев», «охлаждение», «осушка», «автоматический»), управление скоростью вентилятора, заслонками и т.п.
+				.page-control__app__item.anime.fadeUp(data-offset="25")
+					.page-control__app__item__content
+						.h4.page-control__app__subtitle
+							| Расписание работы кондиционеров в #[br.for-desktop]помещении/помещениях
+						.page-control__app__text
+							| недельное расписание работы кондиционеров в одном или нескольких помещениях
+					.page-control__app__item__image
+						img(src="./images/control-app-2.png" alt="")
+					.page-control__app__item__content
+						.h4.page-control__app__subtitle
+							| Настраиваемая панель быстрого доступа
+						.page-control__app__text
+							| экран, на котором пользователь может собрать удобные для себя функции: быстрые команды, помещения, в которых регулировка производится наиболее часто, параметры работы системы в этих помещениях и др.
+				.page-control__app__also.anime.fadeUp(data-offset="25")
+					.h4.page-control__app__subtitle
+						| А также
+					.page-control__app__also__list
+						.page-control__app__also__item
+							.page-control__app__text
+								| безопасное подключение к локальной сети: конфиденциональность ваших данных всегда под защитой
+						.page-control__app__also__item
+							.page-control__app__text
+								| связь с сервисной службой Инженерного центра «Даичи», которая всегда придет к вам на помощь в случае необходимости
+						.page-control__app__also__item
+							.page-control__app__text
+								| несколько мобильных устройств (например, мобильные телефоны членов семей) могут управлять одним и тем же помещением
+
+	.catalog.anime(data-app="catalog" data-offset="25")
+		.container
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.catalog__title
+						| Какое оборудование необходимо для&nbsp;подключения?
+		.catalog__slider
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/26.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DW01
+							.catalog__item__text
+								ul
+									li Управление для сплит-систем
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| 4 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/27.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DW11
+							.catalog__item__text
+								ul
+									li Управление для сплит-систем
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| 4 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/28.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DCM-NET
+							.catalog__item__text
+								ul
+									li Управление для систем VRF
+									li Контроллер централизованного управления климатическими системами
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| от 90 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/26.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DW01
+							.catalog__item__text
+								ul
+									li Управление для сплит-систем
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| 4 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/27.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DW11
+							.catalog__item__text
+								ul
+									li Управление для сплит-систем
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| 4 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+					.swiper-slide
+						.catalog__item(data-app="catalog-item")
+							a.catalog__item__image(href="#")
+								.catalog__item__image__container
+									.catalog__item__image__item.is-active(style="background-image:url(./images/temp/28.jpg)")
+								.catalog__item__image__hover
+							.h4.catalog__item__title
+								a(href="#") Wi-Fi-контроллер Daichi DCM-NET
+							.catalog__item__text
+								ul
+									li Управление для систем VRF
+									li Контроллер централизованного управления климатическими системами
+							.catalog__item__space
+							.catalog__item__price
+								.catalog__item__price__item
+									.catalog__item__price__label
+										| оборудование
+									.catalog__item__price__number
+										| от 90 990 ₽
+								.catalog__item__price__item.catalog__item__price__item--auto
+									.catalog__item__price__label
+										| мобильное приложение
+									.catalog__item__price__number
+										| бесплатно
+							.catalog__item__button
+								a.button(href="#") Где купить
+			button.arrow-prev.catalog__slider__prev(type="button"): +svg('arrow-right')
+			button.arrow-next.catalog__slider__next(type="button"): +svg('arrow-right')
+		.container
+			.progress
+
+	.accordion.anime(data-offset="25" data-app="accordion")
+		.container
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h3.accordion__title
+						| Вопросы и ответы
+					.accordion__list
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Как работает контроллер?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Как можно управлять кондиционером с мобильного телефона?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Где расположен сервер «Облако Даичи»?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Как подключить и настроить контроллер?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Сколько контроллеров мне понадобится?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Можно самостоятельно установить контроллер?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Безопасно ли оставлять в системе мои данные? Как обеспечиваются безопасность и&nbsp;конфиденциальность?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Безопасно ли предоставление доступа к моей локальной сети?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Может ли несколько пользователей управлять одним и тем же устройством?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+						.accordion__item
+							.accordion__item__header
+								.accordion__item__header__text
+									| Для каких кондиционеров доступна данная программа?
+									+svg('plus').accordion__item__header__icon
+							.accordion__item__content
+								.accordion__item__text
+									| Внешне это выглядит просто: экран мобильного/ веб приложения похож на пульт управления кондиционером. Параметры работы кондиционера отображаются на экране. Изменяя их, пользователь осуществляет управление кондиционером.
+									br
+									| Если описать более подробно, контроллер, установленный внутри кондиционера, получает информацию о состоянии систем и через интернет передает сигналы на сервер, который называется «Облако Даичи». Мобильное/веб приложение через интернет также связано с «Облаком Даичи». Приложение получает параметры системы кондиционирования от «Облака Даичи» и отображает их на экране мобильного/веб устройства.
+									br
+									| На своем мобильном веб устройстве клиент вводит нужные параметры, приложение отправляет соответствующие сигналы в «Облако Даичи», облако передает управляющие сигналы контроллеру, а тот, в свою очередь, изменяет параметры работы кондиционера.
+
+	include ../components/bottom-menu

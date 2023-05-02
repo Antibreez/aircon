@@ -1,0 +1,266 @@
+.page-cloud(data-app="page-cloud")
+	.page-cloud__intro.anime
+		.page-cloud__intro__trigger
+		.page-cloud__intro__back
+			video(src="./images/clouds.mp4" muted autoplay loop)
+		.container
+			.breadcrumbs
+				ul
+					li: a(href="index.html") Главная
+					li Облачный кондиционер
+			.page-cloud__intro__head
+				h1.page-title.page-cloud__intro__title
+					| Облачный кондиционер
+				.page-cloud__intro__price
+					| #[sup.text-gradient от]#[span.text-gradient 7 999 ₽]
+			.page-cloud__intro__image
+				.page-cloud__intro__image__scroll
+					img(src="./images/cloud-intro-image.png" alt="")
+
+	.container
+		.page-cloud__control.anime(data-offset="25")
+			.wrapper
+				.wrapper__side
+					.page-cloud__control__wifi
+						.page-cloud__control__wifi__icon
+							+svg('wifi')
+						.page-cloud__control__wifi__text
+							| Облачный кондиционер работает только при&nbsp;наличии подключения к Wi-Fi
+				.wrapper__content
+					.h1.page-cloud__control__title
+						| Управляется со смартфона, работает по подписке
+					.page-cloud__control__text
+						| Облачный кондиционер продается как обычный товар и имеет очень низкую цену. Но работает только при подключении к Облачному сервису Даичи — платной ежегодной подписке, которая предоставляет вам возможность управления кондиционером со смартфона или ПК, программное обеспечение, службу технической поддержки и ряд других услуг.
+
+		.page-cloud__price.anime(data-offset="25")
+			.wrapper
+				.wrapper__side
+					a.page-cloud__price__banner.js-goto(href="#catalog")
+						.page-cloud__price__banner__image(style="background-image:url(./images/cloud-price-banner.jpg)")
+						.page-cloud__price__banner__logo
+							img(src="./images/cloud-price-logo.svg" alt="")
+						.page-cloud__price__banner__content
+							.page-cloud__price__banner__text
+								| В каталог Облачных кондиционеров
+							.page-cloud__price__banner__count
+								span 3
+				.wrapper__content
+					.h2.page-cloud__price__title
+						| Новый уровень доступных цен и комфорта
+					.page-cloud__price__list
+						.page-cloud__price__item
+							.page-cloud__price__item__image
+								img(src="./images/cloud-price-1.png" alt="")
+							.page-cloud__price__item__content
+								.h4.page-cloud__price__item__title
+									| Оборудование
+								.page-cloud__price__item__text
+									| Daichi Alpha A20AVQS01/A20FV1
+								.page-cloud__price__item__price
+									.page-cloud__price__item__price__number
+										| 7 999 ₽
+									.page-cloud__price__item__price__label
+										| обычная цена
+										br
+										| 20 999 ₽
+						.page-cloud__price__item
+							.page-cloud__price__item__image
+								img(src="./images/cloud-price-2.svg" alt="")
+							.page-cloud__price__item__content
+								.h4.page-cloud__price__item__title
+									| Подписка
+								.page-cloud__price__item__text
+									| Облачный сервис
+								.page-cloud__price__item__price
+									.page-cloud__price__item__price__number
+										| 2 799 ₽
+									.page-cloud__price__item__price__label
+										| / год
+							.page-cloud__price__item__plus
+								+svg('plus')
+						.page-cloud__price__item
+							.page-cloud__price__item__image
+								img(src="./images/cloud-price-3.svg" alt="")
+							.page-cloud__price__item__content
+								.h4.page-cloud__price__item__title
+									| И еще
+								.page-cloud__price__item__text
+									| Онлайн диагностика
+									br
+									| Год гарантии в подарок
+									br
+									| Консультации и поддержка
+							.page-cloud__price__item__plus
+								+svg('plus')
+
+		.page-cloud__service.anime(data-offset="25")
+			.wrapper
+				.wrapper__side
+				.wrapper__content
+					.h2.page-cloud__service__title
+						| Что входит в сервис
+			.page-cloud__service__guarantee.anime(data-offset="25")
+				.wrapper
+					.wrapper__side
+						.page-cloud__service__guarantee__content
+							.h4
+								| Гарантия в подарок
+							.page-cloud__service__text
+								| Дополнительный год гарантии на кондиционер в подарок
+					.wrapper__content
+						.page-cloud__service__guarantee__image
+							img(src="./images/service-guarantee.jpg" alt="")
+
+			.page-cloud__service__control.anime(data-offset="25")
+				.wrapper
+					.wrapper__side
+					.wrapper__content
+						.page-cloud__service__control__container
+							.page-cloud__service__control__image
+								img(src="./images/service-control.png" alt="")
+							.page-cloud__service__control__content
+								.h4
+									| Управление с помощью приложения Daichi Comfort
+								.page-cloud__service__text
+									| Расширенный диапазон функций управления со смартфона или ПК
+								.page-cloud__service__button
+									a(href="#") Про мобильное управление
+
+			.wrapper
+				.wrapper__side
+					.page-cloud__service__diagnostics.anime(data-offset="25")
+						.page-cloud__service__diagnostics__content
+							.h4
+								| Дистанционная диагностика
+							.page-cloud__service__text
+								| Удалённое определение неисправностей кондиционера
+						.page-cloud__service__diagnostics__image
+							img(src="./images/service-diagnostics.jpg" alt="")
+							.page-cloud__service__diagnostics__pulse
+								svg(width='40' height='41' viewBox='0 0 40 41' fill='none')
+									circle(cx='19.8873' cy='20.2846' r='19.3871' stroke='url(#paint0_linear)')
+									defs
+										lineargradient#paint0_linear(x1='19.8873' y1='0.397461' x2='19.8873' y2='40.1717' gradientUnits='userSpaceOnUse')
+											stop(stop-color='#7BBAFF')
+											stop(offset='1' stop-color='#FFDECB')
+											stop(offset='1' stop-color='#FFDECB')
+								svg(width='40' height='41' viewBox='0 0 40 41' fill='none')
+									circle(cx='19.8873' cy='20.2846' r='19.3871' stroke='url(#paint0_linear)')
+								svg(width='40' height='41' viewBox='0 0 40 41' fill='none')
+									circle(cx='19.8873' cy='20.2846' r='19.3871' stroke='url(#paint0_linear)')
+								svg(width='40' height='41' viewBox='0 0 40 41' fill='none')
+									circle(cx='19.8873' cy='20.2846' r='19.3871' stroke='url(#paint0_linear)')
+
+				.wrapper__content
+					.page-cloud__service__specialist.anime(data-offset="25")
+						.page-cloud__service__specialist__content
+							.h4
+								| Специалист всегда на связи
+							.page-cloud__service__text
+								| Сопровождение консультационной службы °D: всегда доступны консультации по телефону, связаться можно через мобильное приложение
+						.page-cloud__service__specialist__image
+							img(src="./images/service-specialist.jpg" alt="")
+
+	.page-cloud__mobile.anime(data-offset="25")
+		.page-cloud__mobile__bg
+		.container
+			.page-cloud__mobile__head
+				.wrapper
+					.wrapper__side
+						.page-cloud__mobile__logo
+							img(src="./images/mobile-logo.svg" alt="")
+					.wrapper__content
+						.h2.page-cloud__mobile__title
+							| Облачный — значит легкий, благодаря мобильному управлению
+
+			.wrapper.page-cloud__mobile__wrapper
+				.wrapper__side.page-cloud__mobile__wrapper__side
+					a.page-cloud__mobile__video(href="http://media.w3.org/2010/05/sintel/trailer.mp4" data-fancybox)
+						.page-cloud__mobile__video__image
+							img(src="./images/mobile-app-video.jpg" alt="")
+							.page-cloud__mobile__video__play
+								+svg('play')
+						.page-cloud__mobile__video__footer
+							.page-cloud__mobile__video__title
+								| Приложение Мобильное управление
+							.page-cloud__mobile__video__time
+								| 2:30
+					.page-cloud__mobile__market
+						.page-cloud__mobile__market__item
+							.page-cloud__mobile__market__item__qr
+								img(src="./images/app-store-qr.png" alt="")
+							.page-cloud__mobile__market__item__logo
+								a(href="#" target="_blank"): img(src="./images/app-store.svg" alt="")
+						.page-cloud__mobile__market__item
+							.page-cloud__mobile__market__item__qr
+								img(src="./images/google-play-qr.png" alt="")
+							.page-cloud__mobile__market__item__logo
+								a(href="#" target="_blank"): img(src="./images/google-play.svg" alt="")
+				.wrapper__content
+					.page-cloud__mobile__tabs
+						ul.page-cloud__mobile__tabs__list
+							li: a.is-active(href="#" data-tab="tab-1") Управление
+							li: a(href="#" data-tab="tab-2") Персонализация
+							li: a(href="#" data-tab="tab-3") Автоматизация
+						.page-cloud__mobile__tabs__content
+							.page-cloud__mobile__tabs__item.is-active(data-tab="tab-1")
+								.page-cloud__mobile__item
+									.page-cloud__mobile__item__content
+										.h4.page-cloud__mobile__item__title
+											| Управляйте кондиционером из любой точки мира
+										.page-cloud__mobile__item__text
+											| Одно мобильное приложение может контролировать все объекты и помещения
+										.h4.page-cloud__mobile__item__title
+											| Управляйте голосом!
+										.page-cloud__mobile__item__text
+											| Работает с голосовыми помощниками: Алисой, Марусей и другими
+										.page-cloud__mobile__item__helper
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/alisa.png" alt="")
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/marusya.png" alt="")
+									.page-cloud__mobile__item__image
+										img(src="./images/cloud-mobile.png" alt="")
+							.page-cloud__mobile__tabs__item(data-tab="tab-2")
+								.page-cloud__mobile__item
+									.page-cloud__mobile__item__content
+										.h4.page-cloud__mobile__item__title
+											| Управляйте кондиционером из любой точки мира
+										.page-cloud__mobile__item__text
+											| Одно мобильное приложение может контролировать все объекты и помещения
+										.h4.page-cloud__mobile__item__title
+											| Управляйте голосом!
+										.page-cloud__mobile__item__text
+											| Работает с голосовыми помощниками: Алисой, Марусей и другими
+										.page-cloud__mobile__item__helper
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/alisa.png" alt="")
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/marusya.png" alt="")
+									.page-cloud__mobile__item__image
+										img(src="./images/cloud-mobile.png" alt="")
+							.page-cloud__mobile__tabs__item(data-tab="tab-3")
+								.page-cloud__mobile__item
+									.page-cloud__mobile__item__content
+										.h4.page-cloud__mobile__item__title
+											| Управляйте кондиционером из любой точки мира
+										.page-cloud__mobile__item__text
+											| Одно мобильное приложение может контролировать все объекты и помещения
+										.h4.page-cloud__mobile__item__title
+											| Управляйте голосом!
+										.page-cloud__mobile__item__text
+											| Работает с голосовыми помощниками: Алисой, Марусей и другими
+										.page-cloud__mobile__item__helper
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/alisa.png" alt="")
+											.page-cloud__mobile__item__helper__item
+												img(src="./images/marusya.png" alt="")
+									.page-cloud__mobile__item__image
+										img(src="./images/cloud-mobile.png" alt="")
+
+	include ../components/catalog
+
+	include ../components/faq
+
+	include ../components/bottom-menu
+

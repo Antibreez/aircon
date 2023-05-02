@@ -1,0 +1,21 @@
+.slider {
+	margin-bottom: vmin(36);
+
+	&__image {
+		padding-bottom: 54.488%;
+		background: 50% 50% no-repeat;
+		background-size: cover;
+	}
+
+	@include desktop {
+		margin-bottom: vw(64);
+	}
+
+	@include desktop-xl {
+		margin-bottom: 64px;
+	}
+
+	@include desktop-xxl {
+		margin-bottom: px(64);
+	}
+}

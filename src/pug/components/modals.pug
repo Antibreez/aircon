@@ -1,0 +1,70 @@
+.is-hidden
+	form.modal.form#callback(action="./ajax/callback.json" method="get" data-app="form" data-event="Feedback")
+		.h3.form__title
+			| Обратная связь
+		.form__text
+			| Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут
+		.form__row
+			.form__col
+				.input
+					.input__label
+						| Имя
+					.input__field
+						input(type="text" name="firstname" data-validation={
+							regex: ['^[^\\d]+$', 'ig'],
+							maxlength: 300,
+							messages: {
+								regex: "Поле может содержать только буквы и символы"
+							}
+						} required)
+			.form__col
+				.input
+					.input__label
+						| Фамилия
+					.input__field
+						input(type="text" name="surname" data-validation={
+							regex: ['^[^\\d]+$', 'ig'],
+							maxlength: 300,
+							messages: {
+								regex: "Поле может содержать только буквы и символы"
+							}
+						} required)
+		.input
+			.input__label
+				| E-mail
+			.input__field
+				input(type="email" name="email" data-validation={
+					regex: ['^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$', 'i'],
+					maxlength: 254,
+					messages: {
+						regex: "Неверный или некорректный e-mail адрес."
+					}
+				} required)
+		.input
+			.input__label
+				| Телефон
+			.input__field
+				input(type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required)
+		.input
+			.input__label
+				| Комментарий
+			.input__field
+				textarea(name="subject" data-validation={
+					maxlength: 300,
+				} required)
+		.checkbox
+			label
+				input(type="checkbox" name="checkbox" required)
+				i: +svg('check')
+				span Разрешаю обработку #[a(href="#") персональных данных]
+		.form__button
+			button.button(type="submit") Отправить
+
+.is-hidden
+	form.modal.form#success
+		.modal__icon-block
+			img(src="./images/success.svg")
+		.h3.form__title
+			| Спасибо!
+		.page-text
+			| Наш специалист свяжется с вами в ближайшее время.

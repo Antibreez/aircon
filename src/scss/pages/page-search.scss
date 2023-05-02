@@ -1,0 +1,257 @@
+.page-search {
+	&__field {
+		position: relative;
+		margin-bottom: vmin(8);
+
+		.input__field {
+			input {
+				padding-right: vmin(90);
+
+				@include desktop {
+					padding-right: vw(90);
+				}
+
+				@include desktop-xl {
+					padding-right: 90px;
+				}
+
+				@include desktop-xxl {
+					padding-right: px(90);
+				}
+			}
+		}
+
+		&__reset {
+			position: absolute;
+			right: vmin(56);
+			top: vmin(18);
+			z-index: 5;
+			display: none;
+			outline: none;
+			border: none;
+			padding: 0;
+			width: vmin(20);
+			height: vmin(20);
+			background: none;
+			transition: $duration-normal;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -1px 0 0 -5px;
+				width: 10px;
+				height: 2px;
+				background: currentColor;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+
+			.is-filled & {
+				display: block;
+			}
+
+			@include desktop {
+				right: vw(56);
+				top: vw(18);
+				width: vw(20);
+				height: vw(20);
+
+				&:hover {
+					color: $color-denim;
+				}
+			}
+
+			@include desktop-xl {
+				right: 56px;
+				top: 18px;
+				width: 20px;
+				height: 20px;
+			}
+
+			@include desktop-xxl {
+				right: px(56);
+				top: px(18);
+				width: px(20);
+				height: px(20);
+			}
+		}
+
+		&__submit {
+			position: absolute;
+			right: vmin(16);
+			top: vmin(13);
+			outline: none;
+			border: none;
+			padding: vmin(5);
+			background: none;
+			transition: $duration-normal;
+
+			svg {
+				display: block;
+				width: vmin(20);
+				height: vmin(20);
+
+				@include desktop {
+					width: vw(20);
+					height: vw(20);
+				}
+
+				@include desktop-xl {
+					width: 20px;
+					height: 20px;
+				}
+
+				@include desktop-xxl {
+					width: px(20);
+					height: px(20);
+				}
+			}
+
+			@include desktop {
+				right: vw(16);
+				top: vw(13);
+				padding: vw(5);
+
+				&:hover {
+					color: $color-denim;
+				}
+			}
+
+			@include desktop-xl {
+				right: 16px;
+				top: 13px;
+				padding: 5px;
+			}
+
+			@include desktop-xxl {
+				right: px(16);
+				top: px(13);
+				padding: px(5);
+			}
+		}
+
+		@include desktop {
+			margin-bottom: vw(8);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 8px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(8);
+		}
+	}
+
+	&__found {
+		margin-bottom: vmin(54);
+		font-size: vmin(12);
+		line-height: 1.5;
+		color: #94a0b1;
+
+		@include desktop {
+			margin-bottom: vw(54);
+			font-size: vw(12);
+		}
+
+		@include desktop-xl {
+			margin-bottom: 54px;
+			font-size: 12px;
+		}
+
+		@include desktop-xxl {
+			margin-bottom: px(54);
+			font-size: px(12);
+		}
+	}
+
+	&__list {
+		border-bottom: solid 1px #d1d8e1;
+		padding-bottom: vmin(40);
+
+		@include desktop {
+			padding-bottom: vw(40);
+		}
+
+		@include desktop-xl {
+			padding-bottom: 40px;
+		}
+
+		@include desktop-xxl {
+			padding-bottom: px(40);
+		}
+	}
+
+	&__item {
+		&__link {
+			a {
+				border-bottom: solid 1px #d3d3d3;
+
+				@include desktop {
+					&:hover {
+						border-bottom-color: $color-cod-gray;
+						color: $color-cod-gray;
+					}
+				}
+			}
+
+			@include mobile {
+				word-break: break-all;
+			}
+		}
+
+		& + & {
+			margin-top: vmin(48);
+
+			@include desktop {
+				margin-top: vw(48);
+			}
+
+			@include desktop-xl {
+				margin-top: 48px;
+			}
+
+			@include desktop-xxl {
+				margin-top: px(48);
+			}
+		}
+
+		@include desktop {
+			max-width: vw(930);
+		}
+
+		@include desktop-xl {
+			max-width: 930px;
+		}
+
+		@include desktop-xxl {
+			max-width: px(930);
+		}
+	}
+
+	.navigation {
+		justify-content: center;
+		margin-top: vmin(48);
+
+		@include desktop {
+			margin-top: vw(48);
+		}
+
+		@include desktop-xl {
+			margin-top: 48px;
+		}
+
+		@include desktop-xxl {
+			margin-top: px(48);
+		}
+	}
+}
