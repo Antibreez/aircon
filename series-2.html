@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="./css/main.css?v=1683031534902">
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N7W63LX');
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header" data-app="header">
+				<div class="header__line"></div>
+				<div class="container">
+					<div class="header__container">
+						<div class="header__logo"><a href=""><img src="./images/logo.svg" alt=""></a></div>
+						<div class="header__right">
+							<ul class="header__menu for-desktop">
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Мобильное управление</a></li>
+								<li><a href="#">Облачный кондиционер</a></li>
+								<li><a href="#">Где купить</a></li>
+								<li><a href="#">Для партнеров</a></li>
+								<li><a class="is-arrow" href="#">Еще</a>
+									<div class="header__menu__drop">
+										<div class="header__menu__drop__content">
+											<div class="header__menu__drop__wrap">
+												<ul class="header__menu__drop__menu">
+													<li><a href="#">Поддержка</a></li>
+													<li><a href="#">Статьи</a></li>
+													<li><a href="#">Контакты</a></li>
+												</ul>
+												<div class="header__menu__drop__contacts">
+													<div class="header__menu__drop__contacts__phone"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+													<div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
+													<div class="header__menu__drop__contacts__callback"><a href="#callback" data-fancybox>
+															<svg>
+																<use xlink:href="./images/sprites.svg#comment"></use>
+															</svg>Обратная связь</a></div>
+												</div>
+											</div>
+											<div class="header__menu__drop__footer">
+												<div class="header__menu__drop__lang"><a href="#">
+														<svg>
+															<use xlink:href="./images/sprites.svg#world"></use>
+														</svg>Русский</a></div>
+												<div class="header__menu__drop__location"><a href="#location" data-fancybox>
+														<svg>
+															<use xlink:href="./images/sprites.svg#location"></use>
+														</svg>Москва</a></div>
+												<div class="is-hidden">
+													<div class="modal form location" id="location" data-param="change-city">
+														<div class="h3 form__title">Выбор города</div>
+														<div class="location__field input" data-app="select-location" data-ajax="./ajax/location.json">
+															<div class="input__field input__field--search">
+																<select data-placeholder="Введите название города">
+																	<option></option>
+																</select>
+															</div>
+														</div>
+														<div class="location__list">
+															<ul>
+																<li><a href="?change-city=Москва">Москва</a></li>
+																<li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
+																<li><a href="?change-city=Калининград">Калининград</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Краснодар">Краснодар</a></li>
+																<li><a href="?change-city=Красноярск">Красноярск</a></li>
+																<li><a href="?change-city=Севастополь">Севастополь</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Симферополь">Симферополь</a></li>
+																<li><a href="?change-city=Уфа">Уфа</a></li>
+																<li><a href="?change-city=Ялта">Ялта</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="header__search-open"><a href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg></a></div>
+							<form class="header__search" action="search.html" method="get" data-app="form" data-type="submit">
+								<input class="header__search__field" type="text" name="q" placeholder="Поиск по сайту" data-validation="{&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;required&quot;:&quot;Введите поисковый запрос&quot;}}" required>
+								<button class="header__search__submit" type="submit">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+							<button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+						</div>
+						<div class="modal header__location for-desktop">
+							<div class="h3 form__title">Ваш город — Москва?</div>
+							<div class="modal__footer"><a class="button button--white" href="#location" data-fancybox>Выбрать другой</a>
+								<button class="button header__location__confirm" type="button">Верно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-menu for-mobile" data-app="mobile-menu">
+				<div class="mobile-menu__list">
+					<ul>
+						<li><a href="#">Каталог</a>
+							<ul>
+								<li><a href="#">Настенные сплит-системы</a></li>
+								<li><a href="#">Мультисистемы</a></li>
+								<li><a href="#">Полупромышленная серия</a></li>
+								<li><a href="#">DFT</a></li>
+								<li><a href="#">Контроллеры</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Мобильное управление</a></li>
+						<li><a href="#">Облачный кондиционер</a></li>
+						<li><a href="#">Где купить</a></li>
+						<li><a href="#">Для партнеров</a></li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="mobile-menu__support">
+					<div class="mobile-menu__support__phone"><a href="tel:+78002000005">8 800 200 00 05</a></div>
+					<div class="mobile-menu__support__text">Служба поддержки</div>
+				</div>
+				<div class="mobile-menu__button"><a href="#callback" data-fancybox>Обратная связь</a></div>
+			</div>
+			<div class="content">
+				<div class="container">
+					<div class="breadcrumbs">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Полупромышленные системы серия Cityline</a></li>
+							<li>Daichi DA ALC</li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-series">
+					<div class="container">
+						<div class="intro__head anime fadeUp" data-offset="25">
+							<h1 class="intro__title">Полупромыш&shy;ленные кондиционеры Daichi CITY LINE<br>Кассетный тип DA ALC</h1>
+							<div class="h3 intro__subtitle">Выгодный климат <br>для больших помещений</div>
+						</div>
+						<div class="page-series__image anime fadeUp" data-offset="25"><img src="./images/temp/48.png" alt=""></div>
+						<div class="page-series__benefits">
+							<div class="page-series__benefits__row">
+								<div class="page-series__benefits__col anime fadeUp" data-offset="25">
+									<div class="page-series__benefits__item">
+										<div class="page-series__benefits__item__icon"><img src="./images/advantages/inverter-technology.svg" alt=""></div>
+										<div class="page-series__benefits__item__text">FULL DC <br>inverter</div>
+									</div>
+								</div>
+								<div class="page-series__benefits__col anime fadeUp" data-offset="25">
+									<div class="page-series__benefits__item">
+										<div class="page-series__benefits__item__icon"><img src="./images/advantages/on-off.svg" alt=""></div>
+										<div class="page-series__benefits__item__text">R-32 <br>Хладагент</div>
+									</div>
+								</div>
+								<div class="page-series__benefits__col anime fadeUp" data-offset="25">
+									<div class="page-series__benefits__item">
+										<div class="page-series__benefits__item__icon"><img src="./images/advantages/a-plus.svg" alt=""></div>
+										<div class="page-series__benefits__item__text">Класс <br>энергоэффективности</div>
+									</div>
+								</div>
+								<div class="page-series__benefits__col anime fadeUp" data-offset="25">
+									<div class="page-series__benefits__item">
+										<div class="page-series__benefits__item__icon"><img src="./images/advantages/online-management.svg" alt=""></div>
+										<div class="page-series__benefits__item__text">Wi-Fi, онлайн <br>управление</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-split__menu anime fadeUp" data-offset="25">
+							<div class="page-split__menu__label"><b>Кассетный тип DA ALC</b></div>
+							<div class="page-split__menu__list">
+								<ul>
+									<li><a class="js-goto" href="#characteristics">Характеристики</a></li>
+									<li><a class="js-goto" href="#models">Модели</a></li>
+									<li><a class="js-goto" href="#design">Дизайн</a></li>
+									<li><a class="js-goto" href="#comfort">Комфорт</a></li>
+									<li><a class="js-goto" href="#details">Детали</a></li>
+									<li><a class="js-goto" href="#documents">Документы</a></li>
+									<li><a class="js-goto" href="#accessories">Аксессуары</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="page-series__models" id="models">
+							<div class="page-series__models__row">
+								<div class="page-series__models__col anime fadeUp" data-offset="25"><a class="page-series__models__item" href="#">
+										<div class="page-series__models__item__title"><span class="link-arrow">DA70ALCS1R</span></div>
+										<ul class="page-series__models__item__list">
+											<li>
+												<div class="page-series__models__item__list__key">для помещений площадью</div>
+												<div class="page-series__models__item__list__value">70 м²</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">мощность при охлаждении</div>
+												<div class="page-series__models__item__list__value">8 кВт</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">диапазон рабочих температур</div>
+												<div class="page-series__models__item__list__value">–20~48 ºC</div>
+											</li>
+										</ul></a></div>
+								<div class="page-series__models__col anime fadeUp" data-offset="25"><a class="page-series__models__item" href="#">
+										<div class="page-series__models__item__title"><span class="link-arrow">DA70ALCS1R</span></div>
+										<ul class="page-series__models__item__list">
+											<li>
+												<div class="page-series__models__item__list__key">для помещений площадью</div>
+												<div class="page-series__models__item__list__value">70 м²</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">мощность при охлаждении</div>
+												<div class="page-series__models__item__list__value">8 кВт</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">диапазон рабочих температур</div>
+												<div class="page-series__models__item__list__value">–20~48 ºC</div>
+											</li>
+										</ul></a></div>
+								<div class="page-series__models__col anime fadeUp" data-offset="25"><a class="page-series__models__item" href="#">
+										<div class="page-series__models__item__title"><span class="link-arrow">DA70ALCS1R</span></div>
+										<ul class="page-series__models__item__list">
+											<li>
+												<div class="page-series__models__item__list__key">для помещений площадью</div>
+												<div class="page-series__models__item__list__value">70 м²</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">мощность при охлаждении</div>
+												<div class="page-series__models__item__list__value">8 кВт</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">диапазон рабочих температур</div>
+												<div class="page-series__models__item__list__value">–20~48 ºC</div>
+											</li>
+										</ul></a></div>
+								<div class="page-series__models__col anime fadeUp" data-offset="25"><a class="page-series__models__item" href="#">
+										<div class="page-series__models__item__title"><span class="link-arrow">DA70ALCS1R</span></div>
+										<ul class="page-series__models__item__list">
+											<li>
+												<div class="page-series__models__item__list__key">для помещений площадью</div>
+												<div class="page-series__models__item__list__value">70 м²</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">мощность при охлаждении</div>
+												<div class="page-series__models__item__list__value">8 кВт</div>
+											</li>
+											<li>
+												<div class="page-series__models__item__list__key">диапазон рабочих температур</div>
+												<div class="page-series__models__item__list__value">–20~48 ºC</div>
+											</li>
+										</ul></a></div>
+							</div>
+						</div>
+						<div class="page-product__slider anime fadeUp" data-offset="25" data-app="product-slider">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/45.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/46.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/47.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/43.jpg" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/45.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/46.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/47.png" alt=""></div>
+									</div>
+									<div class="swiper-slide">
+										<div class="page-product__slider__image"><img src="./images/temp/43.jpg" alt=""></div>
+									</div>
+								</div>
+							</div>
+							<div class="progress"></div>
+						</div>
+						<div class="page-content">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="page-content__wrapper">
+										<div class="h2 page-content__title anime fadeUp">Облачный кондиционер управляется с&nbsp;помощью пульта, смартфона или&nbsp;ПК, работает по&nbsp;подписке!</div>
+										<div class="page-text-list anime fadeUp">
+											<ol>
+												<li class="h3">Оплачиваете стоимость оборудования</li>
+												<li class="h3">Устанавливаете кондиционер и&nbsp;подключаете его к&nbsp;облачному серверу через мобильное приложение</li>
+												<li class="h3">Платите фиксированный ежегодный платёж или покупаете бессрочную подписку и&nbsp;получаете доступ к&nbsp;управлению кондиционером и&nbsp;к&nbsp;Облачному сервису Даичи</li>
+											</ol>
+										</div>
+										<div class="h2 page-content__title anime fadeUp">Что входит в&nbsp;состав оборудования?</div>
+										<div class="page-text-list anime fadeUp">
+											<ul>
+												<li>Наружный блок кондиционера</li>
+												<li>Внутренний блок кондиционера</li>
+												<li>Встроенный модуль управления через Wi‑Fi</li>
+												<li>Пульт управления</li>
+												<li>На&nbsp;всё предоставляется 2&nbsp;года гарантии</li>
+											</ul>
+										</div>
+									</div>
+									<div class="h2 page-content__title anime fadeUp">Что входит в&nbsp;Облачный сервис Даичи?</div>
+								</div>
+							</div>
+							<div class="page-content__row">
+								<div class="page-content__row__col">
+									<div class="page-content__item page-content__item--big">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">24/7 онлайн диагностика и&nbsp;мониторинг работы Облачного кондиционера</div>
+											<div class="page-content__item__button anime fadeUp"><a class="button button--white" href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<div class="page-content__item">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content-2.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">2&nbsp;года дополнительной гарантии на&nbsp;кондиционер</div>
+										</div>
+									</div>
+									<div class="page-content__item page-content__item--small">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content-3.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">Облачный кондиционер работает только при наличии интернет-соединения через Wi‑Fi и&nbsp;оплаченной подписке</div>
+										</div>
+									</div>
+								</div>
+								<div class="page-content__row__col">
+									<div class="page-content__item">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content-4.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">Управление со&nbsp;смартфона или&nbsp;ПК с&nbsp;помощью приложения Daichi Comfort</div>
+											<div class="page-content__item__button anime fadeUp"><a class="button button--white" href="#">Подробнее</a></div>
+										</div>
+									</div>
+									<div class="page-content__item">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content-5.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">Консультационная служба по&nbsp;вопросам работы Облачного кондиционера</div>
+										</div>
+									</div>
+									<div class="page-content__item">
+										<div class="page-content__item__image anime fadeUp"><img src="./images/page-content-6.jpg" alt=""></div>
+										<div class="page-content__item__content">
+											<div class="page-content__item__text anime fadeUp">Личный кабинет клиента для управления подпиской</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="page-content__wrapper">
+										<div class="h2 page-content__title anime fadeUp">Как оплатить подписку <br> на&nbsp;Облачный сервис Даичи?</div>
+										<div class="h3 page-content__subtitle anime fadeUp">Подписка на&nbsp;Облачный сервис Даичи оплачивается в&nbsp;Личном кабинете клиента на&nbsp;сайте <a class="link-text" href="#">lk.daichi.ru</a> после установки кондиционера.</div>
+										<div class="h3 page-content__subtitle anime fadeUp">Для активации необходимо приобрести один из&nbsp;предложенных тарифов: &laquo;Подписка на&nbsp;1&nbsp;год&raquo; или&nbsp;&laquo;Бессрочный доступ&raquo;.</div>
+									</div>
+									<div class="page-content__inner">
+										<div class="page-content__inner__col">
+											<div class="page-content__block anime fadeUp">
+												<div class="h4 page-content__block__title anime fadeUp">Подписка на&nbsp;1&nbsp;год</div>
+												<div class="page-content__block__text anime fadeUp">При оплате подписки по&nbsp;тарифу &laquo;Подписка на&nbsp;1&nbsp;год &raquo; предоставляется доступ к&nbsp;управлению кондиционером на&nbsp;365 дней с&nbsp;момента оплаты.</div>
+												<div class="page-content__block__text anime fadeUp">Через 365 дней необходимо снова оплатить подписку для продления доступа к&nbsp;управлению устройством.</div>
+											</div>
+										</div>
+										<div class="page-content__inner__col">
+											<div class="page-content__block anime fadeUp">
+												<div class="h4 page-content__block__title anime fadeUp">Бессрочный доступ</div>
+												<div class="page-content__block__text anime fadeUp">При оплате подписки по&nbsp;тарифу &laquo;Бессрочный доступ&raquo; доступ к&nbsp;управлению предоставляется на&nbsp;весь срок жизненного цикла кондиционера.</div>
+												<div class="page-content__block__text anime fadeUp">Цена тарифа равна сумме 3&nbsp;ежегодных платежей, выплачиваемых единовременно.</div>
+											</div>
+										</div>
+									</div>
+									<div class="page-content__text anime fadeUp">Подробная инструкция по&nbsp;подключению Облачного кондиционера и&nbsp;оплате подписки размещена на&nbsp;<a class="text-link" href="https://daichi.cloud/cloud-install">daichi.cloud/cloud-install</a>, QR‑код со&nbsp;ссылкой на&nbsp;инструкцию расположен на&nbsp;торце Облачного кондиционера.</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-series__design" id="design">
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="page-series__design__content anime fadeUp" data-offset="25">
+										<div class="h2 page-series__design__title">Дизайн</div>
+										<div class="page-subtext page-series__design__text">Кассетные блоки встраиваются в подвесной потолок, закрываются снизу декоративной панелью с фильтром и заслонками регулирования подачи воздуха. Это решение выгодно вписывается в дизайн любого коммерческого или общественного помещения</div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="page-series__design__image anime fadeUp" data-offset="25"><img src="./images/series-design.jpg" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="page-series__comfort" id="comfort">
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="h2 page-series__comfort__title anime fadeUp" data-offset="25">Комфорт</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="page-series__comfort__list">
+										<div class="page-series__comfort__list__col anime fadeUp" data-offset="25">
+											<div class="page-series__comfort__list__item">
+												<div class="page-series__comfort__list__item__icon"><img src="./images/advantages/pre-filter.svg" alt=""></div>
+												<div class="page-series__comfort__list__item__title">Система фильтрации и&nbsp;очистки воздуха</div>
+												<div class="page-series__comfort__list__item__text">Эта функция автоматически меняет направление подачи воздуха в зависимости от температуры и обеспечивает равномерный температурный фон по всему объему помещения</div>
+											</div>
+										</div>
+										<div class="page-series__comfort__list__col anime fadeUp" data-offset="25">
+											<div class="page-series__comfort__list__item">
+												<div class="page-series__comfort__list__item__icon"><img src="./images/advantages/noise-level.svg" alt=""></div>
+												<div class="page-series__comfort__list__item__title">Низкий уровень шума</div>
+												<div class="page-series__comfort__list__item__text">Эта функция автоматически меняет направление подачи воздуха в зависимости от температуры и обеспечивает равномерный температурный фон по всему объему помещения</div>
+											</div>
+										</div>
+										<div class="page-series__comfort__list__col anime fadeUp" data-offset="25">
+											<div class="page-series__comfort__list__item">
+												<div class="page-series__comfort__list__item__icon"><img src="./images/advantages/comfortable-air-distribution.svg" alt=""></div>
+												<div class="page-series__comfort__list__item__title">Подача воздуха по&nbsp;восьми направлениям</div>
+												<div class="page-series__comfort__list__item__text">декоративная панель DРС06L обеспечивает подачу воздуха в четырех направлениях и дополнительную угловую подачу</div>
+											</div>
+										</div>
+										<div class="page-series__comfort__list__col anime fadeUp" data-offset="25">
+											<div class="page-series__comfort__list__item">
+												<div class="page-series__comfort__list__item__icon"><img src="./images/advantages/wide-range.svg" alt=""></div>
+												<div class="page-series__comfort__list__item__title">Широкий диапазон</div>
+												<div class="page-series__comfort__list__item__text">изменений угла воздушного потока на 45–80° обеспечивает эффективное кондиционирование всего пространства помещения</div>
+											</div>
+										</div>
+									</div>
+									<div class="page-series__comfort__gallery anime fadeUp" data-offset="25" data-app="series-comfort-gallery">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item"><img src="./images/temp/49.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small"><img src="./images/temp/50.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small"><img src="./images/temp/51.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item"><img src="./images/temp/52.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small"><img src="./images/temp/53.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item"><img src="./images/temp/54.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="page-series__comfort__gallery__item page-series__comfort__gallery__item--small"><img src="./images/temp/55.jpg" alt=""></div>
+												</div>
+											</div>
+										</div>
+										<div class="progress"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-series__details" id="details">
+							<div class="wrapper">
+								<div class="wrapper__side anime fadeUp" data-offset="25">
+									<div class="h2">Детали</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="accordion page-product__accordion anime" data-offset="25" data-app="accordion">
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Энергосбережение
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__row">
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/a-plus.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Высокий показатель SEER</b></div>
+																<div class="accordion__item__point__text">Высокая сезонная энергоэффективность класса &laquo;А++&raquo; и&nbsp;&laquo;А+++&raquo; обеспечит значительное снижение годового потребления электроэнергии</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/energy-saving.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Режим энергосбережения</b></div>
+																<div class="accordion__item__point__text">Производительность кондиционера принудительно снижается в&nbsp;случае необходимости использования другого бытового оборудования</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/dc-inverter.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>DC-инвертор</b></div>
+																<div class="accordion__item__point__text">В&nbsp;компрессорах используются передовые инверторные технологии, дающие существенные преимущества в&nbsp;экономичности.</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/compressor-soft-start.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Плавный пуск компрессора</b></div>
+																<div class="accordion__item__point__text">Программное обеспечение Soft Start ограничивает пусковой тое компрессора в&nbsp;целях снижения нагрузки на&nbsp;энергосистему.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Надежнсть
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__row">
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/automatic-restart.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Автоматический перезапуск</b></div>
+																<div class="accordion__item__point__text">Автоматический перезапуск после устранения сбоя энергоснабжения</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/reliable-work.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Надежная работа</b></div>
+																<div class="accordion__item__point__text">Многоуровневая защита узлов оборудования, высокая стабильность технических характеристик, включая работу в&nbsp;условиях крайне низких температур от &minus;15 до &minus;40 &deg;С.</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/resistant-voltage-surges.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Устойчивость к перепадам напряжения</b></div>
+																<div class="accordion__item__point__text">Кондиционер надежно работает при колебаниях напряжения электропитания от&nbsp;170&nbsp;В до&nbsp;265&nbsp;В</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/corrosion-resistance.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Коррозионная стойкость</b></div>
+																<div class="accordion__item__point__text">Корпус наружного блока и&nbsp;теплообменники имеют специальные покрытия для защиты от&nbsp;влаги, абразивных частиц и&nbsp;агрессивных веществ.</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Здоровье
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__row">
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/anti-mold-treatment.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Противоплесневая обработка</b></div>
+																<div class="accordion__item__point__text">В&nbsp;корпусе внутреннего блока плесень не&nbsp;образуется благодаря продуманной конструкции и&nbsp;работе вентилятора некоторое время после выключения устройства для устранения влаги</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/pre-filter.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Фильтр предварительной очистки</b></div>
+																<div class="accordion__item__point__text">Эффективно задерживает тополиный пух, шерсть животных, пыль</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Управление
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__row">
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/online-management.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Wi-Fi, онлайн управление</b></div>
+																<div class="accordion__item__point__text">Кондиционер может управляться удаленно через интернет или локальную сеть через &laquo;облако Даичи&raquo; со&nbsp;смартфона, ПК</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/blocking.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Блокирока</b></div>
+																<div class="accordion__item__point__text">Исключается управление кондиционером посторонними и&nbsp;детьми</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/timer-operation.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Работа по таймеру</b></div>
+																<div class="accordion__item__point__text">Позволяет запрограммировать время ВКЛ/ВЫКЛ кондиционера (в&nbsp;зависимости от&nbsp;модели и&nbsp;типа таймер от&nbsp;24&nbsp;ч до&nbsp;2&nbsp;недель)</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/cooling.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Охлаждение и&nbsp;обогрев при низких температурах</b></div>
+																<div class="accordion__item__point__text">Кондиционеры работоспособны при низких температурах наружного воздуха: при охлаждении до &minus;15 &deg;С, обогреве до &minus;15 ~ &minus;30 &deg;С</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/self-diagnosis.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Самодиагностика</b></div>
+																<div class="accordion__item__point__text">Функция проверки технических параметров работы, препятствующая выходу оборудования из&nbsp;строя</div>
+															</div>
+														</div>
+													</div>
+													<div class="accordion__item__col">
+														<div class="accordion__item__point">
+															<div class="accordion__item__point__icon"><img src="./images/advantages/information-led-display.svg" alt=""></div>
+															<div class="accordion__item__point__content">
+																<div class="accordion__item__point__title"><b>Информационный LED дисплей</b></div>
+																<div class="accordion__item__point__text">Светодиодный дисплей c&nbsp;четким изображением и&nbsp;возможностью отключения ночью</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-series__control">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 page-series__control__title anime fadeUp" data-offset="25">Расширенные возможности управления</div>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="page-series__control__controller anime fadeUp" data-offset="25">
+										<div class="h4 page-series__control__controller__title">Встроенный контроллер Daichi</div>
+										<div class="page-series__control__controller__text">Кондиционер управляется со смартфона или ПК через&nbsp;приложение Daichi Comfort</div>
+										<div class="page-series__control__controller__image"><img src="./images/series-controller.png" alt=""></div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="page-series__control__item">
+										<div class="page-series__control__item__image anime fadeUp" data-offset="25"><img src="./images/series-control.png" alt=""></div>
+										<div class="page-series__control__item__content anime fadeUp" data-offset="25">
+											<div class="h4 page-series__control__item__title">Оборудование серии City Line DA ALC могут управляться со&nbsp;смартфона, планшета или ПК.</div>
+											<div class="page-series__control__item__text">Для этого необходимо установить Wi-Fi-контроллер Daichi DW11-BL и скачать приложение Daichi Comfort. ваш смартфон превратится в центральный интеллектуальный пульт управления всеми кондиционерами в ваших коммерческих помещениях.</div>
+											<div class="page-series__control__market">
+												<div class="page-series__control__market__item">
+													<div class="page-series__control__market__item__qr"><img src="./images/app-store-qr.png" alt=""></div>
+													<div class="page-series__control__market__item__logo"><a href="#" target="_blank"><img src="./images/app-store.svg" alt=""></a></div>
+												</div>
+												<div class="page-series__control__market__item">
+													<div class="page-series__control__market__item__qr"><img src="./images/google-play-qr.png" alt=""></div>
+													<div class="page-series__control__market__item__logo"><a href="#" target="_blank"><img src="./images/google-play.svg" alt=""></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-series__feature" id="characteristics">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 page-series__feature__title anime fadeUp" data-offset="25">Характеристики</div>
+								</div>
+							</div>
+							<div class="table anime fadeUp" data-offset="25" data-app="table">
+								<table>
+									<tbody>
+										<tr>
+											<td><b>Внутренний блок</b></td>
+											<td><b></b></td>
+											<td><b></b></td>
+											<td><b>DA70ALCS1R</b></td>
+											<td><b>DA100ALCS1R</b></td>
+											<td><b>DA140ALCS1R</b></td>
+											<td><b>DA140ALCS1R</b></td>
+										</tr>
+										<tr>
+											<td><b>Наружный блок</b></td>
+											<td><b></b></td>
+											<td><b></b></td>
+											<td><b>DF70ALS1R</b></td>
+											<td><b>DF100ALS1R</b></td>
+											<td><b>DF140ALS3R</b></td>
+											<td><b>DF160ALS3R</b></td>
+										</tr>
+										<tr>
+											<td>Электропитание</td>
+											<td></td>
+											<td></td>
+											<td>220-240-50 / 60-1</td>
+											<td>220-240-50 / 60-1</td>
+											<td colspan="2">220-240- 50 / 60-1 / 380-415-50 / 60-3</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Производительность</td>
+											<td>Охлаждение (SEER)</td>
+											<td></td>
+											<td>7.2 / A++</td>
+											<td>6.1 / A++</td>
+											<td>6.1 / A++</td>
+											<td>6.1 / A++</td>
+										</tr>
+										<tr>
+											<td>Нагрев (SCOP)</td>
+											<td></td>
+											<td>3.9 / A</td>
+											<td>4.0 / A+</td>
+											<td>4.0 / A+</td>
+											<td>3.8 / A</td>
+										</tr>
+										<tr>
+											<td>Электропитание</td>
+											<td></td>
+											<td>В,Гц,Ф</td>
+											<td>220-240-50 / 60-1</td>
+											<td>220-240-50 / 60-1</td>
+											<td colspan="2">220-240- 50 / 60-1 / 380-415-50 / 60-3</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Сезонная энергоэффективность / Класс</td>
+											<td>Охлаждение (SEER)</td>
+											<td></td>
+											<td>7.2 / A++</td>
+											<td>6.1 / A++</td>
+											<td>6.1 / A++</td>
+											<td>6.1 / A++</td>
+										</tr>
+										<tr>
+											<td>Нагрев (SCOP)</td>
+											<td></td>
+											<td>3.9 / A</td>
+											<td>4.0 / A+</td>
+											<td>4.0 / A+</td>
+											<td>3.8 / A</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Уровень шума (выс./сред./низ.)</td>
+											<td>Внутренний блок</td>
+											<td>дБА</td>
+											<td>42/40/39</td>
+											<td>48/46/42</td>
+											<td>51/48/45</td>
+											<td>52/50/48</td>
+										</tr>
+										<tr>
+											<td>Наружный блок</td>
+											<td>дБА</td>
+											<td>52/—/—</td>
+											<td>55/—/—</td>
+											<td>57/—/—</td>
+											<td>57/—/—</td>
+										</tr>
+										<tr>
+											<td rowspan="3">Габариты (ШхВхГ)</td>
+											<td>Внутренний блок</td>
+											<td>мм</td>
+											<td>840×240×840</td>
+											<td>840×240×840</td>
+											<td>840×290×840</td>
+											<td>840×290×840</td>
+										</tr>
+										<tr>
+											<td>Наружный блок</td>
+											<td>мм</td>
+											<td>892x698x340</td>
+											<td>940×820×460</td>
+											<td>940×820×460</td>
+											<td>900x1345x340</td>
+										</tr>
+										<tr>
+											<td>Декоративная панель</td>
+											<td>мм</td>
+											<td>950×52×950</td>
+											<td>950×52×950</td>
+											<td>950×52×950</td>
+											<td>950×52×950</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Вес</td>
+											<td>Внутренний блок</td>
+											<td>кг</td>
+											<td>29</td>
+											<td>31</td>
+											<td>36</td>
+											<td>36</td>
+										</tr>
+										<tr>
+											<td>Наружный блок</td>
+											<td>кг</td>
+											<td>53</td>
+											<td>83</td>
+											<td>99</td>
+											<td>112</td>
+										</tr>
+										<tr>
+											<td rowspan="4">Трубопровод хладагента</td>
+											<td>Диаметр для жидкости</td>
+											<td>мм</td>
+											<td>9.52</td>
+											<td>9.52</td>
+											<td>9.52</td>
+											<td>9.52</td>
+										</tr>
+										<tr>
+											<td>Диаметр для газа</td>
+											<td>мм</td>
+											<td>15.9</td>
+											<td>15.9</td>
+											<td>15.9</td>
+											<td>15.9</td>
+										</tr>
+										<tr>
+											<td>Длина между блоками</td>
+											<td>м</td>
+											<td>50</td>
+											<td>65</td>
+											<td>75</td>
+											<td>75</td>
+										</tr>
+										<tr>
+											<td>Перепад между блоками</td>
+											<td>м</td>
+											<td>25</td>
+											<td>30</td>
+											<td>30</td>
+											<td>30</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Диапазон рабочих температур</td>
+											<td>Охлаждение</td>
+											<td>°C</td>
+											<td>-20~48</td>
+											<td>-20~48</td>
+											<td>-20~48</td>
+											<td>-20~48</td>
+										</tr>
+										<tr>
+											<td>Нагрев</td>
+											<td>°C</td>
+											<td>-20~24</td>
+											<td>-20~24</td>
+											<td>-20~24</td>
+											<td>-20~24</td>
+										</tr>
+										<tr>
+											<td rowspan="2">Пульт управления</td>
+											<td>Беспроводной</td>
+											<td></td>
+											<td>DRC01</td>
+											<td>DRC01</td>
+											<td>DRC01</td>
+											<td>DRC01</td>
+										</tr>
+										<tr>
+											<td>Проводной (опция)</td>
+											<td></td>
+											<td>DC18W</td>
+											<td>DC18W</td>
+											<td>DC18W</td>
+											<td>DC18W</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="wrapper">
+							<div class="wrapper__side"></div>
+							<div class="wrapper__content">
+								<div class="page-product__documentation page-series__documents anime fadeUp" id="documents" data-offset="25">
+									<div class="page-product__documentation__title">Документация</div><a class="page-product__documentation__item" href="#">
+										<div class="page-product__documentation__item__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#pdf"></use>
+											</svg>
+										</div>
+										<div class="page-product__documentation__item__content">
+											<div class="page-product__documentation__item__title">Настенные сплит-системы Daichi Air</div>
+											<div class="page-product__documentation__item__text">2,5 Мб, PDF</div>
+										</div></a><a class="page-product__documentation__item" href="#">
+										<div class="page-product__documentation__item__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#pdf"></use>
+											</svg>
+										</div>
+										<div class="page-product__documentation__item__content">
+											<div class="page-product__documentation__item__title">Инструкция по монтажу и эксплуатации</div>
+											<div class="page-product__documentation__item__text">2,5 Мб, PDF</div>
+										</div></a><a class="page-product__documentation__item" href="#">
+										<div class="page-product__documentation__item__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#pdf"></use>
+											</svg>
+										</div>
+										<div class="page-product__documentation__item__content">
+											<div class="page-product__documentation__item__title">DAICHI. Cертификат соответствия</div>
+											<div class="page-product__documentation__item__text">2,5 Мб, PDF</div>
+										</div></a><a class="page-product__documentation__item" href="#">
+										<div class="page-product__documentation__item__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#pdf"></use>
+											</svg>
+										</div>
+										<div class="page-product__documentation__item__content">
+											<div class="page-product__documentation__item__title">Мобильное управление</div>
+											<div class="page-product__documentation__item__text">2,5 Мб, PDF</div>
+										</div></a><a class="page-product__documentation__item" href="#">
+										<div class="page-product__documentation__item__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#pdf"></use>
+											</svg>
+										</div>
+										<div class="page-product__documentation__item__content">
+											<div class="page-product__documentation__item__title">Рекламные материалы</div>
+											<div class="page-product__documentation__item__text">2,5 Мб, PDF</div>
+										</div></a>
+								</div>
+								<div class="page-product__accessories-list" id="accessories">
+									<div class="h2 page-product__tab__title anime fadeUp" data-offset="25">Аксессуары</div>
+									<div class="page-product__accessories anime fadeUp" data-offset="25">
+										<div class="page-product__accessories__image"><img src="./images/temp/43.jpg" alt=""></div>
+										<div class="page-product__accessories__content">
+											<div class="page-product__accessories__head">
+												<div class="h4 page-product__accessories__title">Wi-Fi-контроллер Daichi DW11-BL</div>
+												<div class="h4 page-product__accessories__price">от 5 990 ₽</div>
+											</div>
+											<div class="page-product__accessories__row">
+												<div class="page-product__accessories__info">
+													<ul>
+														<li>
+															<div class="page-product__accessories__info__label">Габариты, ШхГхВ, мм</div><span>100x22x55</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Вес нетто</div><span>0,156</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Шифрование</div><span>WEP/TKIP/AES</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Безопасность</div><span>WPA/WPA2</span>
+														</li>
+													</ul>
+												</div>
+												<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="page-product__accessories anime fadeUp" data-offset="25">
+										<div class="page-product__accessories__image"><img src="./images/temp/44.jpg" alt=""></div>
+										<div class="page-product__accessories__content">
+											<div class="page-product__accessories__head">
+												<div class="h4 page-product__accessories__title">Проводной пульт управления Daichi DC18W</div>
+												<div class="h4 page-product__accessories__price">от 4 990 ₽</div>
+											</div>
+											<div class="page-product__accessories__row">
+												<div class="page-product__accessories__info">
+													<ul>
+														<li>
+															<div class="page-product__accessories__info__label">Габариты, ШхГхВ, мм</div><span>100x22x55</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Вес нетто</div><span>0,156</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Шифрование</div><span>WEP/TKIP/AES</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Безопасность</div><span>WPA/WPA2</span>
+														</li>
+													</ul>
+												</div>
+												<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="page-product__accessories anime fadeUp" data-offset="25">
+										<div class="page-product__accessories__image"></div>
+										<div class="page-product__accessories__content">
+											<div class="page-product__accessories__head">
+												<div class="h4 page-product__accessories__title">Декоративная панель DPC06L</div>
+												<div class="h4 page-product__accessories__price">от 11 990 ₽</div>
+											</div>
+											<div class="page-product__accessories__row">
+												<div class="page-product__accessories__info">
+													<ul>
+														<li>
+															<div class="page-product__accessories__info__label">Габариты, ШхГхВ, мм</div><span>100x22x55</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Вес нетто</div><span>0,156</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Шифрование</div><span>WEP/TKIP/AES</span>
+														</li>
+														<li>
+															<div class="page-product__accessories__info__label">Безопасность</div><span>WPA/WPA2</span>
+														</li>
+													</ul>
+												</div>
+												<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<div class="footer__left">
+							<div class="footer__contacts">
+								<div class="footer__logo"><a href="#"><img src="./images/logo-footer.svg" alt=""></a></div>
+								<div class="footer__contacts__content">
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+										<div class="footer__phone__label">Служба поддержки</div>
+									</div>
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 495 737 37 33">8 495 737 37 33</a></div>
+										<div class="footer__phone__label">Офис компании</div>
+									</div>
+									<div class="footer__callback"><a href="#callback" data-fancybox>
+											<svg>
+												<use xlink:href="./images/sprites.svg#callback"></use>
+											</svg>Обратная связь</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__menu">
+								<ul>
+									<li><a href="#">О бренде</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Дилерам</a></li>
+									<li><a href="#">Проектировщикам</a></li>
+									<li><a href="#">Заказчикам</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+							<div class="footer__catalog">
+								<div class="footer__catalog__title"><a href="#">Каталог</a></div>
+								<ul class="footer__catalog__list">
+									<li><a href="#">Облачный кондиционер</a></li>
+									<li><a href="#">Настенные сплит-системы</a></li>
+									<li><a href="#">Мультисистемы</a></li>
+									<li><a href="#">Полупромышленная серия</a></li>
+									<li><a href="#">DFT</a></li>
+									<li><a href="#">Wi-Fi-контроллеры</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__container">
+						<ul class="footer__list footer__list--list">
+							<li class="for-desktop">© Daichi 2021.</li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+						<ul class="footer__list footer__list--social">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Вконтакте</a></li>
+							<li><a href="#">Youtube</a></li>
+						</ul>
+						<div class="footer__list"><span class="for-mobile">© Daichi 2021.</span><a href="#">Разработано в ITECH</a></div>
+					</div>
+				</div>
+			</footer>
+			<div class="is-hidden">
+				<form class="modal form" id="callback" action="./ajax/callback.json" method="get" data-app="form" data-event="Feedback">
+					<div class="h3 form__title">Обратная связь</div>
+					<div class="form__text">Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут</div>
+					<div class="form__row">
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Имя</div>
+								<div class="input__field">
+									<input type="text" name="firstname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Фамилия</div>
+								<div class="input__field">
+									<input type="text" name="surname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">E-mail</div>
+						<div class="input__field">
+							<input type="email" name="email" data-validation="{&quot;regex&quot;:[&quot;^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$&quot;,&quot;i&quot;],&quot;maxlength&quot;:254,&quot;messages&quot;:{&quot;regex&quot;:&quot;Неверный или некорректный e-mail адрес.&quot;}}" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Телефон</div>
+						<div class="input__field">
+							<input type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Комментарий</div>
+						<div class="input__field">
+							<textarea name="subject" data-validation="{&quot;maxlength&quot;:300}" required></textarea>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" required><i>
+								<svg>
+									<use xlink:href="./images/sprites.svg#check"></use>
+								</svg></i><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+						</label>
+					</div>
+					<div class="form__button">
+						<button class="button" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<div class="is-hidden">
+				<form class="modal form" id="success">
+					<div class="modal__icon-block"><img src="./images/success.svg"></div>
+					<div class="h3 form__title">Спасибо!</div>
+					<div class="page-text">Наш специалист свяжется с вами в ближайшее время.</div>
+				</form>
+			</div><a class="up" href="#" data-app="up"></a>
+		</div>
+		<script src="./js/vendor.js?v=1683031534902"></script>
+		<script src="./js/main.js?v=1683031534902"></script>
+		<script>
+			if (window.location.pathname === '/partners-modal.html') {
+				const $btn = $('<a href="#success" data-fancybox></a>')
+				$('body').append($btn)
+				$btn.trigger('click')
+			}
+		</script>
+	</body>
+</html>

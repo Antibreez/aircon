@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="./css/main.css?v=1683031532114">
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N7W63LX');
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header anime" data-app="header">
+				<div class="header__line"></div>
+				<div class="container">
+					<div class="header__container">
+						<div class="header__logo"><a href=""><img src="./images/logo.svg" alt=""></a></div>
+						<div class="header__right">
+							<ul class="header__menu for-desktop">
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Мобильное управление</a></li>
+								<li><a href="#">Облачный кондиционер</a></li>
+								<li><a href="#">Где купить</a></li>
+								<li><a href="#">Для партнеров</a></li>
+								<li><a class="is-arrow" href="#">Еще</a>
+									<div class="header__menu__drop">
+										<div class="header__menu__drop__content">
+											<div class="header__menu__drop__wrap">
+												<ul class="header__menu__drop__menu">
+													<li><a href="#">Поддержка</a></li>
+													<li><a href="#">Статьи</a></li>
+													<li><a href="#">Контакты</a></li>
+												</ul>
+												<div class="header__menu__drop__contacts">
+													<div class="header__menu__drop__contacts__phone"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+													<div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
+													<div class="header__menu__drop__contacts__callback"><a href="#callback" data-fancybox>
+															<svg>
+																<use xlink:href="./images/sprites.svg#comment"></use>
+															</svg>Обратная связь</a></div>
+												</div>
+											</div>
+											<div class="header__menu__drop__footer">
+												<div class="header__menu__drop__lang"><a href="#">
+														<svg>
+															<use xlink:href="./images/sprites.svg#world"></use>
+														</svg>Русский</a></div>
+												<div class="header__menu__drop__location"><a href="#location" data-fancybox>
+														<svg>
+															<use xlink:href="./images/sprites.svg#location"></use>
+														</svg>Москва</a></div>
+												<div class="is-hidden">
+													<div class="modal form location" id="location" data-param="change-city">
+														<div class="h3 form__title">Выбор города</div>
+														<div class="location__field input" data-app="select-location" data-ajax="./ajax/location.json">
+															<div class="input__field input__field--search">
+																<select data-placeholder="Введите название города">
+																	<option></option>
+																</select>
+															</div>
+														</div>
+														<div class="location__list">
+															<ul>
+																<li><a href="?change-city=Москва">Москва</a></li>
+																<li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
+																<li><a href="?change-city=Калининград">Калининград</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Краснодар">Краснодар</a></li>
+																<li><a href="?change-city=Красноярск">Красноярск</a></li>
+																<li><a href="?change-city=Севастополь">Севастополь</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Симферополь">Симферополь</a></li>
+																<li><a href="?change-city=Уфа">Уфа</a></li>
+																<li><a href="?change-city=Ялта">Ялта</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="header__search-open"><a href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg></a></div>
+							<form class="header__search" action="search.html" method="get" data-app="form" data-type="submit">
+								<input class="header__search__field" type="text" name="q" placeholder="Поиск по сайту" data-validation="{&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;required&quot;:&quot;Введите поисковый запрос&quot;}}" required>
+								<button class="header__search__submit" type="submit">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+							<button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+						</div>
+						<div class="modal header__location for-desktop">
+							<div class="h3 form__title">Ваш город — Москва?</div>
+							<div class="modal__footer"><a class="button button--white" href="#location" data-fancybox>Выбрать другой</a>
+								<button class="button header__location__confirm" type="button">Верно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-menu for-mobile" data-app="mobile-menu">
+				<div class="mobile-menu__list">
+					<ul>
+						<li><a href="#">Каталог</a>
+							<ul>
+								<li><a href="#">Настенные сплит-системы</a></li>
+								<li><a href="#">Мультисистемы</a></li>
+								<li><a href="#">Полупромышленная серия</a></li>
+								<li><a href="#">DFT</a></li>
+								<li><a href="#">Контроллеры</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Мобильное управление</a></li>
+						<li><a href="#">Облачный кондиционер</a></li>
+						<li><a href="#">Где купить</a></li>
+						<li><a href="#">Для партнеров</a></li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="mobile-menu__support">
+					<div class="mobile-menu__support__phone"><a href="tel:+78002000005">8 800 200 00 05</a></div>
+					<div class="mobile-menu__support__text">Служба поддержки</div>
+				</div>
+				<div class="mobile-menu__button"><a href="#callback" data-fancybox>Обратная связь</a></div>
+			</div>
+			<div class="content content--index">
+				<div class="page-index" data-app="index">
+					<div class="intro anime" data-app="intro">
+						<div class="container">
+							<div class="intro__head">
+								<h1 class="intro__title">Климатическая техника Daichi</h1>
+								<div class="h3 intro__subtitle">Комфортная среда вашего дома</div>
+							</div>
+							<div class="intro__video">
+								<video src="./images/intro.mp4" playsinline autoplay muted loop></video>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="app-subscribe-trigger"></div>
+						<div class="app-subscribe-wrapper">
+							<div class="app-subscribe anime" data-offset="25">
+								<div class="app-subscribe__cloud">
+									<video src="./images/clouds.mp4" autoplay muted loop></video>
+								</div>
+								<div class="app-subscribe__container">
+									<div class="app-subscribe__side">
+										<div class="app-subscribe__logo">
+											<div class="app-subscribe__logo__o">
+												<svg>
+													<use xlink:href="./images/sprites.svg#o"></use>
+												</svg>
+											</div>
+											<div class="app-subscribe__logo__d">
+												<svg>
+													<use xlink:href="./images/sprites.svg#d"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="app-subscribe__content">
+										<div class="app-subscribe__image"><img src="./images/app-subscribe.png" alt=""></div>
+										<div class="h2 app-subscribe__title">Облачный кондиционер — управляется со смартфона, работает по подписке</div>
+										<div class="app-subscribe__text">Платите за климат, когда он нужен, и управляете кондиционером со смартфона. В сервис также включена онлайн диагностика оборудования, сопровождение и год гарантии в подарок.</div>
+										<div class="app-subscribe__footer">
+											<div class="app-subscribe__price"><sup class="text-gradient">от</sup><span class="text-gradient">10 999</span></div>
+											<div class="app-subscribe__button"><a class="button" href="#">Подробнее</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="equipment anime" data-app="equipment" data-offset="25">
+							<div class="equipment__side">
+								<div class="equipment__side__fixed">
+									<div class="h1 equipment__title">Наше оборудование</div>
+									<div class="equipment__text">Кондиционеры Daichi создают комфортный климат в ваших домах и общественных пространствах.</div>
+									<div class="equipment__button for-desktop"><a class="button" href="#">Каталог</a></div>
+								</div>
+							</div>
+							<div class="equipment__content">
+								<div class="equipment__slider">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="equipment__slider__item">
+													<div class="equipment__slider__item__image" style="background-image:url(./images/temp/7.jpg)"></div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="equipment__slider__item">
+													<div class="equipment__slider__item__image" style="background-image:url(./images/temp/8.jpg)"></div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="equipment__slider__item">
+													<div class="equipment__slider__item__image" style="background-image:url(./images/temp/7.jpg)"></div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="equipment__slider__item">
+													<div class="equipment__slider__item__image" style="background-image:url(./images/temp/8.jpg)"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="equipment__list">
+									<div class="equipment__list__row">
+										<div class="equipment__list__col">
+											<div class="equipment__list__item">
+												<div class="equipment__list__item__label">Кондиционеры для дома</div>
+												<ul>
+													<li><a href="#">Настенные сплит-системы</a></li>
+													<li><a href="#">Мульти-сплит-системы</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="equipment__list__col">
+											<div class="equipment__list__item">
+												<div class="equipment__list__item__label">Для технологического охлаждения</div>
+												<ul>
+													<li><a href="#">Системы DFT</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="equipment__list__col">
+											<div class="equipment__list__item">
+												<div class="equipment__list__item__label">Для общественных помещений</div>
+												<ul>
+													<li><a href="#">Серия полупромышленных кондиционеров City Line</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="equipment__list__col">
+											<div class="equipment__list__item">
+												<div class="equipment__list__item__label">Мобильное управление</div>
+												<ul>
+													<li><a href="#">Wi-Fi контроллеры для сплит-и&nbsp;мульти-сплит-систем</a></li>
+													<li><a href="#">Wi-Fi- контроллеры для&nbsp;полупромышленных кондиционеров</a></li>
+													<li><a href="#">Контроллер централизованного управления для систем VRF</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="equipment__button for-mobile"><a class="button" href="#">Каталог</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="technologies anime" data-app="technologies" data-offset="25">
+							<div class="h3 technologies__title">В оборудовании Daichi применены наиболее современные технологии</div>
+							<div class="technologies__slider">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="technologies__item technologies__item--big">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/4.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Комплексная очистка воздуха</div>
+													<div class="technologies__item__text">Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/5.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Wi-Fi управление</div>
+													<div class="technologies__item__text">Удаленное онлайн-управление через «облако Даичи».</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/6.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Full DC Inverter</div>
+													<div class="technologies__item__text">Комфорт, тишина и эффективный расход электроэнергии.</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item technologies__item--big">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/4.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Комплексная очистка воздуха</div>
+													<div class="technologies__item__text">Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/5.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Wi-Fi управление</div>
+													<div class="technologies__item__text">Удаленное онлайн-управление через «облако Даичи».</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/6.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Full DC Inverter</div>
+													<div class="technologies__item__text">Комфорт, тишина и эффективный расход электроэнергии.</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item technologies__item--big">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/4.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Комплексная очистка воздуха</div>
+													<div class="technologies__item__text">Ионизатор, фильтр с ионами серебра, фотокаталитический фильтр, автоматическая очистка теплообменника. Встроенная УФ-лампа предотвращает развитие бактерий.</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/5.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Wi-Fi управление</div>
+													<div class="technologies__item__text">Удаленное онлайн-управление через «облако Даичи».</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="technologies__item">
+												<div class="technologies__item__image" style="background-image:url(./images/temp/6.jpg)"></div>
+												<div class="technologies__item__content">
+													<div class="h4 technologies__item__title">Full DC Inverter</div>
+													<div class="technologies__item__text">Комфорт, тишина и эффективный расход электроэнергии.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="progress"></div>
+							</div>
+						</div>
+					</div>
+					<div class="comfort-app-trigger"></div>
+					<div class="comfort-app-wrapper">
+						<div class="comfort-app">
+							<div class="comfort-app__bg"></div>
+							<div class="container">
+								<div class="comfort-app__scroll-text">
+									<div class="comfort-app__scroll-text__text">Управляйте климатом с помощью телефона или голоса, дома или на расстоянии</div>
+								</div>
+								<div class="comfort-app__content">
+									<div class="comfort-app__logo"><img src="./images/comfort-app.svg" alt=""></div>
+									<div class="h2 comfort-app__title">Умные решения для контроля  климата через приложение Daichi Comfort</div>
+									<div class="comfort-app__text">Благодаря контроллеру Daichi теперь можно управлять кондиционированием через смартфон или ноутбук. Центр управления всего климатического оборудования, установленного дома, в офисе или на предприятии, теперь всегда у вас в кармане.</div>
+									<div class="comfort-app__button"><a class="button" href="#">Узнать больше</a></div>
+									<div class="comfort-app__apps">
+										<div class="comfort-app__apps__item"><a href="#"><img src="./images/app-store.svg" alt=""></a></div>
+										<div class="comfort-app__apps__item"><a href="#"><img src="./images/google-play.svg" alt=""></a></div>
+									</div>
+								</div>
+								<div class="comfort-app__image">
+									<div class="comfort-app__image__1"><img class="for-desktop" src="./images/comfort-app-1.png" alt=""><img class="for-mobile" src="./images/comfort-app-1-mobile.png" alt="">
+										<canvas class="comfort-app__progress" data-path="./images/app/"></canvas>
+									</div>
+									<div class="comfort-app__image__2"><img src="./images/comfort-app-2.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="climate-online-wrapper">
+							<div class="climate-online-trigger"></div>
+							<div class="climate-online">
+								<div class="climate-online__container">
+									<div class="climate-online__logo"><img src="./images/climate-online.svg" alt=""></div>
+									<div class="climate-online__man"><img src="./images/climate-online.png" alt=""></div>
+									<div class="climate-online__content">
+										<div class="climate-online__conditioner">
+											<div class="climate-online__conditioner__image"><img src="./images/climate-online-conditioner.svg" alt="">
+												<div class="climate-online__conditioner__image__pulse">
+													<div class="climate-online__conditioner__image__pulse__svg">
+														<svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+															<circle cx="19.8873" cy="20.2846" r="19.3871" stroke="url(#climate-online-pulse-gradient)"></circle>
+															<defs>
+																<lineargradient id="climate-online-pulse-gradient" x1="19.8873" y1="0.397461" x2="19.8873" y2="40.1717" gradientUnits="userSpaceOnUse">
+																	<stop stop-color="#71D6C8"></stop>
+																	<stop offset="0.99185" stop-color="#FFDECB"></stop>
+																</lineargradient>
+															</defs>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="climate-online__conditioner__pulse"><i></i><i></i><i></i>
+												<div class="climate-online__conditioner__pulse__image"><img src="./images/climate-online-pulse.png" alt=""></div>
+											</div>
+										</div>
+										<div class="h2 climate-online__title">Интеллектуальная система сервисной поддержки</div>
+										<div class="climate-online__text">Наличие встроенного контроллера позволяет инженерному центру Даичи следить за параметрами работы системы и предупреждать владельца и его сервисную организацию.</div>
+										<div class="climate-online__button"><a class="button" href="#">Узнать больше</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="comfort-subscribe">
+							<div class="comfort-subscribe__image for-desktop" style="background-image:url(./images/comfort-subscribe.jpg)"></div>
+							<div class="comfort-subscribe__content">
+								<div class="comfort-subscribe__logo"><img src="./images/my-comfort.svg" alt=""></div>
+								<div class="comfort-subscribe__img for-mobile"><img src="./images/comfort-subscribe-mobile.jpg" alt=""></div>
+								<div class="h2 comfort-subscribe__title">Абонентская плата по&nbsp;принципу «всё включено»</div>
+								<div class="h4 comfort-subscribe__subtitle">Подписывайтесь на программу «Мой комфорт» при покупке техники Daichi</div>
+								<ul class="comfort-subscribe__list">
+									<li>Гарантия бесперебойной работы системы и консьерж-служба по вопросам климата</li>
+									<li>Беплатный ремонт или замена блока кондиционера или его частей в течение 2 дней</li>
+									<li>Новый кондиционер такого же класса через 7 лет</li>
+								</ul>
+								<div class="comfort-subscribe__button"><a class="button" href="#">Узнать больше</a></div>
+							</div>
+						</div>
+						<div class="articles articles--static anime" data-offset="25">
+							<div class="articles__side">
+								<div class="h2 articles__title">Статьи</div>
+								<ul class="articles__menu for-desktop">
+									<li><a class="link-arrow" href="#">Новости</a></li>
+									<li><a class="link-arrow" href="#">Статьи</a></li>
+									<li><a class="link-arrow" href="#">Видеобзоры</a></li>
+								</ul>
+							</div>
+							<div class="articles__content">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><a class="articles__item" href="#">
+												<div class="articles__item__image" style="background-image:url(./images/temp/1.jpg)"></div>
+												<div class="articles__item__type"><span>Статья</span></div>
+												<div class="h4 articles__item__title">Уникальные возможности VRV&nbsp;Daikin</div>
+												<div class="articles__item__text">Уникальные возможности VRV Daikin Проявляют себя с новой силой в паре с контроллерами</div></a></div>
+										<div class="swiper-slide"><a class="articles__item" href="#">
+												<div class="articles__item__image" style="background-image:url(./images/temp/2.jpg)"></div>
+												<div class="articles__item__type"><span>Статья</span></div>
+												<div class="h4 articles__item__title">Ответ Daikin на пандемию COVID-19</div>
+												<div class="articles__item__text">Важность промышленной вентиляции в местах большого скопления людей</div></a></div>
+										<div class="swiper-slide"><a class="articles__item" href="#">
+												<div class="articles__item__image" style="background-image:url(./images/temp/3.jpg)"></div>
+												<div class="articles__item__type"><span>Статья</span></div>
+												<div class="h4 articles__item__title">Бытовые кондиционеры Daikin: на&nbsp;шаг впереди. Климатическая техника.</div>
+												<div class="articles__item__text">Климатическая техника Daikin для бытового использования</div></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<div class="footer__left">
+							<div class="footer__contacts">
+								<div class="footer__logo"><a href="#"><img src="./images/logo-footer.svg" alt=""></a></div>
+								<div class="footer__contacts__content">
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+										<div class="footer__phone__label">Служба поддержки</div>
+									</div>
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 495 737 37 33">8 495 737 37 33</a></div>
+										<div class="footer__phone__label">Офис компании</div>
+									</div>
+									<div class="footer__callback"><a href="#callback" data-fancybox>
+											<svg>
+												<use xlink:href="./images/sprites.svg#callback"></use>
+											</svg>Обратная связь</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__menu">
+								<ul>
+									<li><a href="#">О бренде</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Дилерам</a></li>
+									<li><a href="#">Проектировщикам</a></li>
+									<li><a href="#">Заказчикам</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+							<div class="footer__catalog">
+								<div class="footer__catalog__title"><a href="#">Каталог</a></div>
+								<ul class="footer__catalog__list">
+									<li><a href="#">Облачный кондиционер</a></li>
+									<li><a href="#">Настенные сплит-системы</a></li>
+									<li><a href="#">Мультисистемы</a></li>
+									<li><a href="#">Полупромышленная серия</a></li>
+									<li><a href="#">DFT</a></li>
+									<li><a href="#">Wi-Fi-контроллеры</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__container">
+						<ul class="footer__list footer__list--list">
+							<li class="for-desktop">© Daichi 2021.</li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+						<ul class="footer__list footer__list--social">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Вконтакте</a></li>
+							<li><a href="#">Youtube</a></li>
+						</ul>
+						<div class="footer__list"><span class="for-mobile">© Daichi 2021.</span><a href="#">Разработано в ITECH</a></div>
+					</div>
+				</div>
+			</footer>
+			<div class="is-hidden">
+				<form class="modal form" id="callback" action="./ajax/callback.json" method="get" data-app="form" data-event="Feedback">
+					<div class="h3 form__title">Обратная связь</div>
+					<div class="form__text">Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут</div>
+					<div class="form__row">
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Имя</div>
+								<div class="input__field">
+									<input type="text" name="firstname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Фамилия</div>
+								<div class="input__field">
+									<input type="text" name="surname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">E-mail</div>
+						<div class="input__field">
+							<input type="email" name="email" data-validation="{&quot;regex&quot;:[&quot;^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$&quot;,&quot;i&quot;],&quot;maxlength&quot;:254,&quot;messages&quot;:{&quot;regex&quot;:&quot;Неверный или некорректный e-mail адрес.&quot;}}" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Телефон</div>
+						<div class="input__field">
+							<input type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Комментарий</div>
+						<div class="input__field">
+							<textarea name="subject" data-validation="{&quot;maxlength&quot;:300}" required></textarea>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" required><i>
+								<svg>
+									<use xlink:href="./images/sprites.svg#check"></use>
+								</svg></i><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+						</label>
+					</div>
+					<div class="form__button">
+						<button class="button" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<div class="is-hidden">
+				<form class="modal form" id="success">
+					<div class="modal__icon-block"><img src="./images/success.svg"></div>
+					<div class="h3 form__title">Спасибо!</div>
+					<div class="page-text">Наш специалист свяжется с вами в ближайшее время.</div>
+				</form>
+			</div><a class="up" href="#" data-app="up"></a>
+		</div>
+		<script src="./js/vendor.js?v=1683031532115"></script>
+		<script src="./js/main.js?v=1683031532115"></script>
+		<script>
+			if (window.location.pathname === '/partners-modal.html') {
+				const $btn = $('<a href="#success" data-fancybox></a>')
+				$('body').append($btn)
+				$btn.trigger('click')
+			}
+		</script>
+	</body>
+</html>

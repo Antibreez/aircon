@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="./css/main.css?v=1683031532688">
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N7W63LX');
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header" data-app="header">
+				<div class="header__line"></div>
+				<div class="container">
+					<div class="header__container">
+						<div class="header__logo"><a href=""><img src="./images/logo.svg" alt=""></a></div>
+						<div class="header__right">
+							<ul class="header__menu for-desktop">
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Мобильное управление</a></li>
+								<li><a href="#">Облачный кондиционер</a></li>
+								<li><a href="#">Где купить</a></li>
+								<li><a href="#">Для партнеров</a></li>
+								<li><a class="is-arrow" href="#">Еще</a>
+									<div class="header__menu__drop">
+										<div class="header__menu__drop__content">
+											<div class="header__menu__drop__wrap">
+												<ul class="header__menu__drop__menu">
+													<li><a href="#">Поддержка</a></li>
+													<li><a href="#">Статьи</a></li>
+													<li><a href="#">Контакты</a></li>
+												</ul>
+												<div class="header__menu__drop__contacts">
+													<div class="header__menu__drop__contacts__phone"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+													<div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
+													<div class="header__menu__drop__contacts__callback"><a href="#callback" data-fancybox>
+															<svg>
+																<use xlink:href="./images/sprites.svg#comment"></use>
+															</svg>Обратная связь</a></div>
+												</div>
+											</div>
+											<div class="header__menu__drop__footer">
+												<div class="header__menu__drop__lang"><a href="#">
+														<svg>
+															<use xlink:href="./images/sprites.svg#world"></use>
+														</svg>Русский</a></div>
+												<div class="header__menu__drop__location"><a href="#location" data-fancybox>
+														<svg>
+															<use xlink:href="./images/sprites.svg#location"></use>
+														</svg>Москва</a></div>
+												<div class="is-hidden">
+													<div class="modal form location" id="location" data-param="change-city">
+														<div class="h3 form__title">Выбор города</div>
+														<div class="location__field input" data-app="select-location" data-ajax="./ajax/location.json">
+															<div class="input__field input__field--search">
+																<select data-placeholder="Введите название города">
+																	<option></option>
+																</select>
+															</div>
+														</div>
+														<div class="location__list">
+															<ul>
+																<li><a href="?change-city=Москва">Москва</a></li>
+																<li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
+																<li><a href="?change-city=Калининград">Калининград</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Краснодар">Краснодар</a></li>
+																<li><a href="?change-city=Красноярск">Красноярск</a></li>
+																<li><a href="?change-city=Севастополь">Севастополь</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Симферополь">Симферополь</a></li>
+																<li><a href="?change-city=Уфа">Уфа</a></li>
+																<li><a href="?change-city=Ялта">Ялта</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="header__search-open"><a href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg></a></div>
+							<form class="header__search" action="search.html" method="get" data-app="form" data-type="submit">
+								<input class="header__search__field" type="text" name="q" placeholder="Поиск по сайту" data-validation="{&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;required&quot;:&quot;Введите поисковый запрос&quot;}}" required>
+								<button class="header__search__submit" type="submit">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+							<button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+						</div>
+						<div class="modal header__location for-desktop">
+							<div class="h3 form__title">Ваш город — Москва?</div>
+							<div class="modal__footer"><a class="button button--white" href="#location" data-fancybox>Выбрать другой</a>
+								<button class="button header__location__confirm" type="button">Верно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-menu for-mobile" data-app="mobile-menu">
+				<div class="mobile-menu__list">
+					<ul>
+						<li><a href="#">Каталог</a>
+							<ul>
+								<li><a href="#">Настенные сплит-системы</a></li>
+								<li><a href="#">Мультисистемы</a></li>
+								<li><a href="#">Полупромышленная серия</a></li>
+								<li><a href="#">DFT</a></li>
+								<li><a href="#">Контроллеры</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Мобильное управление</a></li>
+						<li><a href="#">Облачный кондиционер</a></li>
+						<li><a href="#">Где купить</a></li>
+						<li><a href="#">Для партнеров</a></li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="mobile-menu__support">
+					<div class="mobile-menu__support__phone"><a href="tel:+78002000005">8 800 200 00 05</a></div>
+					<div class="mobile-menu__support__text">Служба поддержки</div>
+				</div>
+				<div class="mobile-menu__button"><a href="#callback" data-fancybox>Обратная связь</a></div>
+			</div>
+			<div class="content">
+				<div class="my-comfort">
+					<div class="container">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="#">Поддержка</a></li>
+								<li>Программа обслуживания «Мой комфорт»</li>
+							</ul>
+						</div>
+						<div class="intro anime" data-app="intro">
+							<div class="intro__head">
+								<h1 class="intro__title">Программа обслуживания «Мой комфорт»</h1>
+								<div class="h3 intro__subtitle">Сервис премиального уровня, включающий ремонт и бесплатную замену устаревшего блока на новый</div>
+							</div>
+							<div class="intro__video">
+								<div class="intro__video__preview" style="background-image:url(./images/my-comfort-intro.jpg)"></div>
+								<video src="./images/intro.mp4"></video>
+								<button class="intro__video__play" type="button">
+									<svg>
+										<use xlink:href="./images/sprites.svg#play"></use>
+									</svg>
+								</button>
+								<button class="intro__video__pause" type="button"></button>
+							</div>
+						</div>
+						<div class="my-comfort__description">
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="my-comfort__description__logo anime fadeUp" data-offset="25"><img src="./images/logo-comfort.svg" alt=""></div>
+									<div class="my-comfort__description__footnote for-desktop anime fadeUp" data-offset="25">Услуга предоставляется инженерным центром «Даичи». В&nbsp;2020–2021 году услуга доступна на&nbsp;территории Москвы и&nbsp;Московской области.<br>Не&nbsp;является публичной офертой.</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="h1 my-comfort__description__title anime fadeUp" data-offset="25">Хотите, чтобы кондиционер прослужил вечно?</div>
+									<div class="page-subtext my-comfort__description__text anime fadeUp" data-offset="25">Ваш кондиционер&nbsp;— прекрасная инвестиция в&nbsp;комфорт и&nbsp;здоровье вас и&nbsp;ваших близких. Но&nbsp;любая инвестиция требует защиты.<br>Купите подписку на&nbsp;программы «Мой комфорт» и&nbsp;получите бессрочную бесперебойную работу системы кондиционирования независимо от&nbsp;срока ее&nbsp;эксплуатации, а&nbsp;также право на&nbsp;бесплатную замену устаревшего блока на&nbsp;новый.</div>
+									<div class="my-comfort__description__footnote for-mobile anime fadeUp" data-offset="25">Услуга предоставляется инженерным центром «Даичи». В&nbsp;2020–2021 году услуга доступна на&nbsp;территории Москвы и&nbsp;Московской области.<br>Не&nbsp;является публичной офертой.</div>
+								</div>
+							</div>
+						</div>
+						<div class="my-comfort__tariffs">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 my-comfort__tariffs__title anime fadeUp" data-offset="25">Подписка на программу «Мой комфорт» предлагается в 3‑х вариантах</div>
+								</div>
+							</div>
+							<div class="my-comfort__tariffs__table anime fadeUp" data-offset="25">
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+											<th>Мой комфорт Премиум<span>Все включено</span></th>
+											<th>Мой комфорт Плюс<span>Обслуживание за&nbsp;отдельную плату</span></th>
+											<th>Мой комфорт<span>Запчасти и блоки включены</span></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Один раз в&nbsp;год техническое обслуживание кондиционера</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__minus"></div>
+													<div class="my-comfort__tariffs__table__value__text">Или за отдельную плату</div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Мониторинг* ошибок работы кондиционера с&nbsp;выездом специалистов</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Замена блока или его части в&nbsp;случае отказа в&nbsp;результате естественного износа или заводской неисправности независимо от&nbsp;срока службы</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+													<div class="my-comfort__tariffs__table__value__text">Запчасти не включены</div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+													<div class="my-comfort__tariffs__table__value__text">Скидка на работы 10%</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Устранение любой неисправности в&nbsp;течение 48 часов</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Консьерж-служба. Личный ассистент по&nbsp;вопросам климата</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="my-comfort__tariffs__table__key">Бесплатная замена блока через 7&nbsp;лет</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+												</div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__value">
+													<div class="my-comfort__tariffs__table__value__plus"></div>
+													<div class="my-comfort__tariffs__table__value__text">Скидка на установку 10%</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td class="my-comfort__tariffs__table__footnote">* При наличии контроллера Daichi</td>
+											<td>
+												<div class="my-comfort__tariffs__table__price">от 5000 ₽</div>
+												<div class="my-comfort__tariffs__table__button"><a class="button js-set-value" href="#order" data-value="Мой комфорт премиум" data-fancybox>Заказать</a></div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__price">от 3000 ₽</div>
+												<div class="my-comfort__tariffs__table__button"><a class="button js-set-value" href="#order" data-value="Мой комфорт +" data-fancybox>Заказать</a></div>
+											</td>
+											<td>
+												<div class="my-comfort__tariffs__table__price">от 2000 ₽</div>
+												<div class="my-comfort__tariffs__table__button"><a class="button js-set-value" href="#order" data-value="Мой комфорт" data-fancybox>Заказать</a></div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="is-hidden">
+									<form class="modal form" id="order" action="./ajax/test.json" method="get" data-app="form">
+										<div class="h3 form__title">Заказать услугу</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="type" value="Мой комфорт" required><i></i><span>Мой комфорт</span>
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="type" value="Мой комфорт +" required><i></i><span>Мой комфорт +</span>
+											</label>
+										</div>
+										<div class="radio">
+											<label>
+												<input type="radio" name="type" value="Мой комфорт премиум" checked required><i></i><span>Мой комфорт премиум</span>
+											</label>
+										</div>
+										<div class="form__row">
+											<div class="form__col">
+												<div class="input">
+													<div class="input__label">Имя</div>
+													<div class="input__field">
+														<input type="text" name="firstname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}">
+													</div>
+												</div>
+											</div>
+											<div class="form__col">
+												<div class="input">
+													<div class="input__label">Фамилия</div>
+													<div class="input__field">
+														<input type="text" name="surname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input">
+											<div class="input__label">E-mail</div>
+											<div class="input__field">
+												<input type="email" name="email" data-validation="{&quot;regex&quot;:[&quot;^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$&quot;,&quot;i&quot;],&quot;maxlength&quot;:254,&quot;messages&quot;:{&quot;regex&quot;:&quot;Неверный или некорректный e-mail адрес.&quot;}}" required>
+											</div>
+										</div>
+										<div class="input">
+											<div class="input__label">Телефон</div>
+											<div class="input__field">
+												<input type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required>
+											</div>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="checkbox" required><i>
+													<svg>
+														<use xlink:href="./images/sprites.svg#check"></use>
+													</svg></i><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+											</label>
+										</div>
+										<div class="form__button">
+											<button class="button" type="submit">Отправить</button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="my-comfort__tariffs__text anime fadeUp" data-offset="25">Другими словами, если подписка «Мой комфорт Премиум» сделана по&nbsp;принципу «все включено», то&nbsp;в&nbsp;«Мой комфорт Плюс» ежегодное техническое обслуживание предоставляется за&nbsp;дополнительную плату, а&nbsp;«Мой комфорт» следует формуле «запчасти и&nbsp;блоки включены», а&nbsp;работы оплачиваются отдельно.</div>
+								</div>
+							</div>
+						</div>
+						<div class="my-comfort__devices">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 my-comfort__devices__title anime fadeUp" data-offset="25">Контроллеры Daichi и мобильное управление</div>
+									<div class="page-subtext my-comfort__devices__text anime fadeUp" data-offset="25">При наличии установленного контроллера Daichi, услуга предусматривает круглосуточный онлайн-прием и анализ диагностических сигналов кондиционера в центре мониторинга «Даичи». Неполадки диагностируются и устраняются в удобное для владельца время в течение двух рабочих дней.</div>
+									<div class="my-comfort__devices__list" data-app="tab">
+										<div class="tab-list anime fadeUp" data-offset="25">
+											<ul>
+												<li><a class="is-active" href="#" data-tab="tab-1">Сплит-системы</a></li>
+												<li><a href="#" data-tab="tab-2">Системы VRF</a></li>
+											</ul>
+										</div>
+										<div class="tab__content">
+											<div class="tab__item is-active" data-tab="tab-1">
+												<div class="page-product__accessories anime fadeUp" data-offset="25">
+													<div class="page-product__accessories__image"><img src="./images/temp/43.jpg" alt=""></div>
+													<div class="page-product__accessories__content">
+														<div class="page-product__accessories__head">
+															<div class="h4 page-product__accessories__title">Wi-Fi-контроллер Daichi DW11-BL</div>
+															<div class="h4 page-product__accessories__price">от 5 990 ₽</div>
+														</div>
+														<div class="page-product__accessories__row">
+															<div class="page-product__accessories__info">
+																<ul>
+																	<li>
+																		<div class="page-product__accessories__info__label">Габариты, ШхГхВ, мм</div><span>100x22x55</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Вес нетто</div><span>0,156</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Шифрование</div><span>WEP/TKIP/AES</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Безопасность</div><span>WPA/WPA2</span>
+																	</li>
+																</ul>
+															</div>
+															<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="page-product__accessories anime fadeUp" data-offset="25">
+													<div class="page-product__accessories__image"><img src="./images/temp/61.jpg" alt=""></div>
+													<div class="page-product__accessories__content">
+														<div class="page-product__accessories__head">
+															<div class="h4 page-product__accessories__title">Мобильное приложение для кoнтpoллepa Daichi</div>
+															<div class="h4 page-product__accessories__price">Бесплатно</div>
+														</div>
+														<div class="page-product__accessories__row">
+															<div class="page-product__accessories__info">
+																<ul>
+																	<li>Доступно для iOS и Android</li>
+																	<li>★★★★☆ 4,2</li>
+																</ul>
+															</div>
+															<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tab__item" data-tab="tab-2">
+												<div class="page-product__accessories anime fadeUp" data-offset="25">
+													<div class="page-product__accessories__image"><img src="./images/temp/61.jpg" alt=""></div>
+													<div class="page-product__accessories__content">
+														<div class="page-product__accessories__head">
+															<div class="h4 page-product__accessories__title">Мобильное приложение для кoнтpoллepa Daichi</div>
+															<div class="h4 page-product__accessories__price">Бесплатно</div>
+														</div>
+														<div class="page-product__accessories__row">
+															<div class="page-product__accessories__info">
+																<ul>
+																	<li>Доступно для iOS и Android</li>
+																	<li>★★★★☆ 4,2</li>
+																</ul>
+															</div>
+															<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+														</div>
+													</div>
+												</div>
+												<div class="page-product__accessories anime fadeUp" data-offset="25">
+													<div class="page-product__accessories__image"><img src="./images/temp/43.jpg" alt=""></div>
+													<div class="page-product__accessories__content">
+														<div class="page-product__accessories__head">
+															<div class="h4 page-product__accessories__title">Wi-Fi-контроллер Daichi DW11-BL</div>
+															<div class="h4 page-product__accessories__price">от 5 990 ₽</div>
+														</div>
+														<div class="page-product__accessories__row">
+															<div class="page-product__accessories__info">
+																<ul>
+																	<li>
+																		<div class="page-product__accessories__info__label">Габариты, ШхГхВ, мм</div><span>100x22x55</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Вес нетто</div><span>0,156</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Шифрование</div><span>WEP/TKIP/AES</span>
+																	</li>
+																	<li>
+																		<div class="page-product__accessories__info__label">Безопасность</div><span>WPA/WPA2</span>
+																	</li>
+																</ul>
+															</div>
+															<div class="page-product__accessories__button"><a class="button" href="#">Подробнее</a></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="my-comfort__app">
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="my-comfort__app__market">
+										<div class="my-comfort__app__market__item anime fadeUp" data-offset="25">
+											<div class="my-comfort__app__market__item__qr"><img src="./images/app-store-qr.png" alt=""></div>
+											<div class="my-comfort__app__market__item__logo"><a href="#"><img src="./images/app-store.svg" alt=""></a></div>
+										</div>
+										<div class="my-comfort__app__market__item anime fadeUp" data-offset="25">
+											<div class="my-comfort__app__market__item__qr"><img src="./images/google-play-qr.png" alt=""></div>
+											<div class="my-comfort__app__market__item__logo"><a href="#"><img src="./images/google-play.svg" alt=""></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="h3 my-comfort__app__title anime fadeUp" data-offset="25">Бесплатное мобильное приложение</div>
+									<div class="page-subtext my-comfort__app__text anime fadeUp" data-offset="25">Приобретая контроллер, вы&nbsp;также получаете возможность бесплатно воспользоваться программой «Мобильное управление».<br>Загрузите бесплатное мобильное приложение Daichi Comfort и&nbsp;ваше мобильное устройство/ПК&nbsp;превратятся в&nbsp;интеллектуальный пульт управления всеми кондиционерами в&nbsp;доме.</div>
+									<div class="my-comfort__app__button anime fadeUp" data-offset="25"><a class="button" href="#">Подробнее</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion anime" data-offset="25" data-app="accordion">
+						<div class="container">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h3 accordion__title">Вопросы и ответы</div>
+									<div class="accordion__list">
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Какие операции входят в ежегодное сервисное (техническое) обслуживание кондиционера и&nbsp;какова их стоимость?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Для каких кондиционеров доступны программы?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Почему услугу нельзя возобновить после перерыва?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Для чего необходимо проверять наличие действующего сертификата авторизованного партнера программы у компании, установившей кондиционер?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Что будет, если из строя выйдет блок целиком?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Вы обещаете отремонтировать за два рабочих дня, а если запчастей не окажется на складе?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Почему требуется какая-то дополнительная оплата запчастей и работы, которые мне полагаются бесплатно в период гарантийного обслуживания?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Подписка распространяется только на внутренний блок или на всю систему целиком?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Обязательно ли устанавливать контроллер для подключения услуги?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Если я уже подписан на «Климат онлайн» и хочу подписаться на «Мой комфорт Плюс», можно ли&nbsp;зачесть уже оплаченную услугу в стоимость новой услуги?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Что делать, если, например, после пяти лет эксплуатации у меня вышел из строя целый блок?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>При продаже дома или квартиры с оборудованием с уже действующей услугой могу я получить абонентскую плату обратно?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item accordion__item--hidden is-hidden">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Обязательно ли устанавливать контроллер для подключения услуги?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item accordion__item--hidden is-hidden">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Если я уже подписан на «Климат онлайн» и хочу подписаться на «Мой комфорт Плюс», можно ли&nbsp;зачесть уже оплаченную услугу в стоимость новой услуги?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item accordion__item--hidden is-hidden">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>Что делать, если, например, после пяти лет эксплуатации у меня вышел из строя целый блок?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__item accordion__item--hidden is-hidden">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text"><b>При продаже дома или квартиры с оборудованием с уже действующей услугой могу я получить абонентскую плату обратно?</b>
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text page-text-list page-text">Услуга предоставляется для кондиционеров:
+													<ul>
+														<li>торговых марок Daikin, Midea, Kentatsu, Daichi, Axioma, Aurum и Primera.</li>
+														<li>установленных не более 4-х лет назад</li>
+														<li>установленных компанией, имеющей действующий сертификат авторизованных партнеров программы «Даичи».</li>
+														<li>зарегистрированных на сайте компании «Даичи»</li>
+													</ul><a href="#">Зарегистрироваться</a> можно самостоятельно онлайн или во время регистрации договора на услугу.
+												</div>
+											</div>
+										</div>
+										<div class="accordion__more anime fadeUp" data-offset="25"><a class="button button--white js-show-hide" href="#" data-target=".accordion__item--hidden" data-on="Скрыть" data-off="Показать еще">Показать еще</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-menu">
+						<div class="bottom-menu__list">
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item" href="#">
+									<div class="h4 bottom-menu__item__label">Мобильное управление</div>
+									<div class="bottom-menu__item__title">Умные решения для контроля климата через приложение Daichi Comfort</div></a></div>
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item bottom-menu__item--catalog" href="#">
+									<div class="h4 bottom-menu__item__label">Каталог</div>
+									<div class="bottom-menu__item__image"><img src="./images/bm-catalog.png" alt=""></div>
+									<div class="bottom-menu__item__title">Комфортный климат в ваших домах и общественных пространствах</div></a></div>
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item bottom-menu__item--buy" href="#">
+									<div class="h4 bottom-menu__item__label">Где купить</div>
+									<div class="bottom-menu__item__image" style="background-image:url(./images/bm-buy.png)"></div>
+									<div class="bottom-menu__item__title">Наш фирменный магазин и широкая дилерская сеть по всей России</div></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<div class="footer__left">
+							<div class="footer__contacts">
+								<div class="footer__logo"><a href="#"><img src="./images/logo-footer.svg" alt=""></a></div>
+								<div class="footer__contacts__content">
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+										<div class="footer__phone__label">Служба поддержки</div>
+									</div>
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 495 737 37 33">8 495 737 37 33</a></div>
+										<div class="footer__phone__label">Офис компании</div>
+									</div>
+									<div class="footer__callback"><a href="#callback" data-fancybox>
+											<svg>
+												<use xlink:href="./images/sprites.svg#callback"></use>
+											</svg>Обратная связь</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__menu">
+								<ul>
+									<li><a href="#">О бренде</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Дилерам</a></li>
+									<li><a href="#">Проектировщикам</a></li>
+									<li><a href="#">Заказчикам</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+							<div class="footer__catalog">
+								<div class="footer__catalog__title"><a href="#">Каталог</a></div>
+								<ul class="footer__catalog__list">
+									<li><a href="#">Облачный кондиционер</a></li>
+									<li><a href="#">Настенные сплит-системы</a></li>
+									<li><a href="#">Мультисистемы</a></li>
+									<li><a href="#">Полупромышленная серия</a></li>
+									<li><a href="#">DFT</a></li>
+									<li><a href="#">Wi-Fi-контроллеры</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__container">
+						<ul class="footer__list footer__list--list">
+							<li class="for-desktop">© Daichi 2021.</li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+						<ul class="footer__list footer__list--social">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Вконтакте</a></li>
+							<li><a href="#">Youtube</a></li>
+						</ul>
+						<div class="footer__list"><span class="for-mobile">© Daichi 2021.</span><a href="#">Разработано в ITECH</a></div>
+					</div>
+				</div>
+			</footer>
+			<div class="is-hidden">
+				<form class="modal form" id="callback" action="./ajax/callback.json" method="get" data-app="form" data-event="Feedback">
+					<div class="h3 form__title">Обратная связь</div>
+					<div class="form__text">Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут</div>
+					<div class="form__row">
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Имя</div>
+								<div class="input__field">
+									<input type="text" name="firstname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Фамилия</div>
+								<div class="input__field">
+									<input type="text" name="surname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">E-mail</div>
+						<div class="input__field">
+							<input type="email" name="email" data-validation="{&quot;regex&quot;:[&quot;^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$&quot;,&quot;i&quot;],&quot;maxlength&quot;:254,&quot;messages&quot;:{&quot;regex&quot;:&quot;Неверный или некорректный e-mail адрес.&quot;}}" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Телефон</div>
+						<div class="input__field">
+							<input type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Комментарий</div>
+						<div class="input__field">
+							<textarea name="subject" data-validation="{&quot;maxlength&quot;:300}" required></textarea>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" required><i>
+								<svg>
+									<use xlink:href="./images/sprites.svg#check"></use>
+								</svg></i><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+						</label>
+					</div>
+					<div class="form__button">
+						<button class="button" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<div class="is-hidden">
+				<form class="modal form" id="success">
+					<div class="modal__icon-block"><img src="./images/success.svg"></div>
+					<div class="h3 form__title">Спасибо!</div>
+					<div class="page-text">Наш специалист свяжется с вами в ближайшее время.</div>
+				</form>
+			</div><a class="up" href="#" data-app="up"></a>
+		</div>
+		<script src="./js/vendor.js?v=1683031532688"></script>
+		<script src="./js/main.js?v=1683031532688"></script>
+		<script>
+			if (window.location.pathname === '/partners-modal.html') {
+				const $btn = $('<a href="#success" data-fancybox></a>')
+				$('body').append($btn)
+				$btn.trigger('click')
+			}
+		</script>
+	</body>
+</html>

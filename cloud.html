@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="stylesheet" href="./css/main.css?v=1683031531339">
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N7W63LX');
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<header class="header" data-app="header">
+				<div class="header__line"></div>
+				<div class="container">
+					<div class="header__container">
+						<div class="header__logo"><a href=""><img src="./images/logo.svg" alt=""></a></div>
+						<div class="header__right">
+							<ul class="header__menu for-desktop">
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Мобильное управление</a></li>
+								<li><a href="#">Облачный кондиционер</a></li>
+								<li><a href="#">Где купить</a></li>
+								<li><a href="#">Для партнеров</a></li>
+								<li><a class="is-arrow" href="#">Еще</a>
+									<div class="header__menu__drop">
+										<div class="header__menu__drop__content">
+											<div class="header__menu__drop__wrap">
+												<ul class="header__menu__drop__menu">
+													<li><a href="#">Поддержка</a></li>
+													<li><a href="#">Статьи</a></li>
+													<li><a href="#">Контакты</a></li>
+												</ul>
+												<div class="header__menu__drop__contacts">
+													<div class="header__menu__drop__contacts__phone"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+													<div class="header__menu__drop__contacts__phone-label">Служба поддержки</div>
+													<div class="header__menu__drop__contacts__callback"><a href="#callback" data-fancybox>
+															<svg>
+																<use xlink:href="./images/sprites.svg#comment"></use>
+															</svg>Обратная связь</a></div>
+												</div>
+											</div>
+											<div class="header__menu__drop__footer">
+												<div class="header__menu__drop__lang"><a href="#">
+														<svg>
+															<use xlink:href="./images/sprites.svg#world"></use>
+														</svg>Русский</a></div>
+												<div class="header__menu__drop__location"><a href="#location" data-fancybox>
+														<svg>
+															<use xlink:href="./images/sprites.svg#location"></use>
+														</svg>Москва</a></div>
+												<div class="is-hidden">
+													<div class="modal form location" id="location" data-param="change-city">
+														<div class="h3 form__title">Выбор города</div>
+														<div class="location__field input" data-app="select-location" data-ajax="./ajax/location.json">
+															<div class="input__field input__field--search">
+																<select data-placeholder="Введите название города">
+																	<option></option>
+																</select>
+															</div>
+														</div>
+														<div class="location__list">
+															<ul>
+																<li><a href="?change-city=Москва">Москва</a></li>
+																<li><a href="?change-city=Петербург">Санкт-Петербург</a></li>
+																<li><a href="?change-city=Калининград">Калининград</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Краснодар">Краснодар</a></li>
+																<li><a href="?change-city=Красноярск">Красноярск</a></li>
+																<li><a href="?change-city=Севастополь">Севастополь</a></li>
+															</ul>
+															<ul>
+																<li><a href="?change-city=Симферополь">Симферополь</a></li>
+																<li><a href="?change-city=Уфа">Уфа</a></li>
+																<li><a href="?change-city=Ялта">Ялта</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="header__search-open"><a href="#">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg></a></div>
+							<form class="header__search" action="search.html" method="get" data-app="form" data-type="submit">
+								<input class="header__search__field" type="text" name="q" placeholder="Поиск по сайту" data-validation="{&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;required&quot;:&quot;Введите поисковый запрос&quot;}}" required>
+								<button class="header__search__submit" type="submit">
+									<svg>
+										<use xlink:href="./images/sprites.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+							<button class="header__burger for-mobile"><i></i><i></i><i></i></button>
+						</div>
+						<div class="modal header__location for-desktop">
+							<div class="h3 form__title">Ваш город — Москва?</div>
+							<div class="modal__footer"><a class="button button--white" href="#location" data-fancybox>Выбрать другой</a>
+								<button class="button header__location__confirm" type="button">Верно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mobile-menu for-mobile" data-app="mobile-menu">
+				<div class="mobile-menu__list">
+					<ul>
+						<li><a href="#">Каталог</a>
+							<ul>
+								<li><a href="#">Настенные сплит-системы</a></li>
+								<li><a href="#">Мультисистемы</a></li>
+								<li><a href="#">Полупромышленная серия</a></li>
+								<li><a href="#">DFT</a></li>
+								<li><a href="#">Контроллеры</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Мобильное управление</a></li>
+						<li><a href="#">Облачный кондиционер</a></li>
+						<li><a href="#">Где купить</a></li>
+						<li><a href="#">Для партнеров</a></li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="mobile-menu__support">
+					<div class="mobile-menu__support__phone"><a href="tel:+78002000005">8 800 200 00 05</a></div>
+					<div class="mobile-menu__support__text">Служба поддержки</div>
+				</div>
+				<div class="mobile-menu__button"><a href="#callback" data-fancybox>Обратная связь</a></div>
+			</div>
+			<div class="content">
+				<div class="page-cloud" data-app="page-cloud">
+					<div class="page-cloud__intro anime">
+						<div class="page-cloud__intro__trigger"></div>
+						<div class="page-cloud__intro__back">
+							<video src="./images/clouds.mp4" muted autoplay loop></video>
+						</div>
+						<div class="container">
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Главная</a></li>
+									<li>Облачный кондиционер</li>
+								</ul>
+							</div>
+							<div class="page-cloud__intro__head">
+								<h1 class="page-title page-cloud__intro__title">Облачный кондиционер</h1>
+								<div class="page-cloud__intro__price"><sup class="text-gradient">от</sup><span class="text-gradient">7 999 ₽</span></div>
+							</div>
+							<div class="page-cloud__intro__image">
+								<div class="page-cloud__intro__image__scroll"><img src="./images/cloud-intro-image.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="page-cloud__control anime" data-offset="25">
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="page-cloud__control__wifi">
+										<div class="page-cloud__control__wifi__icon">
+											<svg>
+												<use xlink:href="./images/sprites.svg#wifi"></use>
+											</svg>
+										</div>
+										<div class="page-cloud__control__wifi__text">Облачный кондиционер работает только при&nbsp;наличии подключения к Wi-Fi</div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="h1 page-cloud__control__title">Управляется со смартфона, работает по подписке</div>
+									<div class="page-cloud__control__text">Облачный кондиционер продается как обычный товар и имеет очень низкую цену. Но работает только при подключении к Облачному сервису Даичи — платной ежегодной подписке, которая предоставляет вам возможность управления кондиционером со смартфона или ПК, программное обеспечение, службу технической поддержки и ряд других услуг.</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-cloud__price anime" data-offset="25">
+							<div class="wrapper">
+								<div class="wrapper__side"><a class="page-cloud__price__banner js-goto" href="#catalog">
+										<div class="page-cloud__price__banner__image" style="background-image:url(./images/cloud-price-banner.jpg)"></div>
+										<div class="page-cloud__price__banner__logo"><img src="./images/cloud-price-logo.svg" alt=""></div>
+										<div class="page-cloud__price__banner__content">
+											<div class="page-cloud__price__banner__text">В каталог Облачных кондиционеров</div>
+											<div class="page-cloud__price__banner__count"><span>3</span></div>
+										</div></a></div>
+								<div class="wrapper__content">
+									<div class="h2 page-cloud__price__title">Новый уровень доступных цен и комфорта</div>
+									<div class="page-cloud__price__list">
+										<div class="page-cloud__price__item">
+											<div class="page-cloud__price__item__image"><img src="./images/cloud-price-1.png" alt=""></div>
+											<div class="page-cloud__price__item__content">
+												<div class="h4 page-cloud__price__item__title">Оборудование</div>
+												<div class="page-cloud__price__item__text">Daichi Alpha A20AVQS01/A20FV1</div>
+												<div class="page-cloud__price__item__price">
+													<div class="page-cloud__price__item__price__number">7 999 ₽</div>
+													<div class="page-cloud__price__item__price__label">обычная цена<br>20 999 ₽</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-cloud__price__item">
+											<div class="page-cloud__price__item__image"><img src="./images/cloud-price-2.svg" alt=""></div>
+											<div class="page-cloud__price__item__content">
+												<div class="h4 page-cloud__price__item__title">Подписка</div>
+												<div class="page-cloud__price__item__text">Облачный сервис</div>
+												<div class="page-cloud__price__item__price">
+													<div class="page-cloud__price__item__price__number">2 799 ₽</div>
+													<div class="page-cloud__price__item__price__label">/ год</div>
+												</div>
+											</div>
+											<div class="page-cloud__price__item__plus">
+												<svg>
+													<use xlink:href="./images/sprites.svg#plus"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="page-cloud__price__item">
+											<div class="page-cloud__price__item__image"><img src="./images/cloud-price-3.svg" alt=""></div>
+											<div class="page-cloud__price__item__content">
+												<div class="h4 page-cloud__price__item__title">И еще</div>
+												<div class="page-cloud__price__item__text">Онлайн диагностика<br>Год гарантии в подарок<br>Консультации и поддержка</div>
+											</div>
+											<div class="page-cloud__price__item__plus">
+												<svg>
+													<use xlink:href="./images/sprites.svg#plus"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page-cloud__service anime" data-offset="25">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 page-cloud__service__title">Что входит в сервис</div>
+								</div>
+							</div>
+							<div class="page-cloud__service__guarantee anime" data-offset="25">
+								<div class="wrapper">
+									<div class="wrapper__side">
+										<div class="page-cloud__service__guarantee__content">
+											<div class="h4">Гарантия в подарок</div>
+											<div class="page-cloud__service__text">Дополнительный год гарантии на кондиционер в подарок</div>
+										</div>
+									</div>
+									<div class="wrapper__content">
+										<div class="page-cloud__service__guarantee__image"><img src="./images/service-guarantee.jpg" alt=""></div>
+									</div>
+								</div>
+							</div>
+							<div class="page-cloud__service__control anime" data-offset="25">
+								<div class="wrapper">
+									<div class="wrapper__side"></div>
+									<div class="wrapper__content">
+										<div class="page-cloud__service__control__container">
+											<div class="page-cloud__service__control__image"><img src="./images/service-control.png" alt=""></div>
+											<div class="page-cloud__service__control__content">
+												<div class="h4">Управление с помощью приложения Daichi Comfort</div>
+												<div class="page-cloud__service__text">Расширенный диапазон функций управления со смартфона или ПК</div>
+												<div class="page-cloud__service__button"><a href="#">Про мобильное управление</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="wrapper__side">
+									<div class="page-cloud__service__diagnostics anime" data-offset="25">
+										<div class="page-cloud__service__diagnostics__content">
+											<div class="h4">Дистанционная диагностика</div>
+											<div class="page-cloud__service__text">Удалённое определение неисправностей кондиционера</div>
+										</div>
+										<div class="page-cloud__service__diagnostics__image"><img src="./images/service-diagnostics.jpg" alt="">
+											<div class="page-cloud__service__diagnostics__pulse">
+												<svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+													<circle cx="19.8873" cy="20.2846" r="19.3871" stroke="url(#paint0_linear)"></circle>
+													<defs>
+														<lineargradient id="paint0_linear" x1="19.8873" y1="0.397461" x2="19.8873" y2="40.1717" gradientUnits="userSpaceOnUse">
+															<stop stop-color="#7BBAFF"></stop>
+															<stop offset="1" stop-color="#FFDECB"></stop>
+															<stop offset="1" stop-color="#FFDECB"></stop>
+														</lineargradient>
+													</defs>
+												</svg>
+												<svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+													<circle cx="19.8873" cy="20.2846" r="19.3871" stroke="url(#paint0_linear)"></circle>
+												</svg>
+												<svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+													<circle cx="19.8873" cy="20.2846" r="19.3871" stroke="url(#paint0_linear)"></circle>
+												</svg>
+												<svg width="40" height="41" viewBox="0 0 40 41" fill="none">
+													<circle cx="19.8873" cy="20.2846" r="19.3871" stroke="url(#paint0_linear)"></circle>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="page-cloud__service__specialist anime" data-offset="25">
+										<div class="page-cloud__service__specialist__content">
+											<div class="h4">Специалист всегда на связи</div>
+											<div class="page-cloud__service__text">Сопровождение консультационной службы °D: всегда доступны консультации по телефону, связаться можно через мобильное приложение</div>
+										</div>
+										<div class="page-cloud__service__specialist__image"><img src="./images/service-specialist.jpg" alt=""></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-cloud__mobile anime" data-offset="25">
+						<div class="page-cloud__mobile__bg"></div>
+						<div class="container">
+							<div class="page-cloud__mobile__head">
+								<div class="wrapper">
+									<div class="wrapper__side">
+										<div class="page-cloud__mobile__logo"><img src="./images/mobile-logo.svg" alt=""></div>
+									</div>
+									<div class="wrapper__content">
+										<div class="h2 page-cloud__mobile__title">Облачный — значит легкий, благодаря мобильному управлению</div>
+									</div>
+								</div>
+							</div>
+							<div class="wrapper page-cloud__mobile__wrapper">
+								<div class="wrapper__side page-cloud__mobile__wrapper__side"><a class="page-cloud__mobile__video" href="http://media.w3.org/2010/05/sintel/trailer.mp4" data-fancybox>
+										<div class="page-cloud__mobile__video__image"><img src="./images/mobile-app-video.jpg" alt="">
+											<div class="page-cloud__mobile__video__play">
+												<svg>
+													<use xlink:href="./images/sprites.svg#play"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="page-cloud__mobile__video__footer">
+											<div class="page-cloud__mobile__video__title">Приложение Мобильное управление</div>
+											<div class="page-cloud__mobile__video__time">2:30</div>
+										</div></a>
+									<div class="page-cloud__mobile__market">
+										<div class="page-cloud__mobile__market__item">
+											<div class="page-cloud__mobile__market__item__qr"><img src="./images/app-store-qr.png" alt=""></div>
+											<div class="page-cloud__mobile__market__item__logo"><a href="#" target="_blank"><img src="./images/app-store.svg" alt=""></a></div>
+										</div>
+										<div class="page-cloud__mobile__market__item">
+											<div class="page-cloud__mobile__market__item__qr"><img src="./images/google-play-qr.png" alt=""></div>
+											<div class="page-cloud__mobile__market__item__logo"><a href="#" target="_blank"><img src="./images/google-play.svg" alt=""></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="wrapper__content">
+									<div class="page-cloud__mobile__tabs">
+										<ul class="page-cloud__mobile__tabs__list">
+											<li><a class="is-active" href="#" data-tab="tab-1">Управление</a></li>
+											<li><a href="#" data-tab="tab-2">Персонализация</a></li>
+											<li><a href="#" data-tab="tab-3">Автоматизация</a></li>
+										</ul>
+										<div class="page-cloud__mobile__tabs__content">
+											<div class="page-cloud__mobile__tabs__item is-active" data-tab="tab-1">
+												<div class="page-cloud__mobile__item">
+													<div class="page-cloud__mobile__item__content">
+														<div class="h4 page-cloud__mobile__item__title">Управляйте кондиционером из любой точки мира</div>
+														<div class="page-cloud__mobile__item__text">Одно мобильное приложение может контролировать все объекты и помещения</div>
+														<div class="h4 page-cloud__mobile__item__title">Управляйте голосом!</div>
+														<div class="page-cloud__mobile__item__text">Работает с голосовыми помощниками: Алисой, Марусей и другими</div>
+														<div class="page-cloud__mobile__item__helper">
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/alisa.png" alt=""></div>
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/marusya.png" alt=""></div>
+														</div>
+													</div>
+													<div class="page-cloud__mobile__item__image"><img src="./images/cloud-mobile.png" alt=""></div>
+												</div>
+											</div>
+											<div class="page-cloud__mobile__tabs__item" data-tab="tab-2">
+												<div class="page-cloud__mobile__item">
+													<div class="page-cloud__mobile__item__content">
+														<div class="h4 page-cloud__mobile__item__title">Управляйте кондиционером из любой точки мира</div>
+														<div class="page-cloud__mobile__item__text">Одно мобильное приложение может контролировать все объекты и помещения</div>
+														<div class="h4 page-cloud__mobile__item__title">Управляйте голосом!</div>
+														<div class="page-cloud__mobile__item__text">Работает с голосовыми помощниками: Алисой, Марусей и другими</div>
+														<div class="page-cloud__mobile__item__helper">
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/alisa.png" alt=""></div>
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/marusya.png" alt=""></div>
+														</div>
+													</div>
+													<div class="page-cloud__mobile__item__image"><img src="./images/cloud-mobile.png" alt=""></div>
+												</div>
+											</div>
+											<div class="page-cloud__mobile__tabs__item" data-tab="tab-3">
+												<div class="page-cloud__mobile__item">
+													<div class="page-cloud__mobile__item__content">
+														<div class="h4 page-cloud__mobile__item__title">Управляйте кондиционером из любой точки мира</div>
+														<div class="page-cloud__mobile__item__text">Одно мобильное приложение может контролировать все объекты и помещения</div>
+														<div class="h4 page-cloud__mobile__item__title">Управляйте голосом!</div>
+														<div class="page-cloud__mobile__item__text">Работает с голосовыми помощниками: Алисой, Марусей и другими</div>
+														<div class="page-cloud__mobile__item__helper">
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/alisa.png" alt=""></div>
+															<div class="page-cloud__mobile__item__helper__item"><img src="./images/marusya.png" alt=""></div>
+														</div>
+													</div>
+													<div class="page-cloud__mobile__item__image"><img src="./images/cloud-mobile.png" alt=""></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog anime" id="catalog" data-app="catalog" data-offset="25">
+						<div class="container">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h2 catalog__title">Каталог облачных кондиционеров</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__slider">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="catalog__item" data-app="catalog-item"><a class="catalog__item__image" href="#">
+												<div class="catalog__item__image__container">
+													<div class="catalog__item__image__item is-active" style="background-image:url(./images/temp/21.jpg)"></div>
+												</div>
+												<div class="catalog__item__image__hover"></div></a>
+											<div class="h4 catalog__item__title"><a href="#">Daichi Alpha</a></div>
+											<div class="catalog__item__text">
+												<ul>
+													<li>Бесшумный режим</li>
+													<li>Комфортное воздухораспределение</li>
+													<li>Энергоэффективность класса А</li>
+													<li>Функция «Комфортный сон»</li>
+												</ul>
+											</div>
+											<div class="catalog__item__space"></div>
+											<div class="catalog__item__price">
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">оборудование</div>
+													<div class="catalog__item__price__number">от 7 999 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">подписка на год</div>
+													<div class="catalog__item__price__number">от 2 799 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">обычная цена</div>
+													<div class="catalog__item__price__number"><span class="catalog__item__price__line">20 999 ₽</span></div>
+												</div>
+											</div>
+											<div class="catalog__item__button"><a class="button" href="#">Где купить</a></div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="catalog__item" data-app="catalog-item"><a class="catalog__item__image" href="#">
+												<div class="catalog__item__image__container">
+													<div class="catalog__item__image__item is-active" style="background-image:url(./images/temp/22.jpg)"></div>
+													<div class="catalog__item__image__item" style="background-image:url(./images/temp/23.jpg)"></div>
+													<div class="catalog__item__image__item" style="background-image:url(./images/temp/24.jpg)"></div>
+												</div>
+												<div class="catalog__item__image__hover">
+													<div class="catalog__item__image__hover__col">
+														<div class="catalog__item__image__hover__item is-active"></div>
+													</div>
+													<div class="catalog__item__image__hover__col">
+														<div class="catalog__item__image__hover__item"></div>
+													</div>
+													<div class="catalog__item__image__hover__col">
+														<div class="catalog__item__image__hover__item"></div>
+													</div>
+												</div></a>
+											<div class="h4 catalog__item__title"><a href="#">Daichi Air</a></div>
+											<div class="catalog__item__text">
+												<ul>
+													<li>Встроенные ионизатор и ультрафиолетовая лампа</li>
+													<li>Инверторная технология DC Inverter</li>
+													<li>Энергоэффективность А++</li>
+													<li>Диапазон рабочих температур от -20 до 53°С</li>
+												</ul>
+											</div>
+											<div class="catalog__item__space"></div>
+											<div class="catalog__item__price">
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">оборудование</div>
+													<div class="catalog__item__price__number">от 21 999 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">подписка на год</div>
+													<div class="catalog__item__price__number">от 3 499 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">обычная цена</div>
+													<div class="catalog__item__price__number"><span class="catalog__item__price__line">от 36 999 ₽</span></div>
+												</div>
+											</div>
+											<div class="catalog__item__button"><a class="button" href="#">Где купить</a></div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="catalog__item" data-app="catalog-item"><a class="catalog__item__image" href="#">
+												<div class="catalog__item__image__container">
+													<div class="catalog__item__image__item is-active" style="background-image:url(./images/temp/25.jpg)"></div>
+												</div>
+												<div class="catalog__item__image__hover"></div></a>
+											<div class="h4 catalog__item__title"><a href="#">Daichi X-Treme Peak</a></div>
+											<div class="catalog__item__text">
+												<ul>
+													<li>Инверторная технология Full DC Inverter</li>
+													<li>Режим локального комфорта Ifeel</li>
+													<li>Энергоэффективность А++</li>
+													<li>Работа на обогрев при низких температурах до -22°С</li>
+												</ul>
+											</div>
+											<div class="catalog__item__space"></div>
+											<div class="catalog__item__price">
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">оборудование</div>
+													<div class="catalog__item__price__number">от 24 999 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">подписка на год</div>
+													<div class="catalog__item__price__number">от 3 499 ₽</div>
+												</div>
+												<div class="catalog__item__price__item">
+													<div class="catalog__item__price__label">обычная цена</div>
+													<div class="catalog__item__price__number"><span class="catalog__item__price__line">от 44 999 ₽</span></div>
+												</div>
+											</div>
+											<div class="catalog__item__button"><a class="button" href="#">Где купить</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="arrow-prev catalog__slider__prev" type="button">
+								<svg>
+									<use xlink:href="./images/sprites.svg#arrow-right"></use>
+								</svg>
+							</button>
+							<button class="arrow-next catalog__slider__next" type="button">
+								<svg>
+									<use xlink:href="./images/sprites.svg#arrow-right"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="container">
+							<div class="progress"></div>
+						</div>
+					</div>
+					<div class="accordion anime" data-offset="25" data-app="accordion">
+						<div class="container">
+							<div class="wrapper">
+								<div class="wrapper__side"></div>
+								<div class="wrapper__content">
+									<div class="h3 accordion__title">Вопросы и ответы</div>
+									<div class="accordion__list">
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Где купить и как установить Облачный кондиционер?
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Есть ли способ отказаться от ежегодных платежей после того, как кондиционер установлен
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Если сравнить стоимость Облачного кондиционера и подписки со стоимостью обычного кондиционера, получается, что я плачу дороже?
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Есть ли особые технические условия, необходимые для работы Облачного кондиционера?
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Где расположен сервер «Облако Даичи»?
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+										<div class="accordion__item">
+											<div class="accordion__item__header">
+												<div class="accordion__item__header__text">Безопасно ли предоставление доступа к моей локальной сети?
+													<svg class="accordion__item__header__icon">
+														<use xlink:href="./images/sprites.svg#plus"></use>
+													</svg>
+												</div>
+											</div>
+											<div class="accordion__item__content">
+												<div class="accordion__item__text">Облачный кондиционер не работает без оплаченной подписки на Облачный сервис. В любой момент времени вы можете приобрести бессрочное предоставление Облачного сервиса, оплатив 4 ежегодных платежа единовременно.<br>После этого Облачный сервис будет предоставляться бесплатно в течении всего жизненного цикла вашего кондиционера.</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-menu">
+						<div class="bottom-menu__list">
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item" href="#">
+									<div class="h4 bottom-menu__item__label">Мобильное управление</div>
+									<div class="bottom-menu__item__title">Умные решения для контроля климата через приложение Daichi Comfort</div></a></div>
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item bottom-menu__item--catalog" href="#">
+									<div class="h4 bottom-menu__item__label">Каталог</div>
+									<div class="bottom-menu__item__image"><img src="./images/bm-catalog.png" alt=""></div>
+									<div class="bottom-menu__item__title">Комфортный климат в ваших домах и общественных пространствах</div></a></div>
+							<div class="bottom-menu__list__col"><a class="bottom-menu__item bottom-menu__item--buy" href="#">
+									<div class="h4 bottom-menu__item__label">Где купить</div>
+									<div class="bottom-menu__item__image" style="background-image:url(./images/bm-buy.png)"></div>
+									<div class="bottom-menu__item__title">Наш фирменный магазин и широкая дилерская сеть по всей России</div></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__container">
+						<div class="footer__left">
+							<div class="footer__contacts">
+								<div class="footer__logo"><a href="#"><img src="./images/logo-footer.svg" alt=""></a></div>
+								<div class="footer__contacts__content">
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 800 200 00 05">8 800 200 00 05</a></div>
+										<div class="footer__phone__label">Служба поддержки</div>
+									</div>
+									<div class="footer__phone">
+										<div class="footer__phone__number"><a href="tel:8 495 737 37 33">8 495 737 37 33</a></div>
+										<div class="footer__phone__label">Офис компании</div>
+									</div>
+									<div class="footer__callback"><a href="#callback" data-fancybox>
+											<svg>
+												<use xlink:href="./images/sprites.svg#callback"></use>
+											</svg>Обратная связь</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__menu">
+								<ul>
+									<li><a href="#">О бренде</a></li>
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Поддержка</a></li>
+									<li><a href="#">Где купить</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Дилерам</a></li>
+									<li><a href="#">Проектировщикам</a></li>
+									<li><a href="#">Заказчикам</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+							<div class="footer__catalog">
+								<div class="footer__catalog__title"><a href="#">Каталог</a></div>
+								<ul class="footer__catalog__list">
+									<li><a href="#">Облачный кондиционер</a></li>
+									<li><a href="#">Настенные сплит-системы</a></li>
+									<li><a href="#">Мультисистемы</a></li>
+									<li><a href="#">Полупромышленная серия</a></li>
+									<li><a href="#">DFT</a></li>
+									<li><a href="#">Wi-Fi-контроллеры</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__container">
+						<ul class="footer__list footer__list--list">
+							<li class="for-desktop">© Daichi 2021.</li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Карта сайта</a></li>
+						</ul>
+						<ul class="footer__list footer__list--social">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Вконтакте</a></li>
+							<li><a href="#">Youtube</a></li>
+						</ul>
+						<div class="footer__list"><span class="for-mobile">© Daichi 2021.</span><a href="#">Разработано в ITECH</a></div>
+					</div>
+				</div>
+			</footer>
+			<div class="is-hidden">
+				<form class="modal form" id="callback" action="./ajax/callback.json" method="get" data-app="form" data-event="Feedback">
+					<div class="h3 form__title">Обратная связь</div>
+					<div class="form__text">Оставьте ваши контактные данные, и&nbsp;наш специалист свяжется с вами в течение 30 минут</div>
+					<div class="form__row">
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Имя</div>
+								<div class="input__field">
+									<input type="text" name="firstname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+						<div class="form__col">
+							<div class="input">
+								<div class="input__label">Фамилия</div>
+								<div class="input__field">
+									<input type="text" name="surname" data-validation="{&quot;regex&quot;:[&quot;^[^\\d]+$&quot;,&quot;ig&quot;],&quot;maxlength&quot;:300,&quot;messages&quot;:{&quot;regex&quot;:&quot;Поле может содержать только буквы и символы&quot;}}" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">E-mail</div>
+						<div class="input__field">
+							<input type="email" name="email" data-validation="{&quot;regex&quot;:[&quot;^\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}\\b$&quot;,&quot;i&quot;],&quot;maxlength&quot;:254,&quot;messages&quot;:{&quot;regex&quot;:&quot;Неверный или некорректный e-mail адрес.&quot;}}" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Телефон</div>
+						<div class="input__field">
+							<input type="tel" data-app="mask" data-mask="+7(999) 999 99-99" name="tel" required>
+						</div>
+					</div>
+					<div class="input">
+						<div class="input__label">Комментарий</div>
+						<div class="input__field">
+							<textarea name="subject" data-validation="{&quot;maxlength&quot;:300}" required></textarea>
+						</div>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="checkbox" required><i>
+								<svg>
+									<use xlink:href="./images/sprites.svg#check"></use>
+								</svg></i><span>Разрешаю обработку <a href="#">персональных данных</a></span>
+						</label>
+					</div>
+					<div class="form__button">
+						<button class="button" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+			<div class="is-hidden">
+				<form class="modal form" id="success">
+					<div class="modal__icon-block"><img src="./images/success.svg"></div>
+					<div class="h3 form__title">Спасибо!</div>
+					<div class="page-text">Наш специалист свяжется с вами в ближайшее время.</div>
+				</form>
+			</div><a class="up" href="#" data-app="up"></a>
+		</div>
+		<script src="./js/vendor.js?v=1683031531340"></script>
+		<script src="./js/main.js?v=1683031531340"></script>
+		<script>
+			if (window.location.pathname === '/partners-modal.html') {
+				const $btn = $('<a href="#success" data-fancybox></a>')
+				$('body').append($btn)
+				$btn.trigger('click')
+			}
+		</script>
+	</body>
+</html>
